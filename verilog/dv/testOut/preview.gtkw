@@ -1,0 +1,34 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Oct 12 10:56:42 2021
+[*]
+[dumpfile] "/home/rodhuega/Elpis-MPW3/verilog/dv/testOut/testOut.vcd"
+[dumpfile_mtime] "Tue Oct 12 10:54:52 2021"
+[dumpfile_size] 2105646304
+[savefile] "/home/rodhuega/Elpis-MPW3/verilog/dv/testOut/preview.gtkw"
+[timestart] 1551560000
+[size] 1920 976
+[pos] -96 -96
+*-23.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testOut_tb.
+[treeopen] testOut_tb.uut.
+[treeopen] testOut_tb.uut.mprj.
+[treeopen] testOut_tb.uut.mprj.mprj.
+[treeopen] testOut_tb.uut.mprj.mprj.elpis.
+[treeopen] testOut_tb.uut.mprj.mprj.elpis.core0.
+[sst_width] 327
+[signals_width] 246
+[sst_expanded] 1
+[sst_vpaned_height] 524
+@28
+testOut_tb.uut.mprj.mprj.elpis.clk
+testOut_tb.uut.mprj.mprj.elpis.reset_chip
+testOut_tb.uut.mprj.mprj.elpis.reset_core
+testOut_tb.uut.mprj.mprj.elpis.is_loading_memory_into_core
+@22
+testOut_tb.uut.mprj.mprj.addr_to_core_mem[19:0]
+testOut_tb.uut.mprj.mprj.data_to_core_mem[31:0]
+testOut_tb.uut.mprj.mprj.elpis.core0.datapath.pc[31:0]
+testOut_tb.uut.mprj.mprj.elpis.core0.datapath.f_inst[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

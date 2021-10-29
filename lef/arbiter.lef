@@ -1,0 +1,6195 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO arbiter
+  CLASS BLOCK ;
+  FOREIGN arbiter ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 200.000 BY 200.000 ;
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 111.560 200.000 112.160 ;
+    END
+  END clk
+  PIN data_from_mem[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 148.210 0.000 148.490 4.000 ;
+    END
+  END data_from_mem[0]
+  PIN data_from_mem[100]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 146.370 0.000 146.650 4.000 ;
+    END
+  END data_from_mem[100]
+  PIN data_from_mem[101]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 147.290 0.000 147.570 4.000 ;
+    END
+  END data_from_mem[101]
+  PIN data_from_mem[102]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 124.290 196.000 124.570 200.000 ;
+    END
+  END data_from_mem[102]
+  PIN data_from_mem[103]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 100.370 0.000 100.650 4.000 ;
+    END
+  END data_from_mem[103]
+  PIN data_from_mem[104]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.490 0.000 18.770 4.000 ;
+    END
+  END data_from_mem[104]
+  PIN data_from_mem[105]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 144.200 4.000 144.800 ;
+    END
+  END data_from_mem[105]
+  PIN data_from_mem[106]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 144.530 196.000 144.810 200.000 ;
+    END
+  END data_from_mem[106]
+  PIN data_from_mem[107]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 161.880 4.000 162.480 ;
+    END
+  END data_from_mem[107]
+  PIN data_from_mem[108]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 26.770 0.000 27.050 4.000 ;
+    END
+  END data_from_mem[108]
+  PIN data_from_mem[109]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 50.690 0.000 50.970 4.000 ;
+    END
+  END data_from_mem[109]
+  PIN data_from_mem[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 102.210 196.000 102.490 200.000 ;
+    END
+  END data_from_mem[10]
+  PIN data_from_mem[110]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 29.530 196.000 29.810 200.000 ;
+    END
+  END data_from_mem[110]
+  PIN data_from_mem[111]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 21.250 0.000 21.530 4.000 ;
+    END
+  END data_from_mem[111]
+  PIN data_from_mem[112]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 24.520 200.000 25.120 ;
+    END
+  END data_from_mem[112]
+  PIN data_from_mem[113]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 42.410 196.000 42.690 200.000 ;
+    END
+  END data_from_mem[113]
+  PIN data_from_mem[114]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 110.490 0.000 110.770 4.000 ;
+    END
+  END data_from_mem[114]
+  PIN data_from_mem[115]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 40.570 0.000 40.850 4.000 ;
+    END
+  END data_from_mem[115]
+  PIN data_from_mem[116]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 88.410 196.000 88.690 200.000 ;
+    END
+  END data_from_mem[116]
+  PIN data_from_mem[117]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 34.130 0.000 34.410 4.000 ;
+    END
+  END data_from_mem[117]
+  PIN data_from_mem[118]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 79.210 0.000 79.490 4.000 ;
+    END
+  END data_from_mem[118]
+  PIN data_from_mem[119]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 184.090 0.000 184.370 4.000 ;
+    END
+  END data_from_mem[119]
+  PIN data_from_mem[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 25.850 196.000 26.130 200.000 ;
+    END
+  END data_from_mem[11]
+  PIN data_from_mem[120]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 189.610 196.000 189.890 200.000 ;
+    END
+  END data_from_mem[120]
+  PIN data_from_mem[121]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 98.530 196.000 98.810 200.000 ;
+    END
+  END data_from_mem[121]
+  PIN data_from_mem[122]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 20.440 4.000 21.040 ;
+    END
+  END data_from_mem[122]
+  PIN data_from_mem[123]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 72.120 200.000 72.720 ;
+    END
+  END data_from_mem[123]
+  PIN data_from_mem[124]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 131.650 0.000 131.930 4.000 ;
+    END
+  END data_from_mem[124]
+  PIN data_from_mem[125]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 155.570 196.000 155.850 200.000 ;
+    END
+  END data_from_mem[125]
+  PIN data_from_mem[126]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 191.450 196.000 191.730 200.000 ;
+    END
+  END data_from_mem[126]
+  PIN data_from_mem[127]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 101.290 196.000 101.570 200.000 ;
+    END
+  END data_from_mem[127]
+  PIN data_from_mem[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 156.440 200.000 157.040 ;
+    END
+  END data_from_mem[12]
+  PIN data_from_mem[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 9.290 196.000 9.570 200.000 ;
+    END
+  END data_from_mem[13]
+  PIN data_from_mem[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 25.880 4.000 26.480 ;
+    END
+  END data_from_mem[14]
+  PIN data_from_mem[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 16.360 200.000 16.960 ;
+    END
+  END data_from_mem[15]
+  PIN data_from_mem[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 45.170 0.000 45.450 4.000 ;
+    END
+  END data_from_mem[16]
+  PIN data_from_mem[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 16.650 0.000 16.930 4.000 ;
+    END
+  END data_from_mem[17]
+  PIN data_from_mem[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 92.520 200.000 93.120 ;
+    END
+  END data_from_mem[18]
+  PIN data_from_mem[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 106.120 4.000 106.720 ;
+    END
+  END data_from_mem[19]
+  PIN data_from_mem[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 159.160 4.000 159.760 ;
+    END
+  END data_from_mem[1]
+  PIN data_from_mem[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 148.280 4.000 148.880 ;
+    END
+  END data_from_mem[20]
+  PIN data_from_mem[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 173.970 0.000 174.250 4.000 ;
+    END
+  END data_from_mem[21]
+  PIN data_from_mem[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 160.520 200.000 161.120 ;
+    END
+  END data_from_mem[22]
+  PIN data_from_mem[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 85.650 0.000 85.930 4.000 ;
+    END
+  END data_from_mem[23]
+  PIN data_from_mem[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 93.930 196.000 94.210 200.000 ;
+    END
+  END data_from_mem[24]
+  PIN data_from_mem[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 141.770 0.000 142.050 4.000 ;
+    END
+  END data_from_mem[25]
+  PIN data_from_mem[26]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 99.320 200.000 99.920 ;
+    END
+  END data_from_mem[26]
+  PIN data_from_mem[27]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 74.840 4.000 75.440 ;
+    END
+  END data_from_mem[27]
+  PIN data_from_mem[28]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 178.200 4.000 178.800 ;
+    END
+  END data_from_mem[28]
+  PIN data_from_mem[29]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 28.610 196.000 28.890 200.000 ;
+    END
+  END data_from_mem[29]
+  PIN data_from_mem[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 180.920 4.000 181.520 ;
+    END
+  END data_from_mem[2]
+  PIN data_from_mem[30]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 191.800 4.000 192.400 ;
+    END
+  END data_from_mem[30]
+  PIN data_from_mem[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 183.640 200.000 184.240 ;
+    END
+  END data_from_mem[31]
+  PIN data_from_mem[32]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 57.130 196.000 57.410 200.000 ;
+    END
+  END data_from_mem[32]
+  PIN data_from_mem[33]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 73.690 196.000 73.970 200.000 ;
+    END
+  END data_from_mem[33]
+  PIN data_from_mem[34]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 174.120 4.000 174.720 ;
+    END
+  END data_from_mem[34]
+  PIN data_from_mem[35]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 171.400 4.000 172.000 ;
+    END
+  END data_from_mem[35]
+  PIN data_from_mem[36]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 159.250 0.000 159.530 4.000 ;
+    END
+  END data_from_mem[36]
+  PIN data_from_mem[37]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 170.040 200.000 170.640 ;
+    END
+  END data_from_mem[37]
+  PIN data_from_mem[38]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 184.090 196.000 184.370 200.000 ;
+    END
+  END data_from_mem[38]
+  PIN data_from_mem[39]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 83.810 196.000 84.090 200.000 ;
+    END
+  END data_from_mem[39]
+  PIN data_from_mem[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 131.960 200.000 132.560 ;
+    END
+  END data_from_mem[3]
+  PIN data_from_mem[40]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 112.920 200.000 113.520 ;
+    END
+  END data_from_mem[40]
+  PIN data_from_mem[41]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 23.160 4.000 23.760 ;
+    END
+  END data_from_mem[41]
+  PIN data_from_mem[42]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 160.170 196.000 160.450 200.000 ;
+    END
+  END data_from_mem[42]
+  PIN data_from_mem[43]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 89.800 4.000 90.400 ;
+    END
+  END data_from_mem[43]
+  PIN data_from_mem[44]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 160.170 0.000 160.450 4.000 ;
+    END
+  END data_from_mem[44]
+  PIN data_from_mem[45]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 115.090 0.000 115.370 4.000 ;
+    END
+  END data_from_mem[45]
+  PIN data_from_mem[46]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 190.530 196.000 190.810 200.000 ;
+    END
+  END data_from_mem[46]
+  PIN data_from_mem[47]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 49.000 200.000 49.600 ;
+    END
+  END data_from_mem[47]
+  PIN data_from_mem[48]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 115.090 196.000 115.370 200.000 ;
+    END
+  END data_from_mem[48]
+  PIN data_from_mem[49]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 185.930 196.000 186.210 200.000 ;
+    END
+  END data_from_mem[49]
+  PIN data_from_mem[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 153.730 196.000 154.010 200.000 ;
+    END
+  END data_from_mem[4]
+  PIN data_from_mem[50]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 15.730 0.000 16.010 4.000 ;
+    END
+  END data_from_mem[50]
+  PIN data_from_mem[51]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 100.680 4.000 101.280 ;
+    END
+  END data_from_mem[51]
+  PIN data_from_mem[52]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 80.280 4.000 80.880 ;
+    END
+  END data_from_mem[52]
+  PIN data_from_mem[53]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 11.130 0.000 11.410 4.000 ;
+    END
+  END data_from_mem[53]
+  PIN data_from_mem[54]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 168.450 196.000 168.730 200.000 ;
+    END
+  END data_from_mem[54]
+  PIN data_from_mem[55]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 97.610 0.000 97.890 4.000 ;
+    END
+  END data_from_mem[55]
+  PIN data_from_mem[56]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1.400 4.000 2.000 ;
+    END
+  END data_from_mem[56]
+  PIN data_from_mem[57]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 73.480 4.000 74.080 ;
+    END
+  END data_from_mem[57]
+  PIN data_from_mem[58]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 90.250 196.000 90.530 200.000 ;
+    END
+  END data_from_mem[58]
+  PIN data_from_mem[59]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 54.370 0.000 54.650 4.000 ;
+    END
+  END data_from_mem[59]
+  PIN data_from_mem[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 33.210 0.000 33.490 4.000 ;
+    END
+  END data_from_mem[5]
+  PIN data_from_mem[60]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 66.330 0.000 66.610 4.000 ;
+    END
+  END data_from_mem[60]
+  PIN data_from_mem[61]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 93.880 200.000 94.480 ;
+    END
+  END data_from_mem[61]
+  PIN data_from_mem[62]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 135.330 0.000 135.610 4.000 ;
+    END
+  END data_from_mem[62]
+  PIN data_from_mem[63]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 6.840 200.000 7.440 ;
+    END
+  END data_from_mem[63]
+  PIN data_from_mem[64]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 66.680 4.000 67.280 ;
+    END
+  END data_from_mem[64]
+  PIN data_from_mem[65]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 20.330 0.000 20.610 4.000 ;
+    END
+  END data_from_mem[65]
+  PIN data_from_mem[66]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 174.890 196.000 175.170 200.000 ;
+    END
+  END data_from_mem[66]
+  PIN data_from_mem[67]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 64.490 0.000 64.770 4.000 ;
+    END
+  END data_from_mem[67]
+  PIN data_from_mem[68]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 84.360 4.000 84.960 ;
+    END
+  END data_from_mem[68]
+  PIN data_from_mem[69]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 29.960 200.000 30.560 ;
+    END
+  END data_from_mem[69]
+  PIN data_from_mem[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 177.650 196.000 177.930 200.000 ;
+    END
+  END data_from_mem[6]
+  PIN data_from_mem[70]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 70.010 196.000 70.290 200.000 ;
+    END
+  END data_from_mem[70]
+  PIN data_from_mem[71]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 111.560 4.000 112.160 ;
+    END
+  END data_from_mem[71]
+  PIN data_from_mem[72]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 122.450 0.000 122.730 4.000 ;
+    END
+  END data_from_mem[72]
+  PIN data_from_mem[73]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 193.160 200.000 193.760 ;
+    END
+  END data_from_mem[73]
+  PIN data_from_mem[74]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 141.770 196.000 142.050 200.000 ;
+    END
+  END data_from_mem[74]
+  PIN data_from_mem[75]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 20.330 196.000 20.610 200.000 ;
+    END
+  END data_from_mem[75]
+  PIN data_from_mem[76]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 24.520 4.000 25.120 ;
+    END
+  END data_from_mem[76]
+  PIN data_from_mem[77]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 85.720 200.000 86.320 ;
+    END
+  END data_from_mem[77]
+  PIN data_from_mem[78]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 12.050 196.000 12.330 200.000 ;
+    END
+  END data_from_mem[78]
+  PIN data_from_mem[79]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 129.810 196.000 130.090 200.000 ;
+    END
+  END data_from_mem[79]
+  PIN data_from_mem[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 28.600 4.000 29.200 ;
+    END
+  END data_from_mem[7]
+  PIN data_from_mem[80]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 13.640 4.000 14.240 ;
+    END
+  END data_from_mem[80]
+  PIN data_from_mem[81]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 33.210 196.000 33.490 200.000 ;
+    END
+  END data_from_mem[81]
+  PIN data_from_mem[82]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 62.600 4.000 63.200 ;
+    END
+  END data_from_mem[82]
+  PIN data_from_mem[83]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 41.490 0.000 41.770 4.000 ;
+    END
+  END data_from_mem[83]
+  PIN data_from_mem[84]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 2.760 200.000 3.360 ;
+    END
+  END data_from_mem[84]
+  PIN data_from_mem[85]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 162.010 0.000 162.290 4.000 ;
+    END
+  END data_from_mem[85]
+  PIN data_from_mem[86]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 134.680 200.000 135.280 ;
+    END
+  END data_from_mem[86]
+  PIN data_from_mem[87]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 162.930 196.000 163.210 200.000 ;
+    END
+  END data_from_mem[87]
+  PIN data_from_mem[88]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 190.440 4.000 191.040 ;
+    END
+  END data_from_mem[88]
+  PIN data_from_mem[89]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 113.250 196.000 113.530 200.000 ;
+    END
+  END data_from_mem[89]
+  PIN data_from_mem[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 182.250 196.000 182.530 200.000 ;
+    END
+  END data_from_mem[8]
+  PIN data_from_mem[90]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 128.890 0.000 129.170 4.000 ;
+    END
+  END data_from_mem[90]
+  PIN data_from_mem[91]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 57.160 4.000 57.760 ;
+    END
+  END data_from_mem[91]
+  PIN data_from_mem[92]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 115.640 4.000 116.240 ;
+    END
+  END data_from_mem[92]
+  PIN data_from_mem[93]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 31.320 4.000 31.920 ;
+    END
+  END data_from_mem[93]
+  PIN data_from_mem[94]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 32.680 4.000 33.280 ;
+    END
+  END data_from_mem[94]
+  PIN data_from_mem[95]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 36.760 4.000 37.360 ;
+    END
+  END data_from_mem[95]
+  PIN data_from_mem[96]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 181.330 0.000 181.610 4.000 ;
+    END
+  END data_from_mem[96]
+  PIN data_from_mem[97]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 15.000 200.000 15.600 ;
+    END
+  END data_from_mem[97]
+  PIN data_from_mem[98]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 178.570 0.000 178.850 4.000 ;
+    END
+  END data_from_mem[98]
+  PIN data_from_mem[99]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 50.360 4.000 50.960 ;
+    END
+  END data_from_mem[99]
+  PIN data_from_mem[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 8.200 4.000 8.800 ;
+    END
+  END data_from_mem[9]
+  PIN dcache_re
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 74.610 196.000 74.890 200.000 ;
+    END
+  END dcache_re
+  PIN dcache_request
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 196.050 196.000 196.330 200.000 ;
+    END
+  END dcache_request
+  PIN dcache_to_mem_data_in[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 124.290 0.000 124.570 4.000 ;
+    END
+  END dcache_to_mem_data_in[0]
+  PIN dcache_to_mem_data_in[100]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 30.450 0.000 30.730 4.000 ;
+    END
+  END dcache_to_mem_data_in[100]
+  PIN dcache_to_mem_data_in[101]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 139.930 0.000 140.210 4.000 ;
+    END
+  END dcache_to_mem_data_in[101]
+  PIN dcache_to_mem_data_in[102]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 108.650 0.000 108.930 4.000 ;
+    END
+  END dcache_to_mem_data_in[102]
+  PIN dcache_to_mem_data_in[103]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 20.440 200.000 21.040 ;
+    END
+  END dcache_to_mem_data_in[103]
+  PIN dcache_to_mem_data_in[104]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 106.810 0.000 107.090 4.000 ;
+    END
+  END dcache_to_mem_data_in[104]
+  PIN dcache_to_mem_data_in[105]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 190.440 200.000 191.040 ;
+    END
+  END dcache_to_mem_data_in[105]
+  PIN dcache_to_mem_data_in[106]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 157.410 196.000 157.690 200.000 ;
+    END
+  END dcache_to_mem_data_in[106]
+  PIN dcache_to_mem_data_in[107]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 106.810 196.000 107.090 200.000 ;
+    END
+  END dcache_to_mem_data_in[107]
+  PIN dcache_to_mem_data_in[108]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 7.450 196.000 7.730 200.000 ;
+    END
+  END dcache_to_mem_data_in[108]
+  PIN dcache_to_mem_data_in[109]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 129.240 4.000 129.840 ;
+    END
+  END dcache_to_mem_data_in[109]
+  PIN dcache_to_mem_data_in[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 42.410 0.000 42.690 4.000 ;
+    END
+  END dcache_to_mem_data_in[10]
+  PIN dcache_to_mem_data_in[110]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 54.440 4.000 55.040 ;
+    END
+  END dcache_to_mem_data_in[110]
+  PIN dcache_to_mem_data_in[111]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 108.650 196.000 108.930 200.000 ;
+    END
+  END dcache_to_mem_data_in[111]
+  PIN dcache_to_mem_data_in[112]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 154.650 0.000 154.930 4.000 ;
+    END
+  END dcache_to_mem_data_in[112]
+  PIN dcache_to_mem_data_in[113]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 87.490 196.000 87.770 200.000 ;
+    END
+  END dcache_to_mem_data_in[113]
+  PIN dcache_to_mem_data_in[114]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 47.640 200.000 48.240 ;
+    END
+  END dcache_to_mem_data_in[114]
+  PIN dcache_to_mem_data_in[115]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 80.130 0.000 80.410 4.000 ;
+    END
+  END dcache_to_mem_data_in[115]
+  PIN dcache_to_mem_data_in[116]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 195.130 0.000 195.410 4.000 ;
+    END
+  END dcache_to_mem_data_in[116]
+  PIN dcache_to_mem_data_in[117]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 49.000 4.000 49.600 ;
+    END
+  END dcache_to_mem_data_in[117]
+  PIN dcache_to_mem_data_in[118]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 162.930 0.000 163.210 4.000 ;
+    END
+  END dcache_to_mem_data_in[118]
+  PIN dcache_to_mem_data_in[119]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 126.130 0.000 126.410 4.000 ;
+    END
+  END dcache_to_mem_data_in[119]
+  PIN dcache_to_mem_data_in[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 146.920 4.000 147.520 ;
+    END
+  END dcache_to_mem_data_in[11]
+  PIN dcache_to_mem_data_in[120]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 6.530 0.000 6.810 4.000 ;
+    END
+  END dcache_to_mem_data_in[120]
+  PIN dcache_to_mem_data_in[121]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 40.570 196.000 40.850 200.000 ;
+    END
+  END dcache_to_mem_data_in[121]
+  PIN dcache_to_mem_data_in[122]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 103.400 4.000 104.000 ;
+    END
+  END dcache_to_mem_data_in[122]
+  PIN dcache_to_mem_data_in[123]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 55.800 4.000 56.400 ;
+    END
+  END dcache_to_mem_data_in[123]
+  PIN dcache_to_mem_data_in[124]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 10.210 0.000 10.490 4.000 ;
+    END
+  END dcache_to_mem_data_in[124]
+  PIN dcache_to_mem_data_in[125]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 157.410 0.000 157.690 4.000 ;
+    END
+  END dcache_to_mem_data_in[125]
+  PIN dcache_to_mem_data_in[126]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 175.480 200.000 176.080 ;
+    END
+  END dcache_to_mem_data_in[126]
+  PIN dcache_to_mem_data_in[127]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 179.490 0.000 179.770 4.000 ;
+    END
+  END dcache_to_mem_data_in[127]
+  PIN dcache_to_mem_data_in[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 59.890 196.000 60.170 200.000 ;
+    END
+  END dcache_to_mem_data_in[12]
+  PIN dcache_to_mem_data_in[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 185.010 196.000 185.290 200.000 ;
+    END
+  END dcache_to_mem_data_in[13]
+  PIN dcache_to_mem_data_in[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 100.370 196.000 100.650 200.000 ;
+    END
+  END dcache_to_mem_data_in[14]
+  PIN dcache_to_mem_data_in[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 179.560 200.000 180.160 ;
+    END
+  END dcache_to_mem_data_in[15]
+  PIN dcache_to_mem_data_in[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 155.080 4.000 155.680 ;
+    END
+  END dcache_to_mem_data_in[16]
+  PIN dcache_to_mem_data_in[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 32.680 200.000 33.280 ;
+    END
+  END dcache_to_mem_data_in[17]
+  PIN dcache_to_mem_data_in[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 51.610 196.000 51.890 200.000 ;
+    END
+  END dcache_to_mem_data_in[18]
+  PIN dcache_to_mem_data_in[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 4.690 196.000 4.970 200.000 ;
+    END
+  END dcache_to_mem_data_in[19]
+  PIN dcache_to_mem_data_in[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 189.080 4.000 189.680 ;
+    END
+  END dcache_to_mem_data_in[1]
+  PIN dcache_to_mem_data_in[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 40.840 4.000 41.440 ;
+    END
+  END dcache_to_mem_data_in[20]
+  PIN dcache_to_mem_data_in[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 67.250 0.000 67.530 4.000 ;
+    END
+  END dcache_to_mem_data_in[21]
+  PIN dcache_to_mem_data_in[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 130.730 0.000 131.010 4.000 ;
+    END
+  END dcache_to_mem_data_in[22]
+  PIN dcache_to_mem_data_in[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 172.760 200.000 173.360 ;
+    END
+  END dcache_to_mem_data_in[23]
+  PIN dcache_to_mem_data_in[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 95.770 196.000 96.050 200.000 ;
+    END
+  END dcache_to_mem_data_in[24]
+  PIN dcache_to_mem_data_in[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 174.890 0.000 175.170 4.000 ;
+    END
+  END dcache_to_mem_data_in[25]
+  PIN dcache_to_mem_data_in[26]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 112.920 4.000 113.520 ;
+    END
+  END dcache_to_mem_data_in[26]
+  PIN dcache_to_mem_data_in[27]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 133.320 4.000 133.920 ;
+    END
+  END dcache_to_mem_data_in[27]
+  PIN dcache_to_mem_data_in[28]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 19.410 196.000 19.690 200.000 ;
+    END
+  END dcache_to_mem_data_in[28]
+  PIN dcache_to_mem_data_in[29]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 22.170 0.000 22.450 4.000 ;
+    END
+  END dcache_to_mem_data_in[29]
+  PIN dcache_to_mem_data_in[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 51.720 200.000 52.320 ;
+    END
+  END dcache_to_mem_data_in[2]
+  PIN dcache_to_mem_data_in[30]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 68.040 200.000 68.640 ;
+    END
+  END dcache_to_mem_data_in[30]
+  PIN dcache_to_mem_data_in[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 76.200 200.000 76.800 ;
+    END
+  END dcache_to_mem_data_in[31]
+  PIN dcache_to_mem_data_in[32]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 72.120 4.000 72.720 ;
+    END
+  END dcache_to_mem_data_in[32]
+  PIN dcache_to_mem_data_in[33]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 152.810 0.000 153.090 4.000 ;
+    END
+  END dcache_to_mem_data_in[33]
+  PIN dcache_to_mem_data_in[34]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 50.690 196.000 50.970 200.000 ;
+    END
+  END dcache_to_mem_data_in[34]
+  PIN dcache_to_mem_data_in[35]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 37.810 196.000 38.090 200.000 ;
+    END
+  END dcache_to_mem_data_in[35]
+  PIN dcache_to_mem_data_in[36]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 121.080 4.000 121.680 ;
+    END
+  END dcache_to_mem_data_in[36]
+  PIN dcache_to_mem_data_in[37]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 160.520 4.000 161.120 ;
+    END
+  END dcache_to_mem_data_in[37]
+  PIN dcache_to_mem_data_in[38]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 63.570 0.000 63.850 4.000 ;
+    END
+  END dcache_to_mem_data_in[38]
+  PIN dcache_to_mem_data_in[39]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 177.650 0.000 177.930 4.000 ;
+    END
+  END dcache_to_mem_data_in[39]
+  PIN dcache_to_mem_data_in[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 120.610 0.000 120.890 4.000 ;
+    END
+  END dcache_to_mem_data_in[3]
+  PIN dcache_to_mem_data_in[40]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 111.410 0.000 111.690 4.000 ;
+    END
+  END dcache_to_mem_data_in[40]
+  PIN dcache_to_mem_data_in[41]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 150.970 196.000 151.250 200.000 ;
+    END
+  END dcache_to_mem_data_in[41]
+  PIN dcache_to_mem_data_in[42]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 77.560 4.000 78.160 ;
+    END
+  END dcache_to_mem_data_in[42]
+  PIN dcache_to_mem_data_in[43]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 46.280 4.000 46.880 ;
+    END
+  END dcache_to_mem_data_in[43]
+  PIN dcache_to_mem_data_in[44]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 122.440 200.000 123.040 ;
+    END
+  END dcache_to_mem_data_in[44]
+  PIN dcache_to_mem_data_in[45]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 185.000 200.000 185.600 ;
+    END
+  END dcache_to_mem_data_in[45]
+  PIN dcache_to_mem_data_in[46]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 130.730 196.000 131.010 200.000 ;
+    END
+  END dcache_to_mem_data_in[46]
+  PIN dcache_to_mem_data_in[47]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 130.600 4.000 131.200 ;
+    END
+  END dcache_to_mem_data_in[47]
+  PIN dcache_to_mem_data_in[48]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 104.760 200.000 105.360 ;
+    END
+  END dcache_to_mem_data_in[48]
+  PIN dcache_to_mem_data_in[49]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 74.610 0.000 74.890 4.000 ;
+    END
+  END dcache_to_mem_data_in[49]
+  PIN dcache_to_mem_data_in[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 187.720 200.000 188.320 ;
+    END
+  END dcache_to_mem_data_in[4]
+  PIN dcache_to_mem_data_in[50]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 70.930 0.000 71.210 4.000 ;
+    END
+  END dcache_to_mem_data_in[50]
+  PIN dcache_to_mem_data_in[51]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 173.050 196.000 173.330 200.000 ;
+    END
+  END dcache_to_mem_data_in[51]
+  PIN dcache_to_mem_data_in[52]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 111.410 196.000 111.690 200.000 ;
+    END
+  END dcache_to_mem_data_in[52]
+  PIN dcache_to_mem_data_in[53]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 4.120 200.000 4.720 ;
+    END
+  END dcache_to_mem_data_in[53]
+  PIN dcache_to_mem_data_in[54]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 63.960 4.000 64.560 ;
+    END
+  END dcache_to_mem_data_in[54]
+  PIN dcache_to_mem_data_in[55]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 166.610 0.000 166.890 4.000 ;
+    END
+  END dcache_to_mem_data_in[55]
+  PIN dcache_to_mem_data_in[56]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 17.720 4.000 18.320 ;
+    END
+  END dcache_to_mem_data_in[56]
+  PIN dcache_to_mem_data_in[57]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 198.810 196.000 199.090 200.000 ;
+    END
+  END dcache_to_mem_data_in[57]
+  PIN dcache_to_mem_data_in[58]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 60.810 0.000 61.090 4.000 ;
+    END
+  END dcache_to_mem_data_in[58]
+  PIN dcache_to_mem_data_in[59]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 96.600 4.000 97.200 ;
+    END
+  END dcache_to_mem_data_in[59]
+  PIN dcache_to_mem_data_in[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 52.530 196.000 52.810 200.000 ;
+    END
+  END dcache_to_mem_data_in[5]
+  PIN dcache_to_mem_data_in[60]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 161.880 200.000 162.480 ;
+    END
+  END dcache_to_mem_data_in[60]
+  PIN dcache_to_mem_data_in[61]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 27.240 4.000 27.840 ;
+    END
+  END dcache_to_mem_data_in[61]
+  PIN dcache_to_mem_data_in[62]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 120.610 196.000 120.890 200.000 ;
+    END
+  END dcache_to_mem_data_in[62]
+  PIN dcache_to_mem_data_in[63]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 62.650 196.000 62.930 200.000 ;
+    END
+  END dcache_to_mem_data_in[63]
+  PIN dcache_to_mem_data_in[64]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 198.810 0.000 199.090 4.000 ;
+    END
+  END dcache_to_mem_data_in[64]
+  PIN dcache_to_mem_data_in[65]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 78.920 4.000 79.520 ;
+    END
+  END dcache_to_mem_data_in[65]
+  PIN dcache_to_mem_data_in[66]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 187.720 4.000 188.320 ;
+    END
+  END dcache_to_mem_data_in[66]
+  PIN dcache_to_mem_data_in[67]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 134.680 4.000 135.280 ;
+    END
+  END dcache_to_mem_data_in[67]
+  PIN dcache_to_mem_data_in[68]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 157.800 200.000 158.400 ;
+    END
+  END dcache_to_mem_data_in[68]
+  PIN dcache_to_mem_data_in[69]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 1.400 200.000 2.000 ;
+    END
+  END dcache_to_mem_data_in[69]
+  PIN dcache_to_mem_data_in[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 105.890 196.000 106.170 200.000 ;
+    END
+  END dcache_to_mem_data_in[6]
+  PIN dcache_to_mem_data_in[70]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 36.890 196.000 37.170 200.000 ;
+    END
+  END dcache_to_mem_data_in[70]
+  PIN dcache_to_mem_data_in[71]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 69.400 4.000 70.000 ;
+    END
+  END dcache_to_mem_data_in[71]
+  PIN dcache_to_mem_data_in[72]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 188.690 196.000 188.970 200.000 ;
+    END
+  END dcache_to_mem_data_in[72]
+  PIN dcache_to_mem_data_in[73]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 196.970 0.000 197.250 4.000 ;
+    END
+  END dcache_to_mem_data_in[73]
+  PIN dcache_to_mem_data_in[74]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 97.960 4.000 98.560 ;
+    END
+  END dcache_to_mem_data_in[74]
+  PIN dcache_to_mem_data_in[75]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 10.920 200.000 11.520 ;
+    END
+  END dcache_to_mem_data_in[75]
+  PIN dcache_to_mem_data_in[76]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 116.010 196.000 116.290 200.000 ;
+    END
+  END dcache_to_mem_data_in[76]
+  PIN dcache_to_mem_data_in[77]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 81.970 196.000 82.250 200.000 ;
+    END
+  END dcache_to_mem_data_in[77]
+  PIN dcache_to_mem_data_in[78]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 164.600 200.000 165.200 ;
+    END
+  END dcache_to_mem_data_in[78]
+  PIN dcache_to_mem_data_in[79]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 10.210 196.000 10.490 200.000 ;
+    END
+  END dcache_to_mem_data_in[79]
+  PIN dcache_to_mem_data_in[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 102.040 4.000 102.640 ;
+    END
+  END dcache_to_mem_data_in[7]
+  PIN dcache_to_mem_data_in[80]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 107.480 4.000 108.080 ;
+    END
+  END dcache_to_mem_data_in[80]
+  PIN dcache_to_mem_data_in[81]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 171.210 0.000 171.490 4.000 ;
+    END
+  END dcache_to_mem_data_in[81]
+  PIN dcache_to_mem_data_in[82]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 97.960 200.000 98.560 ;
+    END
+  END dcache_to_mem_data_in[82]
+  PIN dcache_to_mem_data_in[83]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 127.970 0.000 128.250 4.000 ;
+    END
+  END dcache_to_mem_data_in[83]
+  PIN dcache_to_mem_data_in[84]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 96.600 200.000 97.200 ;
+    END
+  END dcache_to_mem_data_in[84]
+  PIN dcache_to_mem_data_in[85]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 69.090 196.000 69.370 200.000 ;
+    END
+  END dcache_to_mem_data_in[85]
+  PIN dcache_to_mem_data_in[86]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 24.930 196.000 25.210 200.000 ;
+    END
+  END dcache_to_mem_data_in[86]
+  PIN dcache_to_mem_data_in[87]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 52.530 0.000 52.810 4.000 ;
+    END
+  END dcache_to_mem_data_in[87]
+  PIN dcache_to_mem_data_in[88]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 179.560 4.000 180.160 ;
+    END
+  END dcache_to_mem_data_in[88]
+  PIN dcache_to_mem_data_in[89]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 131.650 196.000 131.930 200.000 ;
+    END
+  END dcache_to_mem_data_in[89]
+  PIN dcache_to_mem_data_in[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 183.170 196.000 183.450 200.000 ;
+    END
+  END dcache_to_mem_data_in[8]
+  PIN dcache_to_mem_data_in[90]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 155.570 0.000 155.850 4.000 ;
+    END
+  END dcache_to_mem_data_in[90]
+  PIN dcache_to_mem_data_in[91]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 165.690 196.000 165.970 200.000 ;
+    END
+  END dcache_to_mem_data_in[91]
+  PIN dcache_to_mem_data_in[92]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 65.320 200.000 65.920 ;
+    END
+  END dcache_to_mem_data_in[92]
+  PIN dcache_to_mem_data_in[93]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 14.810 196.000 15.090 200.000 ;
+    END
+  END dcache_to_mem_data_in[93]
+  PIN dcache_to_mem_data_in[94]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 81.970 0.000 82.250 4.000 ;
+    END
+  END dcache_to_mem_data_in[94]
+  PIN dcache_to_mem_data_in[95]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 138.760 200.000 139.360 ;
+    END
+  END dcache_to_mem_data_in[95]
+  PIN dcache_to_mem_data_in[96]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 54.370 196.000 54.650 200.000 ;
+    END
+  END dcache_to_mem_data_in[96]
+  PIN dcache_to_mem_data_in[97]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 88.440 4.000 89.040 ;
+    END
+  END dcache_to_mem_data_in[97]
+  PIN dcache_to_mem_data_in[98]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 75.530 196.000 75.810 200.000 ;
+    END
+  END dcache_to_mem_data_in[98]
+  PIN dcache_to_mem_data_in[99]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 167.320 4.000 167.920 ;
+    END
+  END dcache_to_mem_data_in[99]
+  PIN dcache_to_mem_data_in[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 117.850 0.000 118.130 4.000 ;
+    END
+  END dcache_to_mem_data_in[9]
+  PIN dcache_to_mem_data_out[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 89.800 200.000 90.400 ;
+    END
+  END dcache_to_mem_data_out[0]
+  PIN dcache_to_mem_data_out[100]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 58.520 200.000 59.120 ;
+    END
+  END dcache_to_mem_data_out[100]
+  PIN dcache_to_mem_data_out[101]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 55.800 200.000 56.400 ;
+    END
+  END dcache_to_mem_data_out[101]
+  PIN dcache_to_mem_data_out[102]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 170.290 196.000 170.570 200.000 ;
+    END
+  END dcache_to_mem_data_out[102]
+  PIN dcache_to_mem_data_out[103]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 60.810 196.000 61.090 200.000 ;
+    END
+  END dcache_to_mem_data_out[103]
+  PIN dcache_to_mem_data_out[104]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 61.730 0.000 62.010 4.000 ;
+    END
+  END dcache_to_mem_data_out[104]
+  PIN dcache_to_mem_data_out[105]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 35.970 196.000 36.250 200.000 ;
+    END
+  END dcache_to_mem_data_out[105]
+  PIN dcache_to_mem_data_out[106]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 23.090 196.000 23.370 200.000 ;
+    END
+  END dcache_to_mem_data_out[106]
+  PIN dcache_to_mem_data_out[107]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 116.930 196.000 117.210 200.000 ;
+    END
+  END dcache_to_mem_data_out[107]
+  PIN dcache_to_mem_data_out[108]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 127.050 0.000 127.330 4.000 ;
+    END
+  END dcache_to_mem_data_out[108]
+  PIN dcache_to_mem_data_out[109]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 23.090 0.000 23.370 4.000 ;
+    END
+  END dcache_to_mem_data_out[109]
+  PIN dcache_to_mem_data_out[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 161.090 196.000 161.370 200.000 ;
+    END
+  END dcache_to_mem_data_out[10]
+  PIN dcache_to_mem_data_out[110]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 142.840 4.000 143.440 ;
+    END
+  END dcache_to_mem_data_out[110]
+  PIN dcache_to_mem_data_out[111]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 70.930 196.000 71.210 200.000 ;
+    END
+  END dcache_to_mem_data_out[111]
+  PIN dcache_to_mem_data_out[112]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 88.440 200.000 89.040 ;
+    END
+  END dcache_to_mem_data_out[112]
+  PIN dcache_to_mem_data_out[113]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 2.760 4.000 3.360 ;
+    END
+  END dcache_to_mem_data_out[113]
+  PIN dcache_to_mem_data_out[114]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 28.600 200.000 29.200 ;
+    END
+  END dcache_to_mem_data_out[114]
+  PIN dcache_to_mem_data_out[115]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 64.490 196.000 64.770 200.000 ;
+    END
+  END dcache_to_mem_data_out[115]
+  PIN dcache_to_mem_data_out[116]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 168.450 0.000 168.730 4.000 ;
+    END
+  END dcache_to_mem_data_out[116]
+  PIN dcache_to_mem_data_out[117]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 95.770 0.000 96.050 4.000 ;
+    END
+  END dcache_to_mem_data_out[117]
+  PIN dcache_to_mem_data_out[118]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 175.480 4.000 176.080 ;
+    END
+  END dcache_to_mem_data_out[118]
+  PIN dcache_to_mem_data_out[119]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 58.050 196.000 58.330 200.000 ;
+    END
+  END dcache_to_mem_data_out[119]
+  PIN dcache_to_mem_data_out[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 84.730 0.000 85.010 4.000 ;
+    END
+  END dcache_to_mem_data_out[11]
+  PIN dcache_to_mem_data_out[120]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 196.970 196.000 197.250 200.000 ;
+    END
+  END dcache_to_mem_data_out[120]
+  PIN dcache_to_mem_data_out[121]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 62.650 0.000 62.930 4.000 ;
+    END
+  END dcache_to_mem_data_out[121]
+  PIN dcache_to_mem_data_out[122]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 4.690 0.000 4.970 4.000 ;
+    END
+  END dcache_to_mem_data_out[122]
+  PIN dcache_to_mem_data_out[123]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 189.610 0.000 189.890 4.000 ;
+    END
+  END dcache_to_mem_data_out[123]
+  PIN dcache_to_mem_data_out[124]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 152.360 4.000 152.960 ;
+    END
+  END dcache_to_mem_data_out[124]
+  PIN dcache_to_mem_data_out[125]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 13.890 196.000 14.170 200.000 ;
+    END
+  END dcache_to_mem_data_out[125]
+  PIN dcache_to_mem_data_out[126]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 27.690 196.000 27.970 200.000 ;
+    END
+  END dcache_to_mem_data_out[126]
+  PIN dcache_to_mem_data_out[127]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 187.770 196.000 188.050 200.000 ;
+    END
+  END dcache_to_mem_data_out[127]
+  PIN dcache_to_mem_data_out[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 5.480 4.000 6.080 ;
+    END
+  END dcache_to_mem_data_out[12]
+  PIN dcache_to_mem_data_out[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 22.170 196.000 22.450 200.000 ;
+    END
+  END dcache_to_mem_data_out[13]
+  PIN dcache_to_mem_data_out[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 132.570 0.000 132.850 4.000 ;
+    END
+  END dcache_to_mem_data_out[14]
+  PIN dcache_to_mem_data_out[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 122.440 4.000 123.040 ;
+    END
+  END dcache_to_mem_data_out[15]
+  PIN dcache_to_mem_data_out[16]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 153.720 200.000 154.320 ;
+    END
+  END dcache_to_mem_data_out[16]
+  PIN dcache_to_mem_data_out[17]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 43.330 0.000 43.610 4.000 ;
+    END
+  END dcache_to_mem_data_out[17]
+  PIN dcache_to_mem_data_out[18]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 78.290 0.000 78.570 4.000 ;
+    END
+  END dcache_to_mem_data_out[18]
+  PIN dcache_to_mem_data_out[19]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1.010 0.000 1.290 4.000 ;
+    END
+  END dcache_to_mem_data_out[19]
+  PIN dcache_to_mem_data_out[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 107.480 200.000 108.080 ;
+    END
+  END dcache_to_mem_data_out[1]
+  PIN dcache_to_mem_data_out[20]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 152.810 196.000 153.090 200.000 ;
+    END
+  END dcache_to_mem_data_out[20]
+  PIN dcache_to_mem_data_out[21]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 77.370 196.000 77.650 200.000 ;
+    END
+  END dcache_to_mem_data_out[21]
+  PIN dcache_to_mem_data_out[22]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 81.640 4.000 82.240 ;
+    END
+  END dcache_to_mem_data_out[22]
+  PIN dcache_to_mem_data_out[23]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 92.090 196.000 92.370 200.000 ;
+    END
+  END dcache_to_mem_data_out[23]
+  PIN dcache_to_mem_data_out[24]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1.930 0.000 2.210 4.000 ;
+    END
+  END dcache_to_mem_data_out[24]
+  PIN dcache_to_mem_data_out[25]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 123.370 196.000 123.650 200.000 ;
+    END
+  END dcache_to_mem_data_out[25]
+  PIN dcache_to_mem_data_out[26]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 197.890 196.000 198.170 200.000 ;
+    END
+  END dcache_to_mem_data_out[26]
+  PIN dcache_to_mem_data_out[27]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 192.370 0.000 192.650 4.000 ;
+    END
+  END dcache_to_mem_data_out[27]
+  PIN dcache_to_mem_data_out[28]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 87.080 200.000 87.680 ;
+    END
+  END dcache_to_mem_data_out[28]
+  PIN dcache_to_mem_data_out[29]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 55.290 196.000 55.570 200.000 ;
+    END
+  END dcache_to_mem_data_out[29]
+  PIN dcache_to_mem_data_out[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 46.090 0.000 46.370 4.000 ;
+    END
+  END dcache_to_mem_data_out[2]
+  PIN dcache_to_mem_data_out[30]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 159.160 200.000 159.760 ;
+    END
+  END dcache_to_mem_data_out[30]
+  PIN dcache_to_mem_data_out[31]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 24.010 0.000 24.290 4.000 ;
+    END
+  END dcache_to_mem_data_out[31]
+  PIN dcache_to_mem_data_out[32]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 73.480 200.000 74.080 ;
+    END
+  END dcache_to_mem_data_out[32]
+  PIN dcache_to_mem_data_out[33]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 187.770 0.000 188.050 4.000 ;
+    END
+  END dcache_to_mem_data_out[33]
+  PIN dcache_to_mem_data_out[34]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 153.720 4.000 154.320 ;
+    END
+  END dcache_to_mem_data_out[34]
+  PIN dcache_to_mem_data_out[35]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 121.530 196.000 121.810 200.000 ;
+    END
+  END dcache_to_mem_data_out[35]
+  PIN dcache_to_mem_data_out[36]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 133.490 196.000 133.770 200.000 ;
+    END
+  END dcache_to_mem_data_out[36]
+  PIN dcache_to_mem_data_out[37]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 95.240 200.000 95.840 ;
+    END
+  END dcache_to_mem_data_out[37]
+  PIN dcache_to_mem_data_out[38]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 83.000 200.000 83.600 ;
+    END
+  END dcache_to_mem_data_out[38]
+  PIN dcache_to_mem_data_out[39]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 102.040 200.000 102.640 ;
+    END
+  END dcache_to_mem_data_out[39]
+  PIN dcache_to_mem_data_out[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 80.280 200.000 80.880 ;
+    END
+  END dcache_to_mem_data_out[3]
+  PIN dcache_to_mem_data_out[40]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 21.800 4.000 22.400 ;
+    END
+  END dcache_to_mem_data_out[40]
+  PIN dcache_to_mem_data_out[41]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 195.880 4.000 196.480 ;
+    END
+  END dcache_to_mem_data_out[41]
+  PIN dcache_to_mem_data_out[42]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 68.170 196.000 68.450 200.000 ;
+    END
+  END dcache_to_mem_data_out[42]
+  PIN dcache_to_mem_data_out[43]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 83.810 0.000 84.090 4.000 ;
+    END
+  END dcache_to_mem_data_out[43]
+  PIN dcache_to_mem_data_out[44]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 127.050 196.000 127.330 200.000 ;
+    END
+  END dcache_to_mem_data_out[44]
+  PIN dcache_to_mem_data_out[45]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 57.130 0.000 57.410 4.000 ;
+    END
+  END dcache_to_mem_data_out[45]
+  PIN dcache_to_mem_data_out[46]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 82.890 196.000 83.170 200.000 ;
+    END
+  END dcache_to_mem_data_out[46]
+  PIN dcache_to_mem_data_out[47]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 106.120 200.000 106.720 ;
+    END
+  END dcache_to_mem_data_out[47]
+  PIN dcache_to_mem_data_out[48]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 163.240 200.000 163.840 ;
+    END
+  END dcache_to_mem_data_out[48]
+  PIN dcache_to_mem_data_out[49]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 166.610 196.000 166.890 200.000 ;
+    END
+  END dcache_to_mem_data_out[49]
+  PIN dcache_to_mem_data_out[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 115.640 200.000 116.240 ;
+    END
+  END dcache_to_mem_data_out[4]
+  PIN dcache_to_mem_data_out[50]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 19.080 4.000 19.680 ;
+    END
+  END dcache_to_mem_data_out[50]
+  PIN dcache_to_mem_data_out[51]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 59.880 4.000 60.480 ;
+    END
+  END dcache_to_mem_data_out[51]
+  PIN dcache_to_mem_data_out[52]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 165.960 200.000 166.560 ;
+    END
+  END dcache_to_mem_data_out[52]
+  PIN dcache_to_mem_data_out[53]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 75.530 0.000 75.810 4.000 ;
+    END
+  END dcache_to_mem_data_out[53]
+  PIN dcache_to_mem_data_out[54]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 81.050 0.000 81.330 4.000 ;
+    END
+  END dcache_to_mem_data_out[54]
+  PIN dcache_to_mem_data_out[55]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 167.530 0.000 167.810 4.000 ;
+    END
+  END dcache_to_mem_data_out[55]
+  PIN dcache_to_mem_data_out[56]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 163.850 0.000 164.130 4.000 ;
+    END
+  END dcache_to_mem_data_out[56]
+  PIN dcache_to_mem_data_out[57]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 186.360 200.000 186.960 ;
+    END
+  END dcache_to_mem_data_out[57]
+  PIN dcache_to_mem_data_out[58]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 167.320 200.000 167.920 ;
+    END
+  END dcache_to_mem_data_out[58]
+  PIN dcache_to_mem_data_out[59]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 149.130 196.000 149.410 200.000 ;
+    END
+  END dcache_to_mem_data_out[59]
+  PIN dcache_to_mem_data_out[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 68.040 4.000 68.640 ;
+    END
+  END dcache_to_mem_data_out[5]
+  PIN dcache_to_mem_data_out[60]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 140.120 4.000 140.720 ;
+    END
+  END dcache_to_mem_data_out[60]
+  PIN dcache_to_mem_data_out[61]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 72.770 0.000 73.050 4.000 ;
+    END
+  END dcache_to_mem_data_out[61]
+  PIN dcache_to_mem_data_out[62]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 84.730 196.000 85.010 200.000 ;
+    END
+  END dcache_to_mem_data_out[62]
+  PIN dcache_to_mem_data_out[63]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 38.120 200.000 38.720 ;
+    END
+  END dcache_to_mem_data_out[63]
+  PIN dcache_to_mem_data_out[64]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 132.570 196.000 132.850 200.000 ;
+    END
+  END dcache_to_mem_data_out[64]
+  PIN dcache_to_mem_data_out[65]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 175.810 0.000 176.090 4.000 ;
+    END
+  END dcache_to_mem_data_out[65]
+  PIN dcache_to_mem_data_out[66]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 95.240 4.000 95.840 ;
+    END
+  END dcache_to_mem_data_out[66]
+  PIN dcache_to_mem_data_out[67]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 68.170 0.000 68.450 4.000 ;
+    END
+  END dcache_to_mem_data_out[67]
+  PIN dcache_to_mem_data_out[68]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 29.960 4.000 30.560 ;
+    END
+  END dcache_to_mem_data_out[68]
+  PIN dcache_to_mem_data_out[69]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 63.960 200.000 64.560 ;
+    END
+  END dcache_to_mem_data_out[69]
+  PIN dcache_to_mem_data_out[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 114.170 196.000 114.450 200.000 ;
+    END
+  END dcache_to_mem_data_out[6]
+  PIN dcache_to_mem_data_out[70]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 35.400 200.000 36.000 ;
+    END
+  END dcache_to_mem_data_out[70]
+  PIN dcache_to_mem_data_out[71]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 44.250 0.000 44.530 4.000 ;
+    END
+  END dcache_to_mem_data_out[71]
+  PIN dcache_to_mem_data_out[72]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 118.360 200.000 118.960 ;
+    END
+  END dcache_to_mem_data_out[72]
+  PIN dcache_to_mem_data_out[73]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 168.680 200.000 169.280 ;
+    END
+  END dcache_to_mem_data_out[73]
+  PIN dcache_to_mem_data_out[74]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 173.050 0.000 173.330 4.000 ;
+    END
+  END dcache_to_mem_data_out[74]
+  PIN dcache_to_mem_data_out[75]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 104.970 196.000 105.250 200.000 ;
+    END
+  END dcache_to_mem_data_out[75]
+  PIN dcache_to_mem_data_out[76]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 145.450 196.000 145.730 200.000 ;
+    END
+  END dcache_to_mem_data_out[76]
+  PIN dcache_to_mem_data_out[77]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 50.360 200.000 50.960 ;
+    END
+  END dcache_to_mem_data_out[77]
+  PIN dcache_to_mem_data_out[78]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 176.840 200.000 177.440 ;
+    END
+  END dcache_to_mem_data_out[78]
+  PIN dcache_to_mem_data_out[79]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 30.450 196.000 30.730 200.000 ;
+    END
+  END dcache_to_mem_data_out[79]
+  PIN dcache_to_mem_data_out[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 32.290 0.000 32.570 4.000 ;
+    END
+  END dcache_to_mem_data_out[7]
+  PIN dcache_to_mem_data_out[80]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 31.320 200.000 31.920 ;
+    END
+  END dcache_to_mem_data_out[80]
+  PIN dcache_to_mem_data_out[81]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 96.690 196.000 96.970 200.000 ;
+    END
+  END dcache_to_mem_data_out[81]
+  PIN dcache_to_mem_data_out[82]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 77.370 0.000 77.650 4.000 ;
+    END
+  END dcache_to_mem_data_out[82]
+  PIN dcache_to_mem_data_out[83]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 117.000 200.000 117.600 ;
+    END
+  END dcache_to_mem_data_out[83]
+  PIN dcache_to_mem_data_out[84]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 109.570 196.000 109.850 200.000 ;
+    END
+  END dcache_to_mem_data_out[84]
+  PIN dcache_to_mem_data_out[85]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 179.490 196.000 179.770 200.000 ;
+    END
+  END dcache_to_mem_data_out[85]
+  PIN dcache_to_mem_data_out[86]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 5.610 0.000 5.890 4.000 ;
+    END
+  END dcache_to_mem_data_out[86]
+  PIN dcache_to_mem_data_out[87]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 183.640 4.000 184.240 ;
+    END
+  END dcache_to_mem_data_out[87]
+  PIN dcache_to_mem_data_out[88]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 32.290 196.000 32.570 200.000 ;
+    END
+  END dcache_to_mem_data_out[88]
+  PIN dcache_to_mem_data_out[89]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 38.730 196.000 39.010 200.000 ;
+    END
+  END dcache_to_mem_data_out[89]
+  PIN dcache_to_mem_data_out[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 6.840 4.000 7.440 ;
+    END
+  END dcache_to_mem_data_out[8]
+  PIN dcache_to_mem_data_out[90]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 152.360 200.000 152.960 ;
+    END
+  END dcache_to_mem_data_out[90]
+  PIN dcache_to_mem_data_out[91]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 126.130 196.000 126.410 200.000 ;
+    END
+  END dcache_to_mem_data_out[91]
+  PIN dcache_to_mem_data_out[92]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 69.400 200.000 70.000 ;
+    END
+  END dcache_to_mem_data_out[92]
+  PIN dcache_to_mem_data_out[93]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 61.730 196.000 62.010 200.000 ;
+    END
+  END dcache_to_mem_data_out[93]
+  PIN dcache_to_mem_data_out[94]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 138.760 4.000 139.360 ;
+    END
+  END dcache_to_mem_data_out[94]
+  PIN dcache_to_mem_data_out[95]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 114.170 0.000 114.450 4.000 ;
+    END
+  END dcache_to_mem_data_out[95]
+  PIN dcache_to_mem_data_out[96]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 91.170 196.000 91.450 200.000 ;
+    END
+  END dcache_to_mem_data_out[96]
+  PIN dcache_to_mem_data_out[97]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 148.280 200.000 148.880 ;
+    END
+  END dcache_to_mem_data_out[97]
+  PIN dcache_to_mem_data_out[98]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 79.210 196.000 79.490 200.000 ;
+    END
+  END dcache_to_mem_data_out[98]
+  PIN dcache_to_mem_data_out[99]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 21.250 196.000 21.530 200.000 ;
+    END
+  END dcache_to_mem_data_out[99]
+  PIN dcache_to_mem_data_out[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 141.480 200.000 142.080 ;
+    END
+  END dcache_to_mem_data_out[9]
+  PIN dcache_we
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 44.920 4.000 45.520 ;
+    END
+  END dcache_we
+  PIN dtlb_physical_addr_in[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 65.320 4.000 65.920 ;
+    END
+  END dtlb_physical_addr_in[0]
+  PIN dtlb_physical_addr_in[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 167.530 196.000 167.810 200.000 ;
+    END
+  END dtlb_physical_addr_in[10]
+  PIN dtlb_physical_addr_in[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 173.970 196.000 174.250 200.000 ;
+    END
+  END dtlb_physical_addr_in[11]
+  PIN dtlb_physical_addr_in[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.490 196.000 18.770 200.000 ;
+    END
+  END dtlb_physical_addr_in[12]
+  PIN dtlb_physical_addr_in[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 172.130 0.000 172.410 4.000 ;
+    END
+  END dtlb_physical_addr_in[13]
+  PIN dtlb_physical_addr_in[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 134.410 0.000 134.690 4.000 ;
+    END
+  END dtlb_physical_addr_in[14]
+  PIN dtlb_physical_addr_in[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 144.200 200.000 144.800 ;
+    END
+  END dtlb_physical_addr_in[15]
+  PIN dtlb_physical_addr_in[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 103.400 200.000 104.000 ;
+    END
+  END dtlb_physical_addr_in[16]
+  PIN dtlb_physical_addr_in[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 119.690 196.000 119.970 200.000 ;
+    END
+  END dtlb_physical_addr_in[17]
+  PIN dtlb_physical_addr_in[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 87.490 0.000 87.770 4.000 ;
+    END
+  END dtlb_physical_addr_in[18]
+  PIN dtlb_physical_addr_in[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 104.760 4.000 105.360 ;
+    END
+  END dtlb_physical_addr_in[19]
+  PIN dtlb_physical_addr_in[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 165.960 4.000 166.560 ;
+    END
+  END dtlb_physical_addr_in[1]
+  PIN dtlb_physical_addr_in[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 29.530 0.000 29.810 4.000 ;
+    END
+  END dtlb_physical_addr_in[2]
+  PIN dtlb_physical_addr_in[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 65.410 196.000 65.690 200.000 ;
+    END
+  END dtlb_physical_addr_in[3]
+  PIN dtlb_physical_addr_in[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 34.040 200.000 34.640 ;
+    END
+  END dtlb_physical_addr_in[4]
+  PIN dtlb_physical_addr_in[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 90.250 0.000 90.530 4.000 ;
+    END
+  END dtlb_physical_addr_in[5]
+  PIN dtlb_physical_addr_in[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 13.640 200.000 14.240 ;
+    END
+  END dtlb_physical_addr_in[6]
+  PIN dtlb_physical_addr_in[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 3.770 196.000 4.050 200.000 ;
+    END
+  END dtlb_physical_addr_in[7]
+  PIN dtlb_physical_addr_in[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 170.290 0.000 170.570 4.000 ;
+    END
+  END dtlb_physical_addr_in[8]
+  PIN dtlb_physical_addr_in[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 15.730 196.000 16.010 200.000 ;
+    END
+  END dtlb_physical_addr_in[9]
+  PIN hit_dtlb_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 5.480 200.000 6.080 ;
+    END
+  END hit_dtlb_in
+  PIN hit_itlb_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 55.290 0.000 55.570 4.000 ;
+    END
+  END hit_itlb_in
+  PIN icache_request
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 108.840 4.000 109.440 ;
+    END
+  END icache_request
+  PIN is_dcache_ready
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 91.170 0.000 91.450 4.000 ;
+    END
+  END is_dcache_ready
+  PIN is_icache_ready
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 66.680 200.000 67.280 ;
+    END
+  END is_icache_ready
+  PIN is_mem_req
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 181.330 196.000 181.610 200.000 ;
+    END
+  END is_mem_req
+  PIN itlb_physical_addr_in[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 163.240 4.000 163.840 ;
+    END
+  END itlb_physical_addr_in[0]
+  PIN itlb_physical_addr_in[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 107.730 0.000 108.010 4.000 ;
+    END
+  END itlb_physical_addr_in[10]
+  PIN itlb_physical_addr_in[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 35.050 196.000 35.330 200.000 ;
+    END
+  END itlb_physical_addr_in[11]
+  PIN itlb_physical_addr_in[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 44.250 196.000 44.530 200.000 ;
+    END
+  END itlb_physical_addr_in[12]
+  PIN itlb_physical_addr_in[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 185.000 4.000 185.600 ;
+    END
+  END itlb_physical_addr_in[13]
+  PIN itlb_physical_addr_in[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 197.890 0.000 198.170 4.000 ;
+    END
+  END itlb_physical_addr_in[14]
+  PIN itlb_physical_addr_in[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 83.000 4.000 83.600 ;
+    END
+  END itlb_physical_addr_in[15]
+  PIN itlb_physical_addr_in[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 61.240 200.000 61.840 ;
+    END
+  END itlb_physical_addr_in[16]
+  PIN itlb_physical_addr_in[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 176.840 4.000 177.440 ;
+    END
+  END itlb_physical_addr_in[17]
+  PIN itlb_physical_addr_in[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 4.120 4.000 4.720 ;
+    END
+  END itlb_physical_addr_in[18]
+  PIN itlb_physical_addr_in[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 136.250 196.000 136.530 200.000 ;
+    END
+  END itlb_physical_addr_in[19]
+  PIN itlb_physical_addr_in[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 113.250 0.000 113.530 4.000 ;
+    END
+  END itlb_physical_addr_in[1]
+  PIN itlb_physical_addr_in[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 34.130 196.000 34.410 200.000 ;
+    END
+  END itlb_physical_addr_in[2]
+  PIN itlb_physical_addr_in[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 131.960 4.000 132.560 ;
+    END
+  END itlb_physical_addr_in[3]
+  PIN itlb_physical_addr_in[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 172.760 4.000 173.360 ;
+    END
+  END itlb_physical_addr_in[4]
+  PIN itlb_physical_addr_in[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 0.040 200.000 0.640 ;
+    END
+  END itlb_physical_addr_in[5]
+  PIN itlb_physical_addr_in[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 119.720 200.000 120.320 ;
+    END
+  END itlb_physical_addr_in[6]
+  PIN itlb_physical_addr_in[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 101.290 0.000 101.570 4.000 ;
+    END
+  END itlb_physical_addr_in[7]
+  PIN itlb_physical_addr_in[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 186.360 4.000 186.960 ;
+    END
+  END itlb_physical_addr_in[8]
+  PIN itlb_physical_addr_in[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 142.690 196.000 142.970 200.000 ;
+    END
+  END itlb_physical_addr_in[9]
+  PIN mem_addr[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 12.280 4.000 12.880 ;
+    END
+  END mem_addr[0]
+  PIN mem_addr[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 9.560 4.000 10.160 ;
+    END
+  END mem_addr[10]
+  PIN mem_addr[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 25.850 0.000 26.130 4.000 ;
+    END
+  END mem_addr[11]
+  PIN mem_addr[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 149.130 0.000 149.410 4.000 ;
+    END
+  END mem_addr[12]
+  PIN mem_addr[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 165.690 0.000 165.970 4.000 ;
+    END
+  END mem_addr[13]
+  PIN mem_addr[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 133.320 200.000 133.920 ;
+    END
+  END mem_addr[14]
+  PIN mem_addr[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 44.920 200.000 45.520 ;
+    END
+  END mem_addr[15]
+  PIN mem_addr[16]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 21.800 200.000 22.400 ;
+    END
+  END mem_addr[16]
+  PIN mem_addr[17]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 89.330 0.000 89.610 4.000 ;
+    END
+  END mem_addr[17]
+  PIN mem_addr[18]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 78.290 196.000 78.570 200.000 ;
+    END
+  END mem_addr[18]
+  PIN mem_addr[19]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 69.090 0.000 69.370 4.000 ;
+    END
+  END mem_addr[19]
+  PIN mem_addr[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 139.930 196.000 140.210 200.000 ;
+    END
+  END mem_addr[1]
+  PIN mem_addr[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 118.360 4.000 118.960 ;
+    END
+  END mem_addr[2]
+  PIN mem_addr[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 140.850 0.000 141.130 4.000 ;
+    END
+  END mem_addr[3]
+  PIN mem_addr[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 112.330 0.000 112.610 4.000 ;
+    END
+  END mem_addr[4]
+  PIN mem_addr[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 156.440 4.000 157.040 ;
+    END
+  END mem_addr[5]
+  PIN mem_addr[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 114.280 4.000 114.880 ;
+    END
+  END mem_addr[6]
+  PIN mem_addr[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 93.010 0.000 93.290 4.000 ;
+    END
+  END mem_addr[7]
+  PIN mem_addr[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 8.200 200.000 8.800 ;
+    END
+  END mem_addr[8]
+  PIN mem_addr[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 176.730 0.000 177.010 4.000 ;
+    END
+  END mem_addr[9]
+  PIN mem_ready
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 34.040 4.000 34.640 ;
+    END
+  END mem_ready
+  PIN mem_to_dcache_data[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 25.880 200.000 26.480 ;
+    END
+  END mem_to_dcache_data[0]
+  PIN mem_to_dcache_data[100]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 70.010 0.000 70.290 4.000 ;
+    END
+  END mem_to_dcache_data[100]
+  PIN mem_to_dcache_data[101]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 196.000 0.370 200.000 ;
+    END
+  END mem_to_dcache_data[101]
+  PIN mem_to_dcache_data[102]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 129.810 0.000 130.090 4.000 ;
+    END
+  END mem_to_dcache_data[102]
+  PIN mem_to_dcache_data[103]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 26.770 196.000 27.050 200.000 ;
+    END
+  END mem_to_dcache_data[103]
+  PIN mem_to_dcache_data[104]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 151.890 0.000 152.170 4.000 ;
+    END
+  END mem_to_dcache_data[104]
+  PIN mem_to_dcache_data[105]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 66.330 196.000 66.610 200.000 ;
+    END
+  END mem_to_dcache_data[105]
+  PIN mem_to_dcache_data[106]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 38.120 4.000 38.720 ;
+    END
+  END mem_to_dcache_data[106]
+  PIN mem_to_dcache_data[107]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 185.010 0.000 185.290 4.000 ;
+    END
+  END mem_to_dcache_data[107]
+  PIN mem_to_dcache_data[108]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 31.370 196.000 31.650 200.000 ;
+    END
+  END mem_to_dcache_data[108]
+  PIN mem_to_dcache_data[109]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 99.450 0.000 99.730 4.000 ;
+    END
+  END mem_to_dcache_data[109]
+  PIN mem_to_dcache_data[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 118.770 0.000 119.050 4.000 ;
+    END
+  END mem_to_dcache_data[10]
+  PIN mem_to_dcache_data[110]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 80.130 196.000 80.410 200.000 ;
+    END
+  END mem_to_dcache_data[110]
+  PIN mem_to_dcache_data[111]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 135.330 196.000 135.610 200.000 ;
+    END
+  END mem_to_dcache_data[111]
+  PIN mem_to_dcache_data[112]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 139.010 0.000 139.290 4.000 ;
+    END
+  END mem_to_dcache_data[112]
+  PIN mem_to_dcache_data[113]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 198.600 4.000 199.200 ;
+    END
+  END mem_to_dcache_data[113]
+  PIN mem_to_dcache_data[114]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 138.090 196.000 138.370 200.000 ;
+    END
+  END mem_to_dcache_data[114]
+  PIN mem_to_dcache_data[115]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 47.930 196.000 48.210 200.000 ;
+    END
+  END mem_to_dcache_data[115]
+  PIN mem_to_dcache_data[116]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 175.810 196.000 176.090 200.000 ;
+    END
+  END mem_to_dcache_data[116]
+  PIN mem_to_dcache_data[117]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 144.530 0.000 144.810 4.000 ;
+    END
+  END mem_to_dcache_data[117]
+  PIN mem_to_dcache_data[118]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 59.880 200.000 60.480 ;
+    END
+  END mem_to_dcache_data[118]
+  PIN mem_to_dcache_data[119]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 81.050 196.000 81.330 200.000 ;
+    END
+  END mem_to_dcache_data[119]
+  PIN mem_to_dcache_data[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 134.410 196.000 134.690 200.000 ;
+    END
+  END mem_to_dcache_data[11]
+  PIN mem_to_dcache_data[120]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 185.930 0.000 186.210 4.000 ;
+    END
+  END mem_to_dcache_data[120]
+  PIN mem_to_dcache_data[121]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 82.890 0.000 83.170 4.000 ;
+    END
+  END mem_to_dcache_data[121]
+  PIN mem_to_dcache_data[122]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 98.530 0.000 98.810 4.000 ;
+    END
+  END mem_to_dcache_data[122]
+  PIN mem_to_dcache_data[123]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 171.210 196.000 171.490 200.000 ;
+    END
+  END mem_to_dcache_data[123]
+  PIN mem_to_dcache_data[124]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 9.560 200.000 10.160 ;
+    END
+  END mem_to_dcache_data[124]
+  PIN mem_to_dcache_data[125]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 43.560 4.000 44.160 ;
+    END
+  END mem_to_dcache_data[125]
+  PIN mem_to_dcache_data[126]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 47.930 0.000 48.210 4.000 ;
+    END
+  END mem_to_dcache_data[126]
+  PIN mem_to_dcache_data[127]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 130.600 200.000 131.200 ;
+    END
+  END mem_to_dcache_data[127]
+  PIN mem_to_dcache_data[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 71.850 196.000 72.130 200.000 ;
+    END
+  END mem_to_dcache_data[12]
+  PIN mem_to_dcache_data[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 164.770 196.000 165.050 200.000 ;
+    END
+  END mem_to_dcache_data[13]
+  PIN mem_to_dcache_data[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 126.520 200.000 127.120 ;
+    END
+  END mem_to_dcache_data[14]
+  PIN mem_to_dcache_data[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 107.730 196.000 108.010 200.000 ;
+    END
+  END mem_to_dcache_data[15]
+  PIN mem_to_dcache_data[16]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 128.890 196.000 129.170 200.000 ;
+    END
+  END mem_to_dcache_data[16]
+  PIN mem_to_dcache_data[17]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 73.690 0.000 73.970 4.000 ;
+    END
+  END mem_to_dcache_data[17]
+  PIN mem_to_dcache_data[18]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 157.800 4.000 158.400 ;
+    END
+  END mem_to_dcache_data[18]
+  PIN mem_to_dcache_data[19]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 133.490 0.000 133.770 4.000 ;
+    END
+  END mem_to_dcache_data[19]
+  PIN mem_to_dcache_data[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 39.650 196.000 39.930 200.000 ;
+    END
+  END mem_to_dcache_data[1]
+  PIN mem_to_dcache_data[20]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 35.050 0.000 35.330 4.000 ;
+    END
+  END mem_to_dcache_data[20]
+  PIN mem_to_dcache_data[21]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 94.850 196.000 95.130 200.000 ;
+    END
+  END mem_to_dcache_data[21]
+  PIN mem_to_dcache_data[22]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 119.720 4.000 120.320 ;
+    END
+  END mem_to_dcache_data[22]
+  PIN mem_to_dcache_data[23]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 93.930 0.000 94.210 4.000 ;
+    END
+  END mem_to_dcache_data[23]
+  PIN mem_to_dcache_data[24]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 180.410 196.000 180.690 200.000 ;
+    END
+  END mem_to_dcache_data[24]
+  PIN mem_to_dcache_data[25]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 78.920 200.000 79.520 ;
+    END
+  END mem_to_dcache_data[25]
+  PIN mem_to_dcache_data[26]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 193.290 0.000 193.570 4.000 ;
+    END
+  END mem_to_dcache_data[26]
+  PIN mem_to_dcache_data[27]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 125.160 200.000 125.760 ;
+    END
+  END mem_to_dcache_data[27]
+  PIN mem_to_dcache_data[28]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 42.200 4.000 42.800 ;
+    END
+  END mem_to_dcache_data[28]
+  PIN mem_to_dcache_data[29]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 16.360 4.000 16.960 ;
+    END
+  END mem_to_dcache_data[29]
+  PIN mem_to_dcache_data[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 53.450 196.000 53.730 200.000 ;
+    END
+  END mem_to_dcache_data[2]
+  PIN mem_to_dcache_data[30]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 191.800 200.000 192.400 ;
+    END
+  END mem_to_dcache_data[30]
+  PIN mem_to_dcache_data[31]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 43.330 196.000 43.610 200.000 ;
+    END
+  END mem_to_dcache_data[31]
+  PIN mem_to_dcache_data[32]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 100.680 200.000 101.280 ;
+    END
+  END mem_to_dcache_data[32]
+  PIN mem_to_dcache_data[33]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 182.280 4.000 182.880 ;
+    END
+  END mem_to_dcache_data[33]
+  PIN mem_to_dcache_data[34]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 39.480 200.000 40.080 ;
+    END
+  END mem_to_dcache_data[34]
+  PIN mem_to_dcache_data[35]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 155.080 200.000 155.680 ;
+    END
+  END mem_to_dcache_data[35]
+  PIN mem_to_dcache_data[36]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 104.050 196.000 104.330 200.000 ;
+    END
+  END mem_to_dcache_data[36]
+  PIN mem_to_dcache_data[37]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 14.810 0.000 15.090 4.000 ;
+    END
+  END mem_to_dcache_data[37]
+  PIN mem_to_dcache_data[38]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 96.690 0.000 96.970 4.000 ;
+    END
+  END mem_to_dcache_data[38]
+  PIN mem_to_dcache_data[39]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 51.610 0.000 51.890 4.000 ;
+    END
+  END mem_to_dcache_data[39]
+  PIN mem_to_dcache_data[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 19.080 200.000 19.680 ;
+    END
+  END mem_to_dcache_data[3]
+  PIN mem_to_dcache_data[40]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 12.050 0.000 12.330 4.000 ;
+    END
+  END mem_to_dcache_data[40]
+  PIN mem_to_dcache_data[41]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 53.450 0.000 53.730 4.000 ;
+    END
+  END mem_to_dcache_data[41]
+  PIN mem_to_dcache_data[42]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 12.280 200.000 12.880 ;
+    END
+  END mem_to_dcache_data[42]
+  PIN mem_to_dcache_data[43]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 186.850 196.000 187.130 200.000 ;
+    END
+  END mem_to_dcache_data[43]
+  PIN mem_to_dcache_data[44]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 81.640 200.000 82.240 ;
+    END
+  END mem_to_dcache_data[44]
+  PIN mem_to_dcache_data[45]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 117.000 4.000 117.600 ;
+    END
+  END mem_to_dcache_data[45]
+  PIN mem_to_dcache_data[46]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 62.600 200.000 63.200 ;
+    END
+  END mem_to_dcache_data[46]
+  PIN mem_to_dcache_data[47]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 125.210 0.000 125.490 4.000 ;
+    END
+  END mem_to_dcache_data[47]
+  PIN mem_to_dcache_data[48]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 154.650 196.000 154.930 200.000 ;
+    END
+  END mem_to_dcache_data[48]
+  PIN mem_to_dcache_data[49]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 39.480 4.000 40.080 ;
+    END
+  END mem_to_dcache_data[49]
+  PIN mem_to_dcache_data[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 114.280 200.000 114.880 ;
+    END
+  END mem_to_dcache_data[4]
+  PIN mem_to_dcache_data[50]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 176.730 196.000 177.010 200.000 ;
+    END
+  END mem_to_dcache_data[50]
+  PIN mem_to_dcache_data[51]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 156.490 196.000 156.770 200.000 ;
+    END
+  END mem_to_dcache_data[51]
+  PIN mem_to_dcache_data[52]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 112.330 196.000 112.610 200.000 ;
+    END
+  END mem_to_dcache_data[52]
+  PIN mem_to_dcache_data[53]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 178.570 196.000 178.850 200.000 ;
+    END
+  END mem_to_dcache_data[53]
+  PIN mem_to_dcache_data[54]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 11.130 196.000 11.410 200.000 ;
+    END
+  END mem_to_dcache_data[54]
+  PIN mem_to_dcache_data[55]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 58.970 0.000 59.250 4.000 ;
+    END
+  END mem_to_dcache_data[55]
+  PIN mem_to_dcache_data[56]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 191.450 0.000 191.730 4.000 ;
+    END
+  END mem_to_dcache_data[56]
+  PIN mem_to_dcache_data[57]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 54.440 200.000 55.040 ;
+    END
+  END mem_to_dcache_data[57]
+  PIN mem_to_dcache_data[58]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 121.080 200.000 121.680 ;
+    END
+  END mem_to_dcache_data[58]
+  PIN mem_to_dcache_data[59]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 86.570 196.000 86.850 200.000 ;
+    END
+  END mem_to_dcache_data[59]
+  PIN mem_to_dcache_data[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 138.090 0.000 138.370 4.000 ;
+    END
+  END mem_to_dcache_data[5]
+  PIN mem_to_dcache_data[60]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 17.570 196.000 17.850 200.000 ;
+    END
+  END mem_to_dcache_data[60]
+  PIN mem_to_dcache_data[61]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 146.920 200.000 147.520 ;
+    END
+  END mem_to_dcache_data[61]
+  PIN mem_to_dcache_data[62]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 163.850 196.000 164.130 200.000 ;
+    END
+  END mem_to_dcache_data[62]
+  PIN mem_to_dcache_data[63]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 195.130 196.000 195.410 200.000 ;
+    END
+  END mem_to_dcache_data[63]
+  PIN mem_to_dcache_data[64]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 164.770 0.000 165.050 4.000 ;
+    END
+  END mem_to_dcache_data[64]
+  PIN mem_to_dcache_data[65]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 192.370 196.000 192.650 200.000 ;
+    END
+  END mem_to_dcache_data[65]
+  PIN mem_to_dcache_data[66]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 158.330 0.000 158.610 4.000 ;
+    END
+  END mem_to_dcache_data[66]
+  PIN mem_to_dcache_data[67]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 188.690 0.000 188.970 4.000 ;
+    END
+  END mem_to_dcache_data[67]
+  PIN mem_to_dcache_data[68]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 31.370 0.000 31.650 4.000 ;
+    END
+  END mem_to_dcache_data[68]
+  PIN mem_to_dcache_data[69]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 48.850 0.000 49.130 4.000 ;
+    END
+  END mem_to_dcache_data[69]
+  PIN mem_to_dcache_data[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 169.370 0.000 169.650 4.000 ;
+    END
+  END mem_to_dcache_data[6]
+  PIN mem_to_dcache_data[70]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 99.320 4.000 99.920 ;
+    END
+  END mem_to_dcache_data[70]
+  PIN mem_to_dcache_data[71]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 180.920 200.000 181.520 ;
+    END
+  END mem_to_dcache_data[71]
+  PIN mem_to_dcache_data[72]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 126.520 4.000 127.120 ;
+    END
+  END mem_to_dcache_data[72]
+  PIN mem_to_dcache_data[73]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 85.650 196.000 85.930 200.000 ;
+    END
+  END mem_to_dcache_data[73]
+  PIN mem_to_dcache_data[74]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 58.970 196.000 59.250 200.000 ;
+    END
+  END mem_to_dcache_data[74]
+  PIN mem_to_dcache_data[75]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 59.890 0.000 60.170 4.000 ;
+    END
+  END mem_to_dcache_data[75]
+  PIN mem_to_dcache_data[76]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 151.000 4.000 151.600 ;
+    END
+  END mem_to_dcache_data[76]
+  PIN mem_to_dcache_data[77]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 186.850 0.000 187.130 4.000 ;
+    END
+  END mem_to_dcache_data[77]
+  PIN mem_to_dcache_data[78]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 48.850 196.000 49.130 200.000 ;
+    END
+  END mem_to_dcache_data[78]
+  PIN mem_to_dcache_data[79]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 37.810 0.000 38.090 4.000 ;
+    END
+  END mem_to_dcache_data[79]
+  PIN mem_to_dcache_data[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 76.200 4.000 76.800 ;
+    END
+  END mem_to_dcache_data[7]
+  PIN mem_to_dcache_data[80]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 110.200 4.000 110.800 ;
+    END
+  END mem_to_dcache_data[80]
+  PIN mem_to_dcache_data[81]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 85.720 4.000 86.320 ;
+    END
+  END mem_to_dcache_data[81]
+  PIN mem_to_dcache_data[82]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 148.210 196.000 148.490 200.000 ;
+    END
+  END mem_to_dcache_data[82]
+  PIN mem_to_dcache_data[83]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 158.330 196.000 158.610 200.000 ;
+    END
+  END mem_to_dcache_data[83]
+  PIN mem_to_dcache_data[84]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 159.250 196.000 159.530 200.000 ;
+    END
+  END mem_to_dcache_data[84]
+  PIN mem_to_dcache_data[85]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 104.970 0.000 105.250 4.000 ;
+    END
+  END mem_to_dcache_data[85]
+  PIN mem_to_dcache_data[86]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 99.450 196.000 99.730 200.000 ;
+    END
+  END mem_to_dcache_data[86]
+  PIN mem_to_dcache_data[87]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 91.160 4.000 91.760 ;
+    END
+  END mem_to_dcache_data[87]
+  PIN mem_to_dcache_data[88]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.850 0.000 3.130 4.000 ;
+    END
+  END mem_to_dcache_data[88]
+  PIN mem_to_dcache_data[89]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 156.490 0.000 156.770 4.000 ;
+    END
+  END mem_to_dcache_data[89]
+  PIN mem_to_dcache_data[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 136.040 4.000 136.640 ;
+    END
+  END mem_to_dcache_data[8]
+  PIN mem_to_dcache_data[90]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 17.720 200.000 18.320 ;
+    END
+  END mem_to_dcache_data[90]
+  PIN mem_to_dcache_data[91]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 168.680 4.000 169.280 ;
+    END
+  END mem_to_dcache_data[91]
+  PIN mem_to_dcache_data[92]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 40.840 200.000 41.440 ;
+    END
+  END mem_to_dcache_data[92]
+  PIN mem_to_dcache_data[93]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1.010 196.000 1.290 200.000 ;
+    END
+  END mem_to_dcache_data[93]
+  PIN mem_to_dcache_data[94]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 8.370 0.000 8.650 4.000 ;
+    END
+  END mem_to_dcache_data[94]
+  PIN mem_to_dcache_data[95]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 39.650 0.000 39.930 4.000 ;
+    END
+  END mem_to_dcache_data[95]
+  PIN mem_to_dcache_data[96]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 88.410 0.000 88.690 4.000 ;
+    END
+  END mem_to_dcache_data[96]
+  PIN mem_to_dcache_data[97]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 97.610 196.000 97.890 200.000 ;
+    END
+  END mem_to_dcache_data[97]
+  PIN mem_to_dcache_data[98]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 161.090 0.000 161.370 4.000 ;
+    END
+  END mem_to_dcache_data[98]
+  PIN mem_to_dcache_data[99]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 76.450 0.000 76.730 4.000 ;
+    END
+  END mem_to_dcache_data[99]
+  PIN mem_to_dcache_data[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 170.040 4.000 170.640 ;
+    END
+  END mem_to_dcache_data[9]
+  PIN mem_to_icache_data[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 142.840 200.000 143.440 ;
+    END
+  END mem_to_icache_data[0]
+  PIN mem_to_icache_data[100]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 195.880 200.000 196.480 ;
+    END
+  END mem_to_icache_data[100]
+  PIN mem_to_icache_data[101]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 153.730 0.000 154.010 4.000 ;
+    END
+  END mem_to_icache_data[101]
+  PIN mem_to_icache_data[102]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.850 196.000 3.130 200.000 ;
+    END
+  END mem_to_icache_data[102]
+  PIN mem_to_icache_data[103]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 196.050 0.000 196.330 4.000 ;
+    END
+  END mem_to_icache_data[103]
+  PIN mem_to_icache_data[104]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 182.280 200.000 182.880 ;
+    END
+  END mem_to_icache_data[104]
+  PIN mem_to_icache_data[105]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 76.450 196.000 76.730 200.000 ;
+    END
+  END mem_to_icache_data[105]
+  PIN mem_to_icache_data[106]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 145.560 200.000 146.160 ;
+    END
+  END mem_to_icache_data[106]
+  PIN mem_to_icache_data[107]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 150.050 0.000 150.330 4.000 ;
+    END
+  END mem_to_icache_data[107]
+  PIN mem_to_icache_data[108]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 118.770 196.000 119.050 200.000 ;
+    END
+  END mem_to_icache_data[108]
+  PIN mem_to_icache_data[109]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 23.160 200.000 23.760 ;
+    END
+  END mem_to_icache_data[109]
+  PIN mem_to_icache_data[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 63.570 196.000 63.850 200.000 ;
+    END
+  END mem_to_icache_data[10]
+  PIN mem_to_icache_data[110]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 127.880 4.000 128.480 ;
+    END
+  END mem_to_icache_data[110]
+  PIN mem_to_icache_data[111]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 35.400 4.000 36.000 ;
+    END
+  END mem_to_icache_data[111]
+  PIN mem_to_icache_data[112]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 24.930 0.000 25.210 4.000 ;
+    END
+  END mem_to_icache_data[112]
+  PIN mem_to_icache_data[113]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 136.040 200.000 136.640 ;
+    END
+  END mem_to_icache_data[113]
+  PIN mem_to_icache_data[114]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 109.570 0.000 109.850 4.000 ;
+    END
+  END mem_to_icache_data[114]
+  PIN mem_to_icache_data[115]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 178.200 200.000 178.800 ;
+    END
+  END mem_to_icache_data[115]
+  PIN mem_to_icache_data[116]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 49.770 0.000 50.050 4.000 ;
+    END
+  END mem_to_icache_data[116]
+  PIN mem_to_icache_data[117]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 53.080 4.000 53.680 ;
+    END
+  END mem_to_icache_data[117]
+  PIN mem_to_icache_data[118]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 12.970 196.000 13.250 200.000 ;
+    END
+  END mem_to_icache_data[118]
+  PIN mem_to_icache_data[119]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 122.450 196.000 122.730 200.000 ;
+    END
+  END mem_to_icache_data[119]
+  PIN mem_to_icache_data[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 194.210 196.000 194.490 200.000 ;
+    END
+  END mem_to_icache_data[11]
+  PIN mem_to_icache_data[120]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 6.530 196.000 6.810 200.000 ;
+    END
+  END mem_to_icache_data[120]
+  PIN mem_to_icache_data[121]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 24.010 196.000 24.290 200.000 ;
+    END
+  END mem_to_icache_data[121]
+  PIN mem_to_icache_data[122]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 36.760 200.000 37.360 ;
+    END
+  END mem_to_icache_data[122]
+  PIN mem_to_icache_data[123]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 194.520 4.000 195.120 ;
+    END
+  END mem_to_icache_data[123]
+  PIN mem_to_icache_data[124]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 84.360 200.000 84.960 ;
+    END
+  END mem_to_icache_data[124]
+  PIN mem_to_icache_data[125]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 89.330 196.000 89.610 200.000 ;
+    END
+  END mem_to_icache_data[125]
+  PIN mem_to_icache_data[126]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 49.770 196.000 50.050 200.000 ;
+    END
+  END mem_to_icache_data[126]
+  PIN mem_to_icache_data[127]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 164.600 4.000 165.200 ;
+    END
+  END mem_to_icache_data[127]
+  PIN mem_to_icache_data[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 17.570 0.000 17.850 4.000 ;
+    END
+  END mem_to_icache_data[12]
+  PIN mem_to_icache_data[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 123.800 4.000 124.400 ;
+    END
+  END mem_to_icache_data[13]
+  PIN mem_to_icache_data[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 189.080 200.000 189.680 ;
+    END
+  END mem_to_icache_data[14]
+  PIN mem_to_icache_data[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 171.400 200.000 172.000 ;
+    END
+  END mem_to_icache_data[15]
+  PIN mem_to_icache_data[16]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 119.690 0.000 119.970 4.000 ;
+    END
+  END mem_to_icache_data[16]
+  PIN mem_to_icache_data[17]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 151.000 200.000 151.600 ;
+    END
+  END mem_to_icache_data[17]
+  PIN mem_to_icache_data[18]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 70.760 200.000 71.360 ;
+    END
+  END mem_to_icache_data[18]
+  PIN mem_to_icache_data[19]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 180.410 0.000 180.690 4.000 ;
+    END
+  END mem_to_icache_data[19]
+  PIN mem_to_icache_data[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 93.010 196.000 93.290 200.000 ;
+    END
+  END mem_to_icache_data[1]
+  PIN mem_to_icache_data[20]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 146.370 196.000 146.650 200.000 ;
+    END
+  END mem_to_icache_data[20]
+  PIN mem_to_icache_data[21]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 105.890 0.000 106.170 4.000 ;
+    END
+  END mem_to_icache_data[21]
+  PIN mem_to_icache_data[22]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 150.970 0.000 151.250 4.000 ;
+    END
+  END mem_to_icache_data[22]
+  PIN mem_to_icache_data[23]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 43.560 200.000 44.160 ;
+    END
+  END mem_to_icache_data[23]
+  PIN mem_to_icache_data[24]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 197.240 4.000 197.840 ;
+    END
+  END mem_to_icache_data[24]
+  PIN mem_to_icache_data[25]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 15.000 4.000 15.600 ;
+    END
+  END mem_to_icache_data[25]
+  PIN mem_to_icache_data[26]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 19.410 0.000 19.690 4.000 ;
+    END
+  END mem_to_icache_data[26]
+  PIN mem_to_icache_data[27]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 41.490 196.000 41.770 200.000 ;
+    END
+  END mem_to_icache_data[27]
+  PIN mem_to_icache_data[28]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 137.400 200.000 138.000 ;
+    END
+  END mem_to_icache_data[28]
+  PIN mem_to_icache_data[29]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 172.130 196.000 172.410 200.000 ;
+    END
+  END mem_to_icache_data[29]
+  PIN mem_to_icache_data[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 71.850 0.000 72.130 4.000 ;
+    END
+  END mem_to_icache_data[2]
+  PIN mem_to_icache_data[30]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 127.970 196.000 128.250 200.000 ;
+    END
+  END mem_to_icache_data[30]
+  PIN mem_to_icache_data[31]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 91.160 200.000 91.760 ;
+    END
+  END mem_to_icache_data[31]
+  PIN mem_to_icache_data[32]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 143.610 0.000 143.890 4.000 ;
+    END
+  END mem_to_icache_data[32]
+  PIN mem_to_icache_data[33]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 125.210 196.000 125.490 200.000 ;
+    END
+  END mem_to_icache_data[33]
+  PIN mem_to_icache_data[34]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 137.170 0.000 137.450 4.000 ;
+    END
+  END mem_to_icache_data[34]
+  PIN mem_to_icache_data[35]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 58.050 0.000 58.330 4.000 ;
+    END
+  END mem_to_icache_data[35]
+  PIN mem_to_icache_data[36]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 9.290 0.000 9.570 4.000 ;
+    END
+  END mem_to_icache_data[36]
+  PIN mem_to_icache_data[37]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 61.240 4.000 61.840 ;
+    END
+  END mem_to_icache_data[37]
+  PIN mem_to_icache_data[38]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 46.280 200.000 46.880 ;
+    END
+  END mem_to_icache_data[38]
+  PIN mem_to_icache_data[39]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 46.090 196.000 46.370 200.000 ;
+    END
+  END mem_to_icache_data[39]
+  PIN mem_to_icache_data[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 193.290 196.000 193.570 200.000 ;
+    END
+  END mem_to_icache_data[3]
+  PIN mem_to_icache_data[40]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 125.160 4.000 125.760 ;
+    END
+  END mem_to_icache_data[40]
+  PIN mem_to_icache_data[41]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 145.560 4.000 146.160 ;
+    END
+  END mem_to_icache_data[41]
+  PIN mem_to_icache_data[42]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 137.400 4.000 138.000 ;
+    END
+  END mem_to_icache_data[42]
+  PIN mem_to_icache_data[43]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 7.450 0.000 7.730 4.000 ;
+    END
+  END mem_to_icache_data[43]
+  PIN mem_to_icache_data[44]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 38.730 0.000 39.010 4.000 ;
+    END
+  END mem_to_icache_data[44]
+  PIN mem_to_icache_data[45]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 110.200 200.000 110.800 ;
+    END
+  END mem_to_icache_data[45]
+  PIN mem_to_icache_data[46]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 104.050 0.000 104.330 4.000 ;
+    END
+  END mem_to_icache_data[46]
+  PIN mem_to_icache_data[47]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 117.850 196.000 118.130 200.000 ;
+    END
+  END mem_to_icache_data[47]
+  PIN mem_to_icache_data[48]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 162.010 196.000 162.290 200.000 ;
+    END
+  END mem_to_icache_data[48]
+  PIN mem_to_icache_data[49]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 5.610 196.000 5.890 200.000 ;
+    END
+  END mem_to_icache_data[49]
+  PIN mem_to_icache_data[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 27.690 0.000 27.970 4.000 ;
+    END
+  END mem_to_icache_data[4]
+  PIN mem_to_icache_data[50]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 129.240 200.000 129.840 ;
+    END
+  END mem_to_icache_data[50]
+  PIN mem_to_icache_data[51]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 169.370 196.000 169.650 200.000 ;
+    END
+  END mem_to_icache_data[51]
+  PIN mem_to_icache_data[52]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 92.520 4.000 93.120 ;
+    END
+  END mem_to_icache_data[52]
+  PIN mem_to_icache_data[53]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 174.120 200.000 174.720 ;
+    END
+  END mem_to_icache_data[53]
+  PIN mem_to_icache_data[54]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 53.080 200.000 53.680 ;
+    END
+  END mem_to_icache_data[54]
+  PIN mem_to_icache_data[55]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 123.370 0.000 123.650 4.000 ;
+    END
+  END mem_to_icache_data[55]
+  PIN mem_to_icache_data[56]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 150.050 196.000 150.330 200.000 ;
+    END
+  END mem_to_icache_data[56]
+  PIN mem_to_icache_data[57]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 45.170 196.000 45.450 200.000 ;
+    END
+  END mem_to_icache_data[57]
+  PIN mem_to_icache_data[58]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 56.210 0.000 56.490 4.000 ;
+    END
+  END mem_to_icache_data[58]
+  PIN mem_to_icache_data[59]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 123.800 200.000 124.400 ;
+    END
+  END mem_to_icache_data[59]
+  PIN mem_to_icache_data[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 145.450 0.000 145.730 4.000 ;
+    END
+  END mem_to_icache_data[5]
+  PIN mem_to_icache_data[60]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 42.200 200.000 42.800 ;
+    END
+  END mem_to_icache_data[60]
+  PIN mem_to_icache_data[61]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 87.080 4.000 87.680 ;
+    END
+  END mem_to_icache_data[61]
+  PIN mem_to_icache_data[62]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 182.250 0.000 182.530 4.000 ;
+    END
+  END mem_to_icache_data[62]
+  PIN mem_to_icache_data[63]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 28.610 0.000 28.890 4.000 ;
+    END
+  END mem_to_icache_data[63]
+  PIN mem_to_icache_data[64]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 86.570 0.000 86.850 4.000 ;
+    END
+  END mem_to_icache_data[64]
+  PIN mem_to_icache_data[65]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 77.560 200.000 78.160 ;
+    END
+  END mem_to_icache_data[65]
+  PIN mem_to_icache_data[66]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 147.290 196.000 147.570 200.000 ;
+    END
+  END mem_to_icache_data[66]
+  PIN mem_to_icache_data[67]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 194.520 200.000 195.120 ;
+    END
+  END mem_to_icache_data[67]
+  PIN mem_to_icache_data[68]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 183.170 0.000 183.450 4.000 ;
+    END
+  END mem_to_icache_data[68]
+  PIN mem_to_icache_data[69]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 13.890 0.000 14.170 4.000 ;
+    END
+  END mem_to_icache_data[69]
+  PIN mem_to_icache_data[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 108.840 200.000 109.440 ;
+    END
+  END mem_to_icache_data[6]
+  PIN mem_to_icache_data[70]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 3.770 0.000 4.050 4.000 ;
+    END
+  END mem_to_icache_data[70]
+  PIN mem_to_icache_data[71]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 197.240 200.000 197.840 ;
+    END
+  END mem_to_icache_data[71]
+  PIN mem_to_icache_data[72]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 143.610 196.000 143.890 200.000 ;
+    END
+  END mem_to_icache_data[72]
+  PIN mem_to_icache_data[73]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 194.210 0.000 194.490 4.000 ;
+    END
+  END mem_to_icache_data[73]
+  PIN mem_to_icache_data[74]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 10.920 4.000 11.520 ;
+    END
+  END mem_to_icache_data[74]
+  PIN mem_to_icache_data[75]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 116.930 0.000 117.210 4.000 ;
+    END
+  END mem_to_icache_data[75]
+  PIN mem_to_icache_data[76]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 47.640 4.000 48.240 ;
+    END
+  END mem_to_icache_data[76]
+  PIN mem_to_icache_data[77]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 116.010 0.000 116.290 4.000 ;
+    END
+  END mem_to_icache_data[77]
+  PIN mem_to_icache_data[78]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 4.000 ;
+    END
+  END mem_to_icache_data[78]
+  PIN mem_to_icache_data[79]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 136.250 0.000 136.530 4.000 ;
+    END
+  END mem_to_icache_data[79]
+  PIN mem_to_icache_data[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 93.880 4.000 94.480 ;
+    END
+  END mem_to_icache_data[7]
+  PIN mem_to_icache_data[80]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 193.160 4.000 193.760 ;
+    END
+  END mem_to_icache_data[80]
+  PIN mem_to_icache_data[81]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 67.250 196.000 67.530 200.000 ;
+    END
+  END mem_to_icache_data[81]
+  PIN mem_to_icache_data[82]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 58.520 4.000 59.120 ;
+    END
+  END mem_to_icache_data[82]
+  PIN mem_to_icache_data[83]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 35.970 0.000 36.250 4.000 ;
+    END
+  END mem_to_icache_data[83]
+  PIN mem_to_icache_data[84]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 12.970 0.000 13.250 4.000 ;
+    END
+  END mem_to_icache_data[84]
+  PIN mem_to_icache_data[85]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 110.490 196.000 110.770 200.000 ;
+    END
+  END mem_to_icache_data[85]
+  PIN mem_to_icache_data[86]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 72.770 196.000 73.050 200.000 ;
+    END
+  END mem_to_icache_data[86]
+  PIN mem_to_icache_data[87]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 92.090 0.000 92.370 4.000 ;
+    END
+  END mem_to_icache_data[87]
+  PIN mem_to_icache_data[88]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 140.850 196.000 141.130 200.000 ;
+    END
+  END mem_to_icache_data[88]
+  PIN mem_to_icache_data[89]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 27.240 200.000 27.840 ;
+    END
+  END mem_to_icache_data[89]
+  PIN mem_to_icache_data[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 149.640 4.000 150.240 ;
+    END
+  END mem_to_icache_data[8]
+  PIN mem_to_icache_data[90]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 149.640 200.000 150.240 ;
+    END
+  END mem_to_icache_data[90]
+  PIN mem_to_icache_data[91]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 36.890 0.000 37.170 4.000 ;
+    END
+  END mem_to_icache_data[91]
+  PIN mem_to_icache_data[92]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 65.410 0.000 65.690 4.000 ;
+    END
+  END mem_to_icache_data[92]
+  PIN mem_to_icache_data[93]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 102.210 0.000 102.490 4.000 ;
+    END
+  END mem_to_icache_data[93]
+  PIN mem_to_icache_data[94]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 140.120 200.000 140.720 ;
+    END
+  END mem_to_icache_data[94]
+  PIN mem_to_icache_data[95]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 103.130 0.000 103.410 4.000 ;
+    END
+  END mem_to_icache_data[95]
+  PIN mem_to_icache_data[96]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 139.010 196.000 139.290 200.000 ;
+    END
+  END mem_to_icache_data[96]
+  PIN mem_to_icache_data[97]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 137.170 196.000 137.450 200.000 ;
+    END
+  END mem_to_icache_data[97]
+  PIN mem_to_icache_data[98]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 16.650 196.000 16.930 200.000 ;
+    END
+  END mem_to_icache_data[98]
+  PIN mem_to_icache_data[99]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 47.010 196.000 47.290 200.000 ;
+    END
+  END mem_to_icache_data[99]
+  PIN mem_to_icache_data[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 121.530 0.000 121.810 4.000 ;
+    END
+  END mem_to_icache_data[9]
+  PIN mem_we
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 51.720 4.000 52.320 ;
+    END
+  END mem_we
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1.930 196.000 2.210 200.000 ;
+    END
+  END reset
+  PIN reset_mem_req
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 74.840 200.000 75.440 ;
+    END
+  END reset_mem_req
+  PIN vccd1
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.640 22.640 187.920 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 174.640 10.640 176.240 187.920 ;
+    END
+  END vccd1
+  PIN vssd1
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 97.840 10.640 99.440 187.920 ;
+    END
+  END vssd1
+  OBS
+      LAYER li1 ;
+        RECT 4.285 4.505 199.955 187.765 ;
+      LAYER met1 ;
+        RECT 0.070 4.460 199.555 194.440 ;
+      LAYER met2 ;
+        RECT 0.650 195.720 0.730 199.085 ;
+        RECT 1.570 195.720 1.650 199.085 ;
+        RECT 2.490 195.720 2.570 199.085 ;
+        RECT 3.410 195.720 3.490 199.085 ;
+        RECT 4.330 195.720 4.410 199.085 ;
+        RECT 5.250 195.720 5.330 199.085 ;
+        RECT 6.170 195.720 6.250 199.085 ;
+        RECT 7.090 195.720 7.170 199.085 ;
+        RECT 8.010 195.720 9.010 199.085 ;
+        RECT 9.850 195.720 9.930 199.085 ;
+        RECT 10.770 195.720 10.850 199.085 ;
+        RECT 11.690 195.720 11.770 199.085 ;
+        RECT 12.610 195.720 12.690 199.085 ;
+        RECT 13.530 195.720 13.610 199.085 ;
+        RECT 14.450 195.720 14.530 199.085 ;
+        RECT 15.370 195.720 15.450 199.085 ;
+        RECT 16.290 195.720 16.370 199.085 ;
+        RECT 17.210 195.720 17.290 199.085 ;
+        RECT 18.130 195.720 18.210 199.085 ;
+        RECT 19.050 195.720 19.130 199.085 ;
+        RECT 19.970 195.720 20.050 199.085 ;
+        RECT 20.890 195.720 20.970 199.085 ;
+        RECT 21.810 195.720 21.890 199.085 ;
+        RECT 22.730 195.720 22.810 199.085 ;
+        RECT 23.650 195.720 23.730 199.085 ;
+        RECT 24.570 195.720 24.650 199.085 ;
+        RECT 25.490 195.720 25.570 199.085 ;
+        RECT 26.410 195.720 26.490 199.085 ;
+        RECT 27.330 195.720 27.410 199.085 ;
+        RECT 28.250 195.720 28.330 199.085 ;
+        RECT 29.170 195.720 29.250 199.085 ;
+        RECT 30.090 195.720 30.170 199.085 ;
+        RECT 31.010 195.720 31.090 199.085 ;
+        RECT 31.930 195.720 32.010 199.085 ;
+        RECT 32.850 195.720 32.930 199.085 ;
+        RECT 33.770 195.720 33.850 199.085 ;
+        RECT 34.690 195.720 34.770 199.085 ;
+        RECT 35.610 195.720 35.690 199.085 ;
+        RECT 36.530 195.720 36.610 199.085 ;
+        RECT 37.450 195.720 37.530 199.085 ;
+        RECT 38.370 195.720 38.450 199.085 ;
+        RECT 39.290 195.720 39.370 199.085 ;
+        RECT 40.210 195.720 40.290 199.085 ;
+        RECT 41.130 195.720 41.210 199.085 ;
+        RECT 42.050 195.720 42.130 199.085 ;
+        RECT 42.970 195.720 43.050 199.085 ;
+        RECT 43.890 195.720 43.970 199.085 ;
+        RECT 44.810 195.720 44.890 199.085 ;
+        RECT 45.730 195.720 45.810 199.085 ;
+        RECT 46.650 195.720 46.730 199.085 ;
+        RECT 47.570 195.720 47.650 199.085 ;
+        RECT 48.490 195.720 48.570 199.085 ;
+        RECT 49.410 195.720 49.490 199.085 ;
+        RECT 50.330 195.720 50.410 199.085 ;
+        RECT 51.250 195.720 51.330 199.085 ;
+        RECT 52.170 195.720 52.250 199.085 ;
+        RECT 53.090 195.720 53.170 199.085 ;
+        RECT 54.010 195.720 54.090 199.085 ;
+        RECT 54.930 195.720 55.010 199.085 ;
+        RECT 55.850 195.720 56.850 199.085 ;
+        RECT 57.690 195.720 57.770 199.085 ;
+        RECT 58.610 195.720 58.690 199.085 ;
+        RECT 59.530 195.720 59.610 199.085 ;
+        RECT 60.450 195.720 60.530 199.085 ;
+        RECT 61.370 195.720 61.450 199.085 ;
+        RECT 62.290 195.720 62.370 199.085 ;
+        RECT 63.210 195.720 63.290 199.085 ;
+        RECT 64.130 195.720 64.210 199.085 ;
+        RECT 65.050 195.720 65.130 199.085 ;
+        RECT 65.970 195.720 66.050 199.085 ;
+        RECT 66.890 195.720 66.970 199.085 ;
+        RECT 67.810 195.720 67.890 199.085 ;
+        RECT 68.730 195.720 68.810 199.085 ;
+        RECT 69.650 195.720 69.730 199.085 ;
+        RECT 70.570 195.720 70.650 199.085 ;
+        RECT 71.490 195.720 71.570 199.085 ;
+        RECT 72.410 195.720 72.490 199.085 ;
+        RECT 73.330 195.720 73.410 199.085 ;
+        RECT 74.250 195.720 74.330 199.085 ;
+        RECT 75.170 195.720 75.250 199.085 ;
+        RECT 76.090 195.720 76.170 199.085 ;
+        RECT 77.010 195.720 77.090 199.085 ;
+        RECT 77.930 195.720 78.010 199.085 ;
+        RECT 78.850 195.720 78.930 199.085 ;
+        RECT 79.770 195.720 79.850 199.085 ;
+        RECT 80.690 195.720 80.770 199.085 ;
+        RECT 81.610 195.720 81.690 199.085 ;
+        RECT 82.530 195.720 82.610 199.085 ;
+        RECT 83.450 195.720 83.530 199.085 ;
+        RECT 84.370 195.720 84.450 199.085 ;
+        RECT 85.290 195.720 85.370 199.085 ;
+        RECT 86.210 195.720 86.290 199.085 ;
+        RECT 87.130 195.720 87.210 199.085 ;
+        RECT 88.050 195.720 88.130 199.085 ;
+        RECT 88.970 195.720 89.050 199.085 ;
+        RECT 89.890 195.720 89.970 199.085 ;
+        RECT 90.810 195.720 90.890 199.085 ;
+        RECT 91.730 195.720 91.810 199.085 ;
+        RECT 92.650 195.720 92.730 199.085 ;
+        RECT 93.570 195.720 93.650 199.085 ;
+        RECT 94.490 195.720 94.570 199.085 ;
+        RECT 95.410 195.720 95.490 199.085 ;
+        RECT 96.330 195.720 96.410 199.085 ;
+        RECT 97.250 195.720 97.330 199.085 ;
+        RECT 98.170 195.720 98.250 199.085 ;
+        RECT 99.090 195.720 99.170 199.085 ;
+        RECT 100.010 195.720 100.090 199.085 ;
+        RECT 100.930 195.720 101.010 199.085 ;
+        RECT 101.850 195.720 101.930 199.085 ;
+        RECT 102.770 195.720 103.770 199.085 ;
+        RECT 104.610 195.720 104.690 199.085 ;
+        RECT 105.530 195.720 105.610 199.085 ;
+        RECT 106.450 195.720 106.530 199.085 ;
+        RECT 107.370 195.720 107.450 199.085 ;
+        RECT 108.290 195.720 108.370 199.085 ;
+        RECT 109.210 195.720 109.290 199.085 ;
+        RECT 110.130 195.720 110.210 199.085 ;
+        RECT 111.050 195.720 111.130 199.085 ;
+        RECT 111.970 195.720 112.050 199.085 ;
+        RECT 112.890 195.720 112.970 199.085 ;
+        RECT 113.810 195.720 113.890 199.085 ;
+        RECT 114.730 195.720 114.810 199.085 ;
+        RECT 115.650 195.720 115.730 199.085 ;
+        RECT 116.570 195.720 116.650 199.085 ;
+        RECT 117.490 195.720 117.570 199.085 ;
+        RECT 118.410 195.720 118.490 199.085 ;
+        RECT 119.330 195.720 119.410 199.085 ;
+        RECT 120.250 195.720 120.330 199.085 ;
+        RECT 121.170 195.720 121.250 199.085 ;
+        RECT 122.090 195.720 122.170 199.085 ;
+        RECT 123.010 195.720 123.090 199.085 ;
+        RECT 123.930 195.720 124.010 199.085 ;
+        RECT 124.850 195.720 124.930 199.085 ;
+        RECT 125.770 195.720 125.850 199.085 ;
+        RECT 126.690 195.720 126.770 199.085 ;
+        RECT 127.610 195.720 127.690 199.085 ;
+        RECT 128.530 195.720 128.610 199.085 ;
+        RECT 129.450 195.720 129.530 199.085 ;
+        RECT 130.370 195.720 130.450 199.085 ;
+        RECT 131.290 195.720 131.370 199.085 ;
+        RECT 132.210 195.720 132.290 199.085 ;
+        RECT 133.130 195.720 133.210 199.085 ;
+        RECT 134.050 195.720 134.130 199.085 ;
+        RECT 134.970 195.720 135.050 199.085 ;
+        RECT 135.890 195.720 135.970 199.085 ;
+        RECT 136.810 195.720 136.890 199.085 ;
+        RECT 137.730 195.720 137.810 199.085 ;
+        RECT 138.650 195.720 138.730 199.085 ;
+        RECT 139.570 195.720 139.650 199.085 ;
+        RECT 140.490 195.720 140.570 199.085 ;
+        RECT 141.410 195.720 141.490 199.085 ;
+        RECT 142.330 195.720 142.410 199.085 ;
+        RECT 143.250 195.720 143.330 199.085 ;
+        RECT 144.170 195.720 144.250 199.085 ;
+        RECT 145.090 195.720 145.170 199.085 ;
+        RECT 146.010 195.720 146.090 199.085 ;
+        RECT 146.930 195.720 147.010 199.085 ;
+        RECT 147.850 195.720 147.930 199.085 ;
+        RECT 148.770 195.720 148.850 199.085 ;
+        RECT 149.690 195.720 149.770 199.085 ;
+        RECT 150.610 195.720 150.690 199.085 ;
+        RECT 151.530 195.720 152.530 199.085 ;
+        RECT 153.370 195.720 153.450 199.085 ;
+        RECT 154.290 195.720 154.370 199.085 ;
+        RECT 155.210 195.720 155.290 199.085 ;
+        RECT 156.130 195.720 156.210 199.085 ;
+        RECT 157.050 195.720 157.130 199.085 ;
+        RECT 157.970 195.720 158.050 199.085 ;
+        RECT 158.890 195.720 158.970 199.085 ;
+        RECT 159.810 195.720 159.890 199.085 ;
+        RECT 160.730 195.720 160.810 199.085 ;
+        RECT 161.650 195.720 161.730 199.085 ;
+        RECT 162.570 195.720 162.650 199.085 ;
+        RECT 163.490 195.720 163.570 199.085 ;
+        RECT 164.410 195.720 164.490 199.085 ;
+        RECT 165.330 195.720 165.410 199.085 ;
+        RECT 166.250 195.720 166.330 199.085 ;
+        RECT 167.170 195.720 167.250 199.085 ;
+        RECT 168.090 195.720 168.170 199.085 ;
+        RECT 169.010 195.720 169.090 199.085 ;
+        RECT 169.930 195.720 170.010 199.085 ;
+        RECT 170.850 195.720 170.930 199.085 ;
+        RECT 171.770 195.720 171.850 199.085 ;
+        RECT 172.690 195.720 172.770 199.085 ;
+        RECT 173.610 195.720 173.690 199.085 ;
+        RECT 174.530 195.720 174.610 199.085 ;
+        RECT 175.450 195.720 175.530 199.085 ;
+        RECT 176.370 195.720 176.450 199.085 ;
+        RECT 177.290 195.720 177.370 199.085 ;
+        RECT 178.210 195.720 178.290 199.085 ;
+        RECT 179.130 195.720 179.210 199.085 ;
+        RECT 180.050 195.720 180.130 199.085 ;
+        RECT 180.970 195.720 181.050 199.085 ;
+        RECT 181.890 195.720 181.970 199.085 ;
+        RECT 182.810 195.720 182.890 199.085 ;
+        RECT 183.730 195.720 183.810 199.085 ;
+        RECT 184.650 195.720 184.730 199.085 ;
+        RECT 185.570 195.720 185.650 199.085 ;
+        RECT 186.490 195.720 186.570 199.085 ;
+        RECT 187.410 195.720 187.490 199.085 ;
+        RECT 188.330 195.720 188.410 199.085 ;
+        RECT 189.250 195.720 189.330 199.085 ;
+        RECT 190.170 195.720 190.250 199.085 ;
+        RECT 191.090 195.720 191.170 199.085 ;
+        RECT 192.010 195.720 192.090 199.085 ;
+        RECT 192.930 195.720 193.010 199.085 ;
+        RECT 193.850 195.720 193.930 199.085 ;
+        RECT 194.770 195.720 194.850 199.085 ;
+        RECT 195.690 195.720 195.770 199.085 ;
+        RECT 196.610 195.720 196.690 199.085 ;
+        RECT 197.530 195.720 197.610 199.085 ;
+        RECT 198.450 195.720 198.530 199.085 ;
+        RECT 0.100 4.280 199.080 195.720 ;
+        RECT 0.650 1.515 0.730 4.280 ;
+        RECT 1.570 1.515 1.650 4.280 ;
+        RECT 2.490 1.515 2.570 4.280 ;
+        RECT 3.410 1.515 3.490 4.280 ;
+        RECT 4.330 1.515 4.410 4.280 ;
+        RECT 5.250 1.515 5.330 4.280 ;
+        RECT 6.170 1.515 6.250 4.280 ;
+        RECT 7.090 1.515 7.170 4.280 ;
+        RECT 8.010 1.515 8.090 4.280 ;
+        RECT 8.930 1.515 9.010 4.280 ;
+        RECT 9.850 1.515 9.930 4.280 ;
+        RECT 10.770 1.515 10.850 4.280 ;
+        RECT 11.690 1.515 11.770 4.280 ;
+        RECT 12.610 1.515 12.690 4.280 ;
+        RECT 13.530 1.515 13.610 4.280 ;
+        RECT 14.450 1.515 14.530 4.280 ;
+        RECT 15.370 1.515 15.450 4.280 ;
+        RECT 16.290 1.515 16.370 4.280 ;
+        RECT 17.210 1.515 17.290 4.280 ;
+        RECT 18.130 1.515 18.210 4.280 ;
+        RECT 19.050 1.515 19.130 4.280 ;
+        RECT 19.970 1.515 20.050 4.280 ;
+        RECT 20.890 1.515 20.970 4.280 ;
+        RECT 21.810 1.515 21.890 4.280 ;
+        RECT 22.730 1.515 22.810 4.280 ;
+        RECT 23.650 1.515 23.730 4.280 ;
+        RECT 24.570 1.515 24.650 4.280 ;
+        RECT 25.490 1.515 25.570 4.280 ;
+        RECT 26.410 1.515 26.490 4.280 ;
+        RECT 27.330 1.515 27.410 4.280 ;
+        RECT 28.250 1.515 28.330 4.280 ;
+        RECT 29.170 1.515 29.250 4.280 ;
+        RECT 30.090 1.515 30.170 4.280 ;
+        RECT 31.010 1.515 31.090 4.280 ;
+        RECT 31.930 1.515 32.010 4.280 ;
+        RECT 32.850 1.515 32.930 4.280 ;
+        RECT 33.770 1.515 33.850 4.280 ;
+        RECT 34.690 1.515 34.770 4.280 ;
+        RECT 35.610 1.515 35.690 4.280 ;
+        RECT 36.530 1.515 36.610 4.280 ;
+        RECT 37.450 1.515 37.530 4.280 ;
+        RECT 38.370 1.515 38.450 4.280 ;
+        RECT 39.290 1.515 39.370 4.280 ;
+        RECT 40.210 1.515 40.290 4.280 ;
+        RECT 41.130 1.515 41.210 4.280 ;
+        RECT 42.050 1.515 42.130 4.280 ;
+        RECT 42.970 1.515 43.050 4.280 ;
+        RECT 43.890 1.515 43.970 4.280 ;
+        RECT 44.810 1.515 44.890 4.280 ;
+        RECT 45.730 1.515 45.810 4.280 ;
+        RECT 46.650 1.515 47.650 4.280 ;
+        RECT 48.490 1.515 48.570 4.280 ;
+        RECT 49.410 1.515 49.490 4.280 ;
+        RECT 50.330 1.515 50.410 4.280 ;
+        RECT 51.250 1.515 51.330 4.280 ;
+        RECT 52.170 1.515 52.250 4.280 ;
+        RECT 53.090 1.515 53.170 4.280 ;
+        RECT 54.010 1.515 54.090 4.280 ;
+        RECT 54.930 1.515 55.010 4.280 ;
+        RECT 55.850 1.515 55.930 4.280 ;
+        RECT 56.770 1.515 56.850 4.280 ;
+        RECT 57.690 1.515 57.770 4.280 ;
+        RECT 58.610 1.515 58.690 4.280 ;
+        RECT 59.530 1.515 59.610 4.280 ;
+        RECT 60.450 1.515 60.530 4.280 ;
+        RECT 61.370 1.515 61.450 4.280 ;
+        RECT 62.290 1.515 62.370 4.280 ;
+        RECT 63.210 1.515 63.290 4.280 ;
+        RECT 64.130 1.515 64.210 4.280 ;
+        RECT 65.050 1.515 65.130 4.280 ;
+        RECT 65.970 1.515 66.050 4.280 ;
+        RECT 66.890 1.515 66.970 4.280 ;
+        RECT 67.810 1.515 67.890 4.280 ;
+        RECT 68.730 1.515 68.810 4.280 ;
+        RECT 69.650 1.515 69.730 4.280 ;
+        RECT 70.570 1.515 70.650 4.280 ;
+        RECT 71.490 1.515 71.570 4.280 ;
+        RECT 72.410 1.515 72.490 4.280 ;
+        RECT 73.330 1.515 73.410 4.280 ;
+        RECT 74.250 1.515 74.330 4.280 ;
+        RECT 75.170 1.515 75.250 4.280 ;
+        RECT 76.090 1.515 76.170 4.280 ;
+        RECT 77.010 1.515 77.090 4.280 ;
+        RECT 77.930 1.515 78.010 4.280 ;
+        RECT 78.850 1.515 78.930 4.280 ;
+        RECT 79.770 1.515 79.850 4.280 ;
+        RECT 80.690 1.515 80.770 4.280 ;
+        RECT 81.610 1.515 81.690 4.280 ;
+        RECT 82.530 1.515 82.610 4.280 ;
+        RECT 83.450 1.515 83.530 4.280 ;
+        RECT 84.370 1.515 84.450 4.280 ;
+        RECT 85.290 1.515 85.370 4.280 ;
+        RECT 86.210 1.515 86.290 4.280 ;
+        RECT 87.130 1.515 87.210 4.280 ;
+        RECT 88.050 1.515 88.130 4.280 ;
+        RECT 88.970 1.515 89.050 4.280 ;
+        RECT 89.890 1.515 89.970 4.280 ;
+        RECT 90.810 1.515 90.890 4.280 ;
+        RECT 91.730 1.515 91.810 4.280 ;
+        RECT 92.650 1.515 92.730 4.280 ;
+        RECT 93.570 1.515 93.650 4.280 ;
+        RECT 94.490 1.515 95.490 4.280 ;
+        RECT 96.330 1.515 96.410 4.280 ;
+        RECT 97.250 1.515 97.330 4.280 ;
+        RECT 98.170 1.515 98.250 4.280 ;
+        RECT 99.090 1.515 99.170 4.280 ;
+        RECT 100.010 1.515 100.090 4.280 ;
+        RECT 100.930 1.515 101.010 4.280 ;
+        RECT 101.850 1.515 101.930 4.280 ;
+        RECT 102.770 1.515 102.850 4.280 ;
+        RECT 103.690 1.515 103.770 4.280 ;
+        RECT 104.610 1.515 104.690 4.280 ;
+        RECT 105.530 1.515 105.610 4.280 ;
+        RECT 106.450 1.515 106.530 4.280 ;
+        RECT 107.370 1.515 107.450 4.280 ;
+        RECT 108.290 1.515 108.370 4.280 ;
+        RECT 109.210 1.515 109.290 4.280 ;
+        RECT 110.130 1.515 110.210 4.280 ;
+        RECT 111.050 1.515 111.130 4.280 ;
+        RECT 111.970 1.515 112.050 4.280 ;
+        RECT 112.890 1.515 112.970 4.280 ;
+        RECT 113.810 1.515 113.890 4.280 ;
+        RECT 114.730 1.515 114.810 4.280 ;
+        RECT 115.650 1.515 115.730 4.280 ;
+        RECT 116.570 1.515 116.650 4.280 ;
+        RECT 117.490 1.515 117.570 4.280 ;
+        RECT 118.410 1.515 118.490 4.280 ;
+        RECT 119.330 1.515 119.410 4.280 ;
+        RECT 120.250 1.515 120.330 4.280 ;
+        RECT 121.170 1.515 121.250 4.280 ;
+        RECT 122.090 1.515 122.170 4.280 ;
+        RECT 123.010 1.515 123.090 4.280 ;
+        RECT 123.930 1.515 124.010 4.280 ;
+        RECT 124.850 1.515 124.930 4.280 ;
+        RECT 125.770 1.515 125.850 4.280 ;
+        RECT 126.690 1.515 126.770 4.280 ;
+        RECT 127.610 1.515 127.690 4.280 ;
+        RECT 128.530 1.515 128.610 4.280 ;
+        RECT 129.450 1.515 129.530 4.280 ;
+        RECT 130.370 1.515 130.450 4.280 ;
+        RECT 131.290 1.515 131.370 4.280 ;
+        RECT 132.210 1.515 132.290 4.280 ;
+        RECT 133.130 1.515 133.210 4.280 ;
+        RECT 134.050 1.515 134.130 4.280 ;
+        RECT 134.970 1.515 135.050 4.280 ;
+        RECT 135.890 1.515 135.970 4.280 ;
+        RECT 136.810 1.515 136.890 4.280 ;
+        RECT 137.730 1.515 137.810 4.280 ;
+        RECT 138.650 1.515 138.730 4.280 ;
+        RECT 139.570 1.515 139.650 4.280 ;
+        RECT 140.490 1.515 140.570 4.280 ;
+        RECT 141.410 1.515 141.490 4.280 ;
+        RECT 142.330 1.515 143.330 4.280 ;
+        RECT 144.170 1.515 144.250 4.280 ;
+        RECT 145.090 1.515 145.170 4.280 ;
+        RECT 146.010 1.515 146.090 4.280 ;
+        RECT 146.930 1.515 147.010 4.280 ;
+        RECT 147.850 1.515 147.930 4.280 ;
+        RECT 148.770 1.515 148.850 4.280 ;
+        RECT 149.690 1.515 149.770 4.280 ;
+        RECT 150.610 1.515 150.690 4.280 ;
+        RECT 151.530 1.515 151.610 4.280 ;
+        RECT 152.450 1.515 152.530 4.280 ;
+        RECT 153.370 1.515 153.450 4.280 ;
+        RECT 154.290 1.515 154.370 4.280 ;
+        RECT 155.210 1.515 155.290 4.280 ;
+        RECT 156.130 1.515 156.210 4.280 ;
+        RECT 157.050 1.515 157.130 4.280 ;
+        RECT 157.970 1.515 158.050 4.280 ;
+        RECT 158.890 1.515 158.970 4.280 ;
+        RECT 159.810 1.515 159.890 4.280 ;
+        RECT 160.730 1.515 160.810 4.280 ;
+        RECT 161.650 1.515 161.730 4.280 ;
+        RECT 162.570 1.515 162.650 4.280 ;
+        RECT 163.490 1.515 163.570 4.280 ;
+        RECT 164.410 1.515 164.490 4.280 ;
+        RECT 165.330 1.515 165.410 4.280 ;
+        RECT 166.250 1.515 166.330 4.280 ;
+        RECT 167.170 1.515 167.250 4.280 ;
+        RECT 168.090 1.515 168.170 4.280 ;
+        RECT 169.010 1.515 169.090 4.280 ;
+        RECT 169.930 1.515 170.010 4.280 ;
+        RECT 170.850 1.515 170.930 4.280 ;
+        RECT 171.770 1.515 171.850 4.280 ;
+        RECT 172.690 1.515 172.770 4.280 ;
+        RECT 173.610 1.515 173.690 4.280 ;
+        RECT 174.530 1.515 174.610 4.280 ;
+        RECT 175.450 1.515 175.530 4.280 ;
+        RECT 176.370 1.515 176.450 4.280 ;
+        RECT 177.290 1.515 177.370 4.280 ;
+        RECT 178.210 1.515 178.290 4.280 ;
+        RECT 179.130 1.515 179.210 4.280 ;
+        RECT 180.050 1.515 180.130 4.280 ;
+        RECT 180.970 1.515 181.050 4.280 ;
+        RECT 181.890 1.515 181.970 4.280 ;
+        RECT 182.810 1.515 182.890 4.280 ;
+        RECT 183.730 1.515 183.810 4.280 ;
+        RECT 184.650 1.515 184.730 4.280 ;
+        RECT 185.570 1.515 185.650 4.280 ;
+        RECT 186.490 1.515 186.570 4.280 ;
+        RECT 187.410 1.515 187.490 4.280 ;
+        RECT 188.330 1.515 188.410 4.280 ;
+        RECT 189.250 1.515 189.330 4.280 ;
+        RECT 190.170 1.515 191.170 4.280 ;
+        RECT 192.010 1.515 192.090 4.280 ;
+        RECT 192.930 1.515 193.010 4.280 ;
+        RECT 193.850 1.515 193.930 4.280 ;
+        RECT 194.770 1.515 194.850 4.280 ;
+        RECT 195.690 1.515 195.770 4.280 ;
+        RECT 196.610 1.515 196.690 4.280 ;
+        RECT 197.530 1.515 197.610 4.280 ;
+        RECT 198.450 1.515 198.530 4.280 ;
+      LAYER met3 ;
+        RECT 4.400 198.240 196.000 199.065 ;
+        RECT 4.400 142.440 195.600 198.240 ;
+        RECT 4.000 141.120 195.600 142.440 ;
+        RECT 4.400 128.840 195.600 141.120 ;
+        RECT 4.400 127.520 196.000 128.840 ;
+        RECT 4.400 71.720 195.600 127.520 ;
+        RECT 4.000 70.400 195.600 71.720 ;
+        RECT 4.400 58.120 195.600 70.400 ;
+        RECT 4.400 56.800 196.000 58.120 ;
+        RECT 4.400 1.000 195.600 56.800 ;
+        RECT 4.000 0.180 195.600 1.000 ;
+      LAYER met4 ;
+        RECT 8.575 188.320 186.465 197.705 ;
+        RECT 8.575 10.240 20.640 188.320 ;
+        RECT 23.040 10.240 97.440 188.320 ;
+        RECT 99.840 10.240 174.240 188.320 ;
+        RECT 176.640 10.240 186.465 188.320 ;
+        RECT 8.575 0.175 186.465 10.240 ;
+  END
+END arbiter
+END LIBRARY
+
