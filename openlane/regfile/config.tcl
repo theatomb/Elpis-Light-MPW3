@@ -32,22 +32,10 @@ set ::env(CLOCK_PERIOD) "10"
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 1000 1000"
 
-#set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
-
 set ::env(PL_BASIC_PLACEMENT) 1
 set ::env(PL_TARGET_DENSITY) 0.3
 set ::env(FP_CORE_UTIL) "50"
 
-#set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0
-
-#Core worked alone with this, crash at step 15 instead of 11. [ERROR GRT-0167] Invalid 2D tree for net _17248_. It also worked with core and & mem(128) togetther without any crash message
-#set ::env(PL_TARGET_DENSITY) 0.1
-#set ::env(FP_CORE_UTIL) "5"
-#set ::env(CLOCK_PERIOD) "550"
-
-#Memory worked alone with this
-#set ::env(PL_TARGET_DENSITY) 0.3
-#set ::env(FP_CORE_UTIL) "5"
 
 # Maximum layer used for routing is metal 4.
 # This is because this macro will be inserted in a top level (user_project_wrapper) 
@@ -65,6 +53,3 @@ set ::env(RUN_CVC) 1
 
 
 set ::env(ROUTING_CORES) 6
-set ::env(DETAILED_ROUTER) tritonroute
-set ::env(SYNTH_STRATEGY) "AREA 2"
-#set ::env(LIB_SYNTH) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
