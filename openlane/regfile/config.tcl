@@ -27,13 +27,13 @@ set ::env(DESIGN_IS_CORE) 0
 #set ::env(CLOCK_TREE_SYNTH) 0
 set ::env(CLOCK_PORT) "clk"
 set ::env(CLOCK_NET) "clk"
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "50"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 1000 1000"
+set ::env(DIE_AREA) "0 0 450 450"
 
-set ::env(PL_BASIC_PLACEMENT) 1
-set ::env(PL_TARGET_DENSITY) 0.3
+#set ::env(PL_BASIC_PLACEMENT) 1
+set ::env(PL_TARGET_DENSITY) 0.43
 set ::env(FP_CORE_UTIL) "50"
 
 
@@ -53,3 +53,4 @@ set ::env(RUN_CVC) 1
 
 
 set ::env(ROUTING_CORES) 6
+set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"

@@ -27,16 +27,16 @@ set ::env(DESIGN_IS_CORE) 0
 #set ::env(CLOCK_TREE_SYNTH) 0
 set ::env(CLOCK_PORT) "clk"
 set ::env(CLOCK_NET) "clk"
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "50"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 200 200"
+set ::env(DIE_AREA) "0 0 180 180"
 
 #set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
-set ::env(PL_BASIC_PLACEMENT) 1
+#set ::env(PL_BASIC_PLACEMENT) 1
 set ::env(PL_TARGET_DENSITY) 0.3
-set ::env(FP_CORE_UTIL) "35"
+set ::env(FP_CORE_UTIL) "50"
 
 #set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0
 

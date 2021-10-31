@@ -33,20 +33,10 @@ set ::env(DIE_AREA) "0 0 800 800"
 
 #set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
-set ::env(PL_BASIC_PLACEMENT) 1
+#set ::env(PL_BASIC_PLACEMENT) 1
 set ::env(PL_TARGET_DENSITY) 0.35
 set ::env(FP_CORE_UTIL) "50"
 
-#set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0
-
-#Core worked alone with this, crash at step 15 instead of 11. [ERROR GRT-0167] Invalid 2D tree for net _17248_. It also worked with core and & mem(128) togetther without any crash message
-#set ::env(PL_TARGET_DENSITY) 0.1
-#set ::env(FP_CORE_UTIL) "5"
-#set ::env(CLOCK_PERIOD) "550"
-
-#Memory worked alone with this
-#set ::env(PL_TARGET_DENSITY) 0.3
-#set ::env(FP_CORE_UTIL) "5"
 
 # Maximum layer used for routing is metal 4.
 # This is because this macro will be inserted in a top level (user_project_wrapper) 
