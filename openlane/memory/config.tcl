@@ -26,15 +26,15 @@ set ::env(DESIGN_IS_CORE) 0
 
 set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_NET) "clk"
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "50"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 3000 3000"
+set ::env(DIE_AREA) "0 0 2000 2000"
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
-set ::env(PL_BASIC_PLACEMENT) 1
-set ::env(PL_TARGET_DENSITY) 0.6
+#set ::env(PL_BASIC_PLACEMENT) 1
+set ::env(PL_TARGET_DENSITY) 0.42
 set ::env(FP_CORE_UTIL) "50"
 
 #set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0
@@ -45,17 +45,17 @@ set ::env(FP_CORE_UTIL) "50"
 # in this macro and the top level metal 5 stripes, we have to restrict routes to metal4.  
 set ::env(GLB_RT_MAXLAYER) 5
 
-set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
+#set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
 
 
-set ::env(VERILOG_FILES_BLACKBOX) "\
-        $script_dir/../../verilog/rtl/elpis/sram_32_1024_sky130.v"
+#set ::env(VERILOG_FILES_BLACKBOX) "\
+#        $script_dir/../../verilog/rtl/elpis/sram_32_1024_sky130.v"
 
-set ::env(EXTRA_LEFS) "\
-        $script_dir/../../lef/sram_32_1024_sky130.lef"
+#set ::env(EXTRA_LEFS) "\
+#        $script_dir/../../lef/sram_32_1024_sky130.lef"
 
-set ::env(EXTRA_GDS_FILES) "\
-        $script_dir/../../gds/sram_32_1024_sky130.gds"
+#set ::env(EXTRA_GDS_FILES) "\
+#        $script_dir/../../gds/sram_32_1024_sky130.gds"
 
 
 

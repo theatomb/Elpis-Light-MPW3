@@ -28,43 +28,31 @@ set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/elpis/datapath.v \
 	$script_dir/../../verilog/rtl/elpis/decoder.v \
 	$script_dir/../../verilog/rtl/elpis/definitions.v \
-	$script_dir/../../verilog/rtl/elpis/drivers.v \
 	$script_dir/../../verilog/rtl/elpis/forwardingunit.v \
 	$script_dir/../../verilog/rtl/elpis/hazardDetectionUnit.v \
-	$script_dir/../../verilog/rtl/elpis/hf.v \
-	$script_dir/../../verilog/rtl/elpis/muldiv.v \
 	$script_dir/../../verilog/rtl/elpis/regfile.v \
 	$script_dir/../../verilog/rtl/elpis/specialreg.v \
 	$script_dir/../../verilog/rtl/elpis/storebuffer.v \
-	$script_dir/../../verilog/rtl/elpis/tlb.v \
 	$script_dir/../../verilog/rtl/elpis/utils.v"
 
 
 set ::env(DESIGN_IS_CORE) 0
 
-set ::env(CLOCK_PORT) "wb_clk_i"
+set ::env(CLOCK_PORT) "clk"
 set ::env(CLOCK_NET) "clk"
-set ::env(CLOCK_PERIOD) "200"
+set ::env(CLOCK_PERIOD) "50"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 2500 2500"
+set ::env(DIE_AREA) "0 0 1500 1500"
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
-set ::env(PL_BASIC_PLACEMENT) 1
-set ::env(PL_TARGET_DENSITY) 0.05
+# set ::env(PL_BASIC_PLACEMENT) 1
+set ::env(PL_TARGET_DENSITY) 0.2
 set ::env(FP_CORE_UTIL) "50"
 
 #set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0
 
-#Core worked alone with this, crash at step 15 instead of 11. [ERROR GRT-0167] Invalid 2D tree for net _17248_. It also worked with core and & mem(128) togetther without any crash message
-#set ::env(PL_TARGET_DENSITY) 0.1
-#set ::env(FP_CORE_UTIL) "5"
-#set ::env(CLOCK_PERIOD) "550"
-
-#Memory worked alone with this
-#set ::env(PL_TARGET_DENSITY) 0.3
-#set ::env(FP_CORE_UTIL) "5"
 
 # Maximum layer used for routing is metal 4.
 # This is because this macro will be inserted in a top level (user_project_wrapper) 

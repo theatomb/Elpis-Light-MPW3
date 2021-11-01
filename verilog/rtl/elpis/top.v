@@ -58,22 +58,11 @@ module top
 		.data_to_core_mem(data_to_core_mem)
 	);
 
-	// reg[19:0] dummyAddr;
-	// always@(posedge clk) begin
-	// 	if(reset_chip) begin
-	// 		output_enabled_from_elpis_to_pico <= 1'b0;
-	// 		output_data_from_elpis_to_pico <= 32'b0;
-	// 		core0_to_mem_address <= 20'b0;
-	// 		dummyAddr <= 20'b0;
-	// 	end else begin
-	// 		output_enabled_from_elpis_to_pico <= is_mem_ready;
-	// 		output_data_from_elpis_to_pico <= read_data_from_mem[31:0];
-	// 		core0_to_mem_address <= dummyAddr;
-	// 		dummyAddr <= dummyAddr + 1'b1;
-	// 	end
-	// end
-
 	core #(.CORE_ID(0)) core0(
+		`ifdef USE_POWER_PINS
+			.vccd1 (vccd1),	    // User area 1 1.8V supply
+			.vssd1 (vssd1),	    // User area 1 digital ground
+		`endif
 		.clk(clk),
 		.rst(reset_core),
 		.read_interactive_value(data_out_to_core),
@@ -90,14 +79,6 @@ module top
 		.is_mem_ready(is_mem_ready),
 		.is_mem_req(is_mem_req)
 	);
-
-	//COre without arbiters
-	// assign read_data_from_mem = data_to_core_mem;
-	// assign is_mem_ready = is_loading_memory_into_core;
-	// assign output_enabled_from_elpis_to_pico = is_ready_print_core0;
-	// assign output_data_from_elpis_to_pico = core0_data_print;
-	// assign data_out_to_core = read_value_to_Elpis;
-	// assign read_enable_to_Elpis = is_ready_dataout_core0;
 
 	assign output_data_from_elpis_to_pico = print_output;
 	assign output_enabled_from_elpis_to_pico = print_hex_enable;
@@ -121,27 +102,5 @@ module top
 		.print_output(print_output),
 		.is_ready_core0(is_ready_print_core0)
 	);
-
-	//COre with arbiters
-	// assign read_data_from_mem = data_to_core_mem;
-	// assign is_mem_ready = is_loading_memory_into_core;
-
-	// Mem with arbiters
-	// reg[19:0] dummyAddr;
-	// always@(posedge clk) begin
-	// 	if(reset_chip) begin
-	// 		req_out_core0 <= 1'b0;
-	// 		core0_data_print <= 32'b0;
-	// 		core0_to_mem_address <= 20'b0;
-	// 		dummyAddr <= 20'b0;
-	// 	end else begin
-	// 		req_out_core0 <= is_mem_ready;
-	// 		core0_data_print <= read_data_from_mem[31:0];
-	// 		core0_to_mem_address <= dummyAddr;
-	// 		dummyAddr <= dummyAddr + 1'b1;
-	// 	end
-	// end
-
-	
 
 endmodule
