@@ -15,11 +15,11 @@
 
 set script_dir [file dirname [file normalize [info script]]]
 
-set ::env(DESIGN_NAME) io_output_arbiter
+set ::env(DESIGN_NAME) sram_wrapper
 
 set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/elpis/definitions.v \
-	$script_dir/../../verilog/rtl/elpis/IO_arbiter.v"
+	$script_dir/../../verilog/rtl/elpis/sram_wrapper.v"
 
 
 set ::env(DESIGN_IS_CORE) 0
@@ -29,24 +29,15 @@ set ::env(CLOCK_NET) "clk"
 set ::env(CLOCK_PERIOD) "50"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 75 75"
+set ::env(DIE_AREA) "0 0 180 180"
 
-set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 # set ::env(PL_BASIC_PLACEMENT) 1
-set ::env(PL_TARGET_DENSITY) 0.35
+set ::env(PL_TARGET_DENSITY) 0.3
 set ::env(FP_CORE_UTIL) "50"
 
 #set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0
 
-#Core worked alone with this, crash at step 15 instead of 11. [ERROR GRT-0167] Invalid 2D tree for net _17248_. It also worked with core and & mem(128) togetther without any crash message
-#set ::env(PL_TARGET_DENSITY) 0.1
-#set ::env(FP_CORE_UTIL) "5"
-#set ::env(CLOCK_PERIOD) "550"
-
-#Memory worked alone with this
-#set ::env(PL_TARGET_DENSITY) 0.3
-#set ::env(FP_CORE_UTIL) "5"
 
 # Maximum layer used for routing is metal 4.
 # This is because this macro will be inserted in a top level (user_project_wrapper) 
