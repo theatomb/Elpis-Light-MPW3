@@ -326,18 +326,15 @@ module EX_MEM(input clk, input flush, input stall, input reg_write_enable_in, in
 			sb_is_byte_out <= 0;
 			sb_data_out_out <= 0;
 			is_mov_out <= 0;
-			// if (rm2_in) begin
-			//  	rm2_out <= rm2_in;
-			// 	rm0_out <= rm0_in;
-			// 	rm1_out <= rm1_in;
-			// end else begin
-			//  	rm2_out <= exc_code_in;
-			// 	rm0_out <= rm0_in;
-			// 	rm1_out <= 0;
-			// end
-			rm2_out <= (rm2_in) ? rm2_in : exc_code_in;
-			rm0_out <= (rm2_in) ? rm0_in : rm0_in;
-			rm1_out <= (rm2_in) ? rm1_in : 0;
+			if (rm2_in) begin
+			 	rm2_out <= rm2_in;
+				rm0_out <= rm0_in;
+				rm1_out <= rm1_in;
+			end else begin
+			 	rm2_out <= exc_code_in;
+				rm0_out <= rm0_in;
+				rm1_out <= 0;
+			end
 			psw_out <= psw_in;
 			was_stall_dcache_out <= 0;
 			sb_data_to_cache_out <= 0;
@@ -593,3 +590,5 @@ module MEM_WB(input clk, input flush, input stall, input[4:0] reg_dest_in, input
 	end
 
 endmodule
+
+

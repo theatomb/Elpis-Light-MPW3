@@ -80,6 +80,9 @@ module decoder(
 							`FUNCT7_OP_SUB: begin
 								op_alu = `ALU_OP_SUB;
 							end
+							`FUNCT7_OP_MUL: begin
+               					op_alu = `ALU_OP_MUL;
+							end
 							default: begin
 								is_illegal = 1;
 								wrd_reg = 0;
@@ -282,3 +285,4 @@ module decoder(
 	end
 	
 endmodule
+

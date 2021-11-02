@@ -21,7 +21,6 @@
     // Assume default net type to be wire because GL netlists don't have the wire definitions
     `default_nettype wire
     `include "gl/user_project_wrapper.v"
-    `include "gl/user_proj_example.v"
 `else
     `include "user_project_wrapper.v"
     `include "elpis/alu.v"
@@ -29,21 +28,19 @@
     `include "elpis/betweenStages.v"
     `include "elpis/branchComparer.v"
     `include "elpis/cache.v"
+    `include "elpis/chip_controller.v"
     `include "elpis/controlunit.v"
     `include "elpis/core.v"
+    `include "elpis/custom_sram.v"
     `include "elpis/datapath.v"
     `include "elpis/decoder.v"
     `include "elpis/definitions.v"
     `include "elpis/forwardingunit.v"
     `include "elpis/hazardDetectionUnit.v"
     `include "elpis/IO_arbiter.v"
-    `include "elpis/memory.v"
-    `include "elpis/sram_32_1024_sky130.v"
     `include "elpis/regfile.v"
     `include "elpis/specialreg.v"
+    `include "elpis/sram_wrapper.v"
     `include "elpis/storebuffer.v"
-    `include "elpis/tlb.v"
-    `include "elpis/top.v"
     `include "elpis/utils.v"
-    `include "user_proj_example.v"
 `endif

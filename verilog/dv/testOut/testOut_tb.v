@@ -49,7 +49,7 @@ module testOut_tb;
 	initial begin
 		$dumpfile("testOut.vcd");
 		$dumpvars(0, testOut_tb);
-
+		// TIP. Increase the first repeat number until it is needed
 		// Repeat cycles of 1000 clock edges as needed to complete testbench
 		repeat (82) begin
 			repeat (1000) @(posedge clock);
@@ -66,6 +66,8 @@ module testOut_tb;
 	end
 
 	initial begin
+
+		// TIP. replace to something like wait(testOut_tb.uut.mprj.core.datapath.regfile.registers[3]=='h5);
 		wait(mprj_io[24:20] == 5'b00000);
 		$display("LA Test 1 started");
 		wait(mprj_io[24:20] == 5'b00010);
@@ -75,6 +77,14 @@ module testOut_tb;
 		#10000;
 		$finish;
 	end
+
+	// TIP. Dumping of first 32 memory addresses. Do something similar with 
+	integer idx;
+	initial begin
+    	for (idx = 0; idx < 32; idx = idx + 1) begin
+			$dumpvars(0, testOut_tb.uut.mprj.custom_sram.mem[idx]);
+		end
+   	end
 
 	initial begin
 		RSTB <= 1'b0;

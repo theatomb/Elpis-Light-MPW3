@@ -273,9 +273,7 @@ module datapath #(parameter CORE_ID=0) (
 		.addr_b(id_reg_src2_addr),
 		.addr_d(wb_or_hf_addr_to_reg),
 		.a(id_reg_a_content),
-		.b(id_reg_b_content),
-		.dest_read(id_reg_dest_addr),
-		.dest_value(id_reg_dest_value)
+		.b(id_reg_b_content)
 	);
 	
 	specialreg specialreg(

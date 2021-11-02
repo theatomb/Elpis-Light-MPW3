@@ -19,7 +19,7 @@
 `define PC_INITIAL 32'h00000000
 
 // PC Exceptions
-`define PC_EXCEPTIONS 32'h00002000
+`define PC_EXCEPTIONS 32'h00000040
 
 // ALU Opcodes
 `define ALU_OP_ADD 			4'b0000
@@ -31,6 +31,8 @@
 `define ALU_OP_SRA 			4'b0110
 `define ALU_OP_SRL 			4'b0111
 `define ALU_OP_SLL 			4'b1000
+`define ALU_OP_MUL 			4'b1001
+
 
 // Decode constants for move instructions
 `define MOV_RM_TO_REGULAR	2'b01
@@ -88,7 +90,7 @@
 
 // Constants for memory
 `define MEMORY_DELAY_CYCLES	5
-`define MEMORY_SIZE		512  		// 2^20 - 2^5 = 2^15.
+`define MEMORY_SIZE		8192  		// 2^20 - 2^5 = 2^15.
 
 // Constants for cache
 `define CACHE_LINE_SIZE		128
@@ -131,8 +133,8 @@
 `define OFFSET_OS_DATA_CORE0 8'h00
 
 // Constants for TLB
-`define ITLB_BASE_ADDRESS_SHIFT_CORE0  	16'h1000	// 1024
-`define DTLB_BASE_ADDRESS_SHIFT_CORE0  	16'h4000	// 4096
+`define ITLB_BASE_ADDRESS_SHIFT_CORE0  	16'h100	// 256 -> 64
+`define DTLB_BASE_ADDRESS_SHIFT_CORE0  	16'h400	// 1024 -> 256
 `define NUM_TLB_LINES           		5'd16
 
 // Constants for History File
@@ -160,4 +162,3 @@
 	(x <= 2048)		? 11 : \
 	(x <= 4096)		? 12 : \
 	(x <= 8192)		? 13 : )
-

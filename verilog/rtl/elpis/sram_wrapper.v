@@ -9,7 +9,11 @@
 * use. Full text of both licenses can be found in LICENSE file.
 */
 
-`include "definitions.v"
+`ifdef TESTS
+	`include "elpis/definitions.v"
+`else
+    `include "/project/openlane/user_proj_example/../../verilog/rtl/elpis/definitions.v"
+`endif
 
 module sram_wrapper
 	(
@@ -41,7 +45,6 @@ module sram_wrapper
 	reg[19:0] addr_to_sram;
 	reg[31:0] data_to_sram;
 
-	wire[19:0] addr_output_mem;
 	wire[7:0] first_bit_out_current;
 	reg[7:0] first_bit_out_previous;
 	reg[31:0] auxiliar_mem_out;
@@ -55,8 +58,6 @@ module sram_wrapper
 	reg[$clog2(`MEMORY_DELAY_CYCLES):0] cycles;
 	
 	assign ready = cycles == 0;
-
-	assign addr_output_mem = addr_in + (cycles % 3'd4);
 	assign first_bit_out_current = 6'd32 * (cycles % 3'd4);
 
 	always@(posedge clk) begin
@@ -88,6 +89,9 @@ module sram_wrapper
 			end else if (cycles == 1) begin
 				data_to_sram <= wr_data[127:96];
 				we_to_sram <= 1'b0;
+			end else begin
+				data_to_sram <= 32'b0;
+				we_to_sram <= 1'b1;
 			end 
 		end else if(is_loading_memory_into_core) begin
 			data_to_sram <= data_to_core_mem;
@@ -97,8 +101,20 @@ module sram_wrapper
 			we_to_sram <= 1'b1;
 		end
 
-		if(!is_loading_memory_into_core) begin
+		if(!is_loading_memory_into_core && !we) begin
 			addr_to_sram <= addr_in + (cycles % 3'd4);
+		end else if(we && requested && !is_loading_memory_into_core) begin
+			if(cycles == 4) begin
+				addr_to_sram <= addr_in;
+			end else if (cycles == 3) begin
+				addr_to_sram <= addr_in + 1'b1;
+			end else if (cycles == 2) begin
+				addr_to_sram <= addr_in + 2'd2;
+			end else if (cycles == 1) begin
+				addr_to_sram <= addr_in + 2'd3;
+			end else begin
+				addr_to_sram <= addr_in;
+			end
 		end else begin
 			addr_to_sram <= addr_to_core_mem;
 		end

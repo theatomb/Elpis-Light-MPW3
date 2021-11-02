@@ -23,22 +23,19 @@ module cache #(parameter CORE_ID = 0, parameter CACHE_TYPE = `CACHE_TYPE_ICACHE)
 	output reg[31:0] read_data_out, output reg hit_out, output reg[19:0] mem_addr_out, output reg[127:0] mem_data_out, output reg req_mem, output reg mem_we_out,
 	output reg hit_tlb, output reg exc_protected_page_tlb);
 
-	wire is_hit_tlb, is_tlb_we, is_tlb_re, is_exc_protected_page_tlb;
+	wire is_hit_tlb, is_exc_protected_page_tlb;
 	wire[19:0] phys_addr_out;
 
 	always@(*) begin
 		hit_tlb <= is_hit_tlb;
 		exc_protected_page_tlb <= (tlb_we && !privilege_mode) ? 1'b1 : 1'b0;
 	end
-	
-	assign is_tlb_we = tlb_we;
-	assign is_tlb_re = tlb_re;
 
 	assign is_hit_tlb = 1'b1;
 	wire[19:0] i_address_candidate = `ITLB_BASE_ADDRESS_SHIFT_CORE0 + address_in[19:0];
 	wire[19:0] d_address_candidate = `DTLB_BASE_ADDRESS_SHIFT_CORE0 + address_in[19:0];
 	assign phys_addr_out = privilege_mode ? address_in[19:0] : ( (CACHE_TYPE == `CACHE_TYPE_DCACHE) ? d_address_candidate : i_address_candidate);
-	
+
 	reg[0:0] cacheValidBits[0:`NUM_CACHE_LINES-1];
 	reg[0:0] cacheDirtyBits[0:`NUM_CACHE_LINES-1];
 	reg[`CACHE_TAG_SIZE-1:0] cacheTag[0:`NUM_CACHE_LINES-1];

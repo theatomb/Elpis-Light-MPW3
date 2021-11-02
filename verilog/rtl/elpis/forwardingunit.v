@@ -69,5 +69,3 @@ module forwardingunit_st(
 	end
 
 endmodule
-  
-  

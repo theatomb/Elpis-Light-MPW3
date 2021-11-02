@@ -42,27 +42,42 @@ module top
 	wire[127:0] read_data_from_mem, core0_to_mem_data;
 	wire is_mem_req;
 
-	// memory module
-	memory #(.MEMORY_FILE(MEMORY_FILE)) memory(
+	wire we_to_sram, csb0_to_sram, spare_wen0_to_sram;
+	wire[19:0] addr0_to_sram;
+	wire[31:0] din0_to_sram, dout0_to_sram;
+
+	custom_sram custom_sram(
+		.clk(clk),
+		.q(dout0_to_sram),
+		.a(addr0_to_sram),
+		.d(din0_to_sram),
+		.we(we_to_sram),
+		.csb0_to_sram(csb0_to_sram),
+		.spare_wen0_to_sram(spare_wen0_to_sram)
+	);
+
+	sram_wrapper sram_wrapper(
 		.clk(clk),
 		.reset(reset_chip),
 		.we(core0_is_mem_we),
 		.addr_in(core0_to_mem_address),
-		.wr_data(core0_to_mem_data), 
+		.wr_data(core0_to_mem_data),
 		.requested(is_mem_req),
 		.reset_mem_req(core0_need_reset_mem_req),
+    	.is_loading_memory_into_core(is_loading_memory_into_core),
+		.addr_to_core_mem(addr_to_core_mem),
+		.data_to_core_mem(data_to_core_mem),
 		.rd_data_out(read_data_from_mem),
 		.ready(is_mem_ready),
-		.is_loading_memory_into_core(is_loading_memory_into_core),
-		.addr_to_core_mem(addr_to_core_mem),
-		.data_to_core_mem(data_to_core_mem)
+	 	.we_to_sram(we_to_sram),
+    	.csb0_to_sram(csb0_to_sram),
+    	.spare_wen0_to_sram(spare_wen0_to_sram),
+    	.addr0_to_sram(addr0_to_sram),
+    	.din0_to_sram(din0_to_sram), 
+    	.dout0_to_sram(dout0_to_sram)
 	);
 
 	core #(.CORE_ID(0)) core0(
-		`ifdef USE_POWER_PINS
-			.vccd1 (vccd1),	    // User area 1 1.8V supply
-			.vssd1 (vssd1),	    // User area 1 digital ground
-		`endif
 		.clk(clk),
 		.rst(reset_core),
 		.read_interactive_value(data_out_to_core),

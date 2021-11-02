@@ -29,7 +29,7 @@ set ::env(CLOCK_NET) "clk"
 set ::env(CLOCK_PERIOD) "50"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 180 180"
+set ::env(DIE_AREA) "0 0 200 200"
 
 
 # set ::env(PL_BASIC_PLACEMENT) 1

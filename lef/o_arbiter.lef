@@ -12,7 +12,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 1.470 0.000 1.750 4.000 ;
+        RECT 1.930 0.000 2.210 4.000 ;
     END
   END clk
   PIN data_core0[0]
@@ -20,7 +20,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 18.950 0.000 19.230 4.000 ;
+        RECT 2.850 71.000 3.130 75.000 ;
     END
   END data_core0[0]
   PIN data_core0[10]
@@ -28,7 +28,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 29.960 4.000 30.560 ;
+        RECT 0.000 16.360 4.000 16.960 ;
     END
   END data_core0[10]
   PIN data_core0[11]
@@ -36,7 +36,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 39.480 4.000 40.080 ;
+        RECT 71.000 32.680 75.000 33.280 ;
     END
   END data_core0[11]
   PIN data_core0[12]
@@ -44,15 +44,15 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 36.890 0.000 37.170 4.000 ;
+        RECT 25.850 71.000 26.130 75.000 ;
     END
   END data_core0[12]
   PIN data_core0[13]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 22.630 71.000 22.910 75.000 ;
+      LAYER met3 ;
+        RECT 0.000 23.840 4.000 24.440 ;
     END
   END data_core0[13]
   PIN data_core0[14]
@@ -60,7 +60,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 40.570 0.000 40.850 4.000 ;
+        RECT 41.030 0.000 41.310 4.000 ;
     END
   END data_core0[14]
   PIN data_core0[15]
@@ -68,23 +68,23 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 30.910 71.000 31.190 75.000 ;
+        RECT 31.370 71.000 31.650 75.000 ;
     END
   END data_core0[15]
   PIN data_core0[16]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 71.000 34.040 75.000 34.640 ;
+      LAYER met2 ;
+        RECT 45.170 0.000 45.450 4.000 ;
     END
   END data_core0[16]
   PIN data_core0[17]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 47.470 0.000 47.750 4.000 ;
+      LAYER met3 ;
+        RECT 0.000 34.720 4.000 35.320 ;
     END
   END data_core0[17]
   PIN data_core0[18]
@@ -92,7 +92,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 71.000 44.240 75.000 44.840 ;
+        RECT 0.000 38.800 4.000 39.400 ;
     END
   END data_core0[18]
   PIN data_core0[19]
@@ -100,7 +100,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 35.050 71.000 35.330 75.000 ;
+        RECT 48.850 71.000 49.130 75.000 ;
     END
   END data_core0[19]
   PIN data_core0[1]
@@ -108,15 +108,15 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 71.000 2.080 75.000 2.680 ;
+        RECT 0.000 1.400 4.000 2.000 ;
     END
   END data_core0[1]
   PIN data_core0[20]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 51.150 0.000 51.430 4.000 ;
+      LAYER met3 ;
+        RECT 0.000 42.200 4.000 42.800 ;
     END
   END data_core0[20]
   PIN data_core0[21]
@@ -124,7 +124,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 71.000 49.680 75.000 50.280 ;
+        RECT 0.000 49.680 4.000 50.280 ;
     END
   END data_core0[21]
   PIN data_core0[22]
@@ -132,23 +132,23 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 47.470 71.000 47.750 75.000 ;
+        RECT 52.990 0.000 53.270 4.000 ;
     END
   END data_core0[22]
   PIN data_core0[23]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 61.730 0.000 62.010 4.000 ;
+      LAYER met3 ;
+        RECT 0.000 61.240 4.000 61.840 ;
     END
   END data_core0[23]
   PIN data_core0[24]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 65.410 0.000 65.690 4.000 ;
+      LAYER met3 ;
+        RECT 71.000 59.200 75.000 59.800 ;
     END
   END data_core0[24]
   PIN data_core0[25]
@@ -156,7 +156,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 57.840 4.000 58.440 ;
+        RECT 71.000 68.040 75.000 68.640 ;
     END
   END data_core0[25]
   PIN data_core0[26]
@@ -164,7 +164,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 71.000 60.560 75.000 61.160 ;
+        RECT 71.000 72.120 75.000 72.720 ;
     END
   END data_core0[26]
   PIN data_core0[27]
@@ -172,23 +172,23 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 69.090 0.000 69.370 4.000 ;
+        RECT 60.810 0.000 61.090 4.000 ;
     END
   END data_core0[27]
   PIN data_core0[28]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 67.360 4.000 67.960 ;
+      LAYER met2 ;
+        RECT 64.950 0.000 65.230 4.000 ;
     END
   END data_core0[28]
   PIN data_core0[29]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 64.030 71.000 64.310 75.000 ;
+      LAYER met3 ;
+        RECT 0.000 68.720 4.000 69.320 ;
     END
   END data_core0[29]
   PIN data_core0[2]
@@ -196,39 +196,39 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 1.930 71.000 2.210 75.000 ;
+        RECT 8.370 71.000 8.650 75.000 ;
     END
   END data_core0[2]
   PIN data_core0[30]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 71.000 71.440 75.000 72.040 ;
+      LAYER met2 ;
+        RECT 68.630 0.000 68.910 4.000 ;
     END
   END data_core0[30]
   PIN data_core0[31]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 72.310 71.000 72.590 75.000 ;
+      LAYER met3 ;
+        RECT 0.000 72.120 4.000 72.720 ;
     END
   END data_core0[31]
   PIN data_core0[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 6.070 71.000 6.350 75.000 ;
+      LAYER met3 ;
+        RECT 71.000 6.160 75.000 6.760 ;
     END
   END data_core0[3]
   PIN data_core0[4]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 6.160 4.000 6.760 ;
+      LAYER met2 ;
+        RECT 14.350 71.000 14.630 75.000 ;
     END
   END data_core0[4]
   PIN data_core0[5]
@@ -236,15 +236,15 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 26.310 0.000 26.590 4.000 ;
+        RECT 25.390 0.000 25.670 4.000 ;
     END
   END data_core0[5]
   PIN data_core0[6]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 71.000 12.280 75.000 12.880 ;
+      LAYER met2 ;
+        RECT 33.210 0.000 33.490 4.000 ;
     END
   END data_core0[6]
   PIN data_core0[7]
@@ -252,15 +252,15 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 20.440 4.000 21.040 ;
+        RECT 71.000 15.000 75.000 15.600 ;
     END
   END data_core0[7]
   PIN data_core0[8]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 29.990 0.000 30.270 4.000 ;
+      LAYER met3 ;
+        RECT 0.000 12.280 4.000 12.880 ;
     END
   END data_core0[8]
   PIN data_core0[9]
@@ -268,7 +268,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 71.000 23.160 75.000 23.760 ;
+        RECT 71.000 27.920 75.000 28.520 ;
     END
   END data_core0[9]
   PIN is_ready_core0
@@ -276,7 +276,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 15.730 0.000 16.010 4.000 ;
+        RECT 17.570 0.000 17.850 4.000 ;
     END
   END is_ready_core0
   PIN print_hex_enable
@@ -284,7 +284,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 12.050 0.000 12.330 4.000 ;
+        RECT 13.430 0.000 13.710 4.000 ;
     END
   END print_hex_enable
   PIN print_output[0]
@@ -292,7 +292,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 22.630 0.000 22.910 4.000 ;
+        RECT 21.250 0.000 21.530 4.000 ;
     END
   END print_output[0]
   PIN print_output[10]
@@ -300,7 +300,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 34.720 4.000 35.320 ;
+        RECT 0.000 19.760 4.000 20.360 ;
     END
   END print_output[10]
   PIN print_output[11]
@@ -308,23 +308,23 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 43.560 4.000 44.160 ;
+        RECT 71.000 36.760 75.000 37.360 ;
     END
   END print_output[11]
   PIN print_output[12]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 18.490 71.000 18.770 75.000 ;
+      LAYER met3 ;
+        RECT 71.000 41.520 75.000 42.120 ;
     END
   END print_output[12]
   PIN print_output[13]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 26.770 71.000 27.050 75.000 ;
+      LAYER met3 ;
+        RECT 0.000 27.240 4.000 27.840 ;
     END
   END print_output[13]
   PIN print_output[14]
@@ -332,7 +332,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 48.320 4.000 48.920 ;
+        RECT 0.000 31.320 4.000 31.920 ;
     END
   END print_output[14]
   PIN print_output[15]
@@ -340,7 +340,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 71.000 28.600 75.000 29.200 ;
+        RECT 71.000 45.600 75.000 46.200 ;
     END
   END print_output[15]
   PIN print_output[16]
@@ -348,31 +348,31 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 44.250 0.000 44.530 4.000 ;
+        RECT 37.350 71.000 37.630 75.000 ;
     END
   END print_output[16]
   PIN print_output[17]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 71.000 39.480 75.000 40.080 ;
+      LAYER met2 ;
+        RECT 42.870 71.000 43.150 75.000 ;
     END
   END print_output[17]
   PIN print_output[18]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 53.080 4.000 53.680 ;
+      LAYER met2 ;
+        RECT 48.850 0.000 49.130 4.000 ;
     END
   END print_output[18]
   PIN print_output[19]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 39.190 71.000 39.470 75.000 ;
+      LAYER met3 ;
+        RECT 71.000 50.360 75.000 50.960 ;
     END
   END print_output[19]
   PIN print_output[1]
@@ -380,39 +380,39 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 2.080 4.000 2.680 ;
+        RECT 0.000 4.800 4.000 5.400 ;
     END
   END print_output[1]
   PIN print_output[20]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 54.830 0.000 55.110 4.000 ;
+      LAYER met3 ;
+        RECT 0.000 46.280 4.000 46.880 ;
     END
   END print_output[20]
   PIN print_output[21]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 43.330 71.000 43.610 75.000 ;
+      LAYER met3 ;
+        RECT 0.000 53.760 4.000 54.360 ;
     END
   END print_output[21]
   PIN print_output[22]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 58.510 0.000 58.790 4.000 ;
+      LAYER met3 ;
+        RECT 0.000 57.160 4.000 57.760 ;
     END
   END print_output[22]
   PIN print_output[23]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 51.610 71.000 51.890 75.000 ;
+      LAYER met3 ;
+        RECT 71.000 54.440 75.000 55.040 ;
     END
   END print_output[23]
   PIN print_output[24]
@@ -420,7 +420,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 71.000 55.120 75.000 55.720 ;
+        RECT 71.000 63.280 75.000 63.880 ;
     END
   END print_output[24]
   PIN print_output[25]
@@ -428,7 +428,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 62.600 4.000 63.200 ;
+        RECT 0.000 64.640 4.000 65.240 ;
     END
   END print_output[25]
   PIN print_output[26]
@@ -436,7 +436,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 55.750 71.000 56.030 75.000 ;
+        RECT 57.130 0.000 57.410 4.000 ;
     END
   END print_output[26]
   PIN print_output[27]
@@ -444,15 +444,15 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 59.890 71.000 60.170 75.000 ;
+        RECT 54.370 71.000 54.650 75.000 ;
     END
   END print_output[27]
   PIN print_output[28]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 71.000 66.000 75.000 66.600 ;
+      LAYER met2 ;
+        RECT 60.350 71.000 60.630 75.000 ;
     END
   END print_output[28]
   PIN print_output[29]
@@ -460,7 +460,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 68.170 71.000 68.450 75.000 ;
+        RECT 65.870 71.000 66.150 75.000 ;
     END
   END print_output[29]
   PIN print_output[2]
@@ -468,7 +468,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 71.000 6.840 75.000 7.440 ;
+        RECT 71.000 2.080 75.000 2.680 ;
     END
   END print_output[2]
   PIN print_output[30]
@@ -476,31 +476,31 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 72.770 0.000 73.050 4.000 ;
+        RECT 71.850 71.000 72.130 75.000 ;
     END
   END print_output[30]
   PIN print_output[31]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 72.120 4.000 72.720 ;
+      LAYER met2 ;
+        RECT 72.770 0.000 73.050 4.000 ;
     END
   END print_output[31]
   PIN print_output[3]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 10.210 71.000 10.490 75.000 ;
+      LAYER met3 ;
+        RECT 0.000 8.880 4.000 9.480 ;
     END
   END print_output[3]
   PIN print_output[4]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 10.920 4.000 11.520 ;
+      LAYER met2 ;
+        RECT 19.870 71.000 20.150 75.000 ;
     END
   END print_output[4]
   PIN print_output[5]
@@ -508,7 +508,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 14.350 71.000 14.630 75.000 ;
+        RECT 29.530 0.000 29.810 4.000 ;
     END
   END print_output[5]
   PIN print_output[6]
@@ -516,7 +516,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 15.680 4.000 16.280 ;
+        RECT 71.000 10.240 75.000 10.840 ;
     END
   END print_output[6]
   PIN print_output[7]
@@ -524,23 +524,23 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 71.000 17.720 75.000 18.320 ;
+        RECT 71.000 19.080 75.000 19.680 ;
     END
   END print_output[7]
   PIN print_output[8]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 33.210 0.000 33.490 4.000 ;
+      LAYER met3 ;
+        RECT 71.000 23.840 75.000 24.440 ;
     END
   END print_output[8]
   PIN print_output[9]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 25.200 4.000 25.800 ;
+      LAYER met2 ;
+        RECT 37.350 0.000 37.630 4.000 ;
     END
   END print_output[9]
   PIN req_core0
@@ -548,7 +548,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 8.370 0.000 8.650 4.000 ;
+        RECT 9.750 0.000 10.030 4.000 ;
     END
   END req_core0
   PIN reset
@@ -556,7 +556,7 @@ MACRO io_output_arbiter
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 4.690 0.000 4.970 4.000 ;
+        RECT 5.610 0.000 5.890 4.000 ;
     END
   END reset
   PIN vccd1
@@ -589,106 +589,113 @@ MACRO io_output_arbiter
   END vssd1
   OBS
       LAYER li1 ;
-        RECT 5.520 2.465 71.155 62.645 ;
+        RECT 5.520 2.465 71.155 68.255 ;
       LAYER met1 ;
-        RECT 1.450 2.420 73.070 62.800 ;
+        RECT 1.910 2.420 73.070 68.300 ;
       LAYER met2 ;
-        RECT 1.480 70.720 1.650 71.925 ;
-        RECT 2.490 70.720 5.790 71.925 ;
-        RECT 6.630 70.720 9.930 71.925 ;
-        RECT 10.770 70.720 14.070 71.925 ;
-        RECT 14.910 70.720 18.210 71.925 ;
-        RECT 19.050 70.720 22.350 71.925 ;
-        RECT 23.190 70.720 26.490 71.925 ;
-        RECT 27.330 70.720 30.630 71.925 ;
-        RECT 31.470 70.720 34.770 71.925 ;
-        RECT 35.610 70.720 38.910 71.925 ;
-        RECT 39.750 70.720 43.050 71.925 ;
-        RECT 43.890 70.720 47.190 71.925 ;
-        RECT 48.030 70.720 51.330 71.925 ;
-        RECT 52.170 70.720 55.470 71.925 ;
-        RECT 56.310 70.720 59.610 71.925 ;
-        RECT 60.450 70.720 63.750 71.925 ;
-        RECT 64.590 70.720 67.890 71.925 ;
-        RECT 68.730 70.720 72.030 71.925 ;
-        RECT 72.870 70.720 73.040 71.925 ;
-        RECT 1.480 4.280 73.040 70.720 ;
-        RECT 2.030 2.195 4.410 4.280 ;
-        RECT 5.250 2.195 8.090 4.280 ;
-        RECT 8.930 2.195 11.770 4.280 ;
-        RECT 12.610 2.195 15.450 4.280 ;
-        RECT 16.290 2.195 18.670 4.280 ;
-        RECT 19.510 2.195 22.350 4.280 ;
-        RECT 23.190 2.195 26.030 4.280 ;
-        RECT 26.870 2.195 29.710 4.280 ;
-        RECT 30.550 2.195 32.930 4.280 ;
-        RECT 33.770 2.195 36.610 4.280 ;
-        RECT 37.450 2.195 40.290 4.280 ;
-        RECT 41.130 2.195 43.970 4.280 ;
-        RECT 44.810 2.195 47.190 4.280 ;
-        RECT 48.030 2.195 50.870 4.280 ;
-        RECT 51.710 2.195 54.550 4.280 ;
-        RECT 55.390 2.195 58.230 4.280 ;
-        RECT 59.070 2.195 61.450 4.280 ;
-        RECT 62.290 2.195 65.130 4.280 ;
-        RECT 65.970 2.195 68.810 4.280 ;
-        RECT 69.650 2.195 72.490 4.280 ;
+        RECT 1.940 70.720 2.570 72.605 ;
+        RECT 3.410 70.720 8.090 72.605 ;
+        RECT 8.930 70.720 14.070 72.605 ;
+        RECT 14.910 70.720 19.590 72.605 ;
+        RECT 20.430 70.720 25.570 72.605 ;
+        RECT 26.410 70.720 31.090 72.605 ;
+        RECT 31.930 70.720 37.070 72.605 ;
+        RECT 37.910 70.720 42.590 72.605 ;
+        RECT 43.430 70.720 48.570 72.605 ;
+        RECT 49.410 70.720 54.090 72.605 ;
+        RECT 54.930 70.720 60.070 72.605 ;
+        RECT 60.910 70.720 65.590 72.605 ;
+        RECT 66.430 70.720 71.570 72.605 ;
+        RECT 72.410 70.720 73.040 72.605 ;
+        RECT 1.940 4.280 73.040 70.720 ;
+        RECT 2.490 1.515 5.330 4.280 ;
+        RECT 6.170 1.515 9.470 4.280 ;
+        RECT 10.310 1.515 13.150 4.280 ;
+        RECT 13.990 1.515 17.290 4.280 ;
+        RECT 18.130 1.515 20.970 4.280 ;
+        RECT 21.810 1.515 25.110 4.280 ;
+        RECT 25.950 1.515 29.250 4.280 ;
+        RECT 30.090 1.515 32.930 4.280 ;
+        RECT 33.770 1.515 37.070 4.280 ;
+        RECT 37.910 1.515 40.750 4.280 ;
+        RECT 41.590 1.515 44.890 4.280 ;
+        RECT 45.730 1.515 48.570 4.280 ;
+        RECT 49.410 1.515 52.710 4.280 ;
+        RECT 53.550 1.515 56.850 4.280 ;
+        RECT 57.690 1.515 60.530 4.280 ;
+        RECT 61.370 1.515 64.670 4.280 ;
+        RECT 65.510 1.515 68.350 4.280 ;
+        RECT 69.190 1.515 72.490 4.280 ;
       LAYER met3 ;
-        RECT 4.400 72.440 71.000 72.570 ;
-        RECT 4.400 71.720 70.600 72.440 ;
-        RECT 4.000 71.040 70.600 71.720 ;
-        RECT 4.000 68.360 71.000 71.040 ;
-        RECT 4.400 67.000 71.000 68.360 ;
-        RECT 4.400 66.960 70.600 67.000 ;
-        RECT 4.000 65.600 70.600 66.960 ;
-        RECT 4.000 63.600 71.000 65.600 ;
-        RECT 4.400 62.200 71.000 63.600 ;
-        RECT 4.000 61.560 71.000 62.200 ;
-        RECT 4.000 60.160 70.600 61.560 ;
-        RECT 4.000 58.840 71.000 60.160 ;
-        RECT 4.400 57.440 71.000 58.840 ;
-        RECT 4.000 56.120 71.000 57.440 ;
-        RECT 4.000 54.720 70.600 56.120 ;
-        RECT 4.000 54.080 71.000 54.720 ;
-        RECT 4.400 52.680 71.000 54.080 ;
-        RECT 4.000 50.680 71.000 52.680 ;
-        RECT 4.000 49.320 70.600 50.680 ;
-        RECT 4.400 49.280 70.600 49.320 ;
-        RECT 4.400 47.920 71.000 49.280 ;
-        RECT 4.000 45.240 71.000 47.920 ;
-        RECT 4.000 44.560 70.600 45.240 ;
-        RECT 4.400 43.840 70.600 44.560 ;
-        RECT 4.400 43.160 71.000 43.840 ;
-        RECT 4.000 40.480 71.000 43.160 ;
-        RECT 4.400 39.080 70.600 40.480 ;
-        RECT 4.000 35.720 71.000 39.080 ;
-        RECT 4.400 35.040 71.000 35.720 ;
-        RECT 4.400 34.320 70.600 35.040 ;
-        RECT 4.000 33.640 70.600 34.320 ;
-        RECT 4.000 30.960 71.000 33.640 ;
-        RECT 4.400 29.600 71.000 30.960 ;
-        RECT 4.400 29.560 70.600 29.600 ;
-        RECT 4.000 28.200 70.600 29.560 ;
-        RECT 4.000 26.200 71.000 28.200 ;
-        RECT 4.400 24.800 71.000 26.200 ;
-        RECT 4.000 24.160 71.000 24.800 ;
-        RECT 4.000 22.760 70.600 24.160 ;
-        RECT 4.000 21.440 71.000 22.760 ;
-        RECT 4.400 20.040 71.000 21.440 ;
-        RECT 4.000 18.720 71.000 20.040 ;
-        RECT 4.000 17.320 70.600 18.720 ;
-        RECT 4.000 16.680 71.000 17.320 ;
-        RECT 4.400 15.280 71.000 16.680 ;
-        RECT 4.000 13.280 71.000 15.280 ;
-        RECT 4.000 11.920 70.600 13.280 ;
-        RECT 4.400 11.880 70.600 11.920 ;
-        RECT 4.400 10.520 71.000 11.880 ;
-        RECT 4.000 7.840 71.000 10.520 ;
-        RECT 4.000 7.160 70.600 7.840 ;
-        RECT 4.400 6.440 70.600 7.160 ;
-        RECT 4.400 5.760 71.000 6.440 ;
-        RECT 4.000 3.080 71.000 5.760 ;
-        RECT 4.400 2.215 70.600 3.080 ;
+        RECT 4.400 71.720 70.600 72.585 ;
+        RECT 4.000 69.720 71.000 71.720 ;
+        RECT 4.400 69.040 71.000 69.720 ;
+        RECT 4.400 68.320 70.600 69.040 ;
+        RECT 4.000 67.640 70.600 68.320 ;
+        RECT 4.000 65.640 71.000 67.640 ;
+        RECT 4.400 64.280 71.000 65.640 ;
+        RECT 4.400 64.240 70.600 64.280 ;
+        RECT 4.000 62.880 70.600 64.240 ;
+        RECT 4.000 62.240 71.000 62.880 ;
+        RECT 4.400 60.840 71.000 62.240 ;
+        RECT 4.000 60.200 71.000 60.840 ;
+        RECT 4.000 58.800 70.600 60.200 ;
+        RECT 4.000 58.160 71.000 58.800 ;
+        RECT 4.400 56.760 71.000 58.160 ;
+        RECT 4.000 55.440 71.000 56.760 ;
+        RECT 4.000 54.760 70.600 55.440 ;
+        RECT 4.400 54.040 70.600 54.760 ;
+        RECT 4.400 53.360 71.000 54.040 ;
+        RECT 4.000 51.360 71.000 53.360 ;
+        RECT 4.000 50.680 70.600 51.360 ;
+        RECT 4.400 49.960 70.600 50.680 ;
+        RECT 4.400 49.280 71.000 49.960 ;
+        RECT 4.000 47.280 71.000 49.280 ;
+        RECT 4.400 46.600 71.000 47.280 ;
+        RECT 4.400 45.880 70.600 46.600 ;
+        RECT 4.000 45.200 70.600 45.880 ;
+        RECT 4.000 43.200 71.000 45.200 ;
+        RECT 4.400 42.520 71.000 43.200 ;
+        RECT 4.400 41.800 70.600 42.520 ;
+        RECT 4.000 41.120 70.600 41.800 ;
+        RECT 4.000 39.800 71.000 41.120 ;
+        RECT 4.400 38.400 71.000 39.800 ;
+        RECT 4.000 37.760 71.000 38.400 ;
+        RECT 4.000 36.360 70.600 37.760 ;
+        RECT 4.000 35.720 71.000 36.360 ;
+        RECT 4.400 34.320 71.000 35.720 ;
+        RECT 4.000 33.680 71.000 34.320 ;
+        RECT 4.000 32.320 70.600 33.680 ;
+        RECT 4.400 32.280 70.600 32.320 ;
+        RECT 4.400 30.920 71.000 32.280 ;
+        RECT 4.000 28.920 71.000 30.920 ;
+        RECT 4.000 28.240 70.600 28.920 ;
+        RECT 4.400 27.520 70.600 28.240 ;
+        RECT 4.400 26.840 71.000 27.520 ;
+        RECT 4.000 24.840 71.000 26.840 ;
+        RECT 4.400 23.440 70.600 24.840 ;
+        RECT 4.000 20.760 71.000 23.440 ;
+        RECT 4.400 20.080 71.000 20.760 ;
+        RECT 4.400 19.360 70.600 20.080 ;
+        RECT 4.000 18.680 70.600 19.360 ;
+        RECT 4.000 17.360 71.000 18.680 ;
+        RECT 4.400 16.000 71.000 17.360 ;
+        RECT 4.400 15.960 70.600 16.000 ;
+        RECT 4.000 14.600 70.600 15.960 ;
+        RECT 4.000 13.280 71.000 14.600 ;
+        RECT 4.400 11.880 71.000 13.280 ;
+        RECT 4.000 11.240 71.000 11.880 ;
+        RECT 4.000 9.880 70.600 11.240 ;
+        RECT 4.400 9.840 70.600 9.880 ;
+        RECT 4.400 8.480 71.000 9.840 ;
+        RECT 4.000 7.160 71.000 8.480 ;
+        RECT 4.000 5.800 70.600 7.160 ;
+        RECT 4.400 5.760 70.600 5.800 ;
+        RECT 4.400 4.400 71.000 5.760 ;
+        RECT 4.000 3.080 71.000 4.400 ;
+        RECT 4.000 2.400 70.600 3.080 ;
+        RECT 4.400 1.680 70.600 2.400 ;
+        RECT 4.400 1.535 71.000 1.680 ;
   END
 END io_output_arbiter
 END LIBRARY

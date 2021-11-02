@@ -132,5 +132,3 @@ module io_input_arbiter(
 	end
 
 endmodule
-
-

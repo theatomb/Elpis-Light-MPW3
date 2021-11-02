@@ -25,10 +25,8 @@ module regfile(
 	input[4:0] addr_a,		// source register A
 	input[4:0] addr_b,		// source register B
 	input[4:0] addr_d,		// destination register
-	output[31:0] a,		// read port A
-	output[31:0] b,		// read port B	
-	input[4:0] dest_read,
-	output[31:0] dest_value
+	output reg[31:0] a,		// read port A
+	output reg[31:0] b		// read port B	
 );
 
 	reg[31:0] registers[31:0];
@@ -44,9 +42,9 @@ module regfile(
 		end
 	end
 
-	assign a = registers[addr_a];
-	assign b = registers[addr_b];
-	assign dest_value = registers[dest_read];
+	always@(*) begin
+		a <= registers[addr_a];
+		b <= registers[addr_b];
+	end
 
 endmodule
-

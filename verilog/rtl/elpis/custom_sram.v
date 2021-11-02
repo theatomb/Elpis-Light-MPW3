@@ -34,8 +34,9 @@ module custom_sram(
     reg[31:0] mem[0:`MEMORY_SIZE-1];
 
     always @(posedge clk) begin
-        if (!we)
+        if (!we) begin
             mem[a] <= d;
+        end
         q <= mem[a];
     end 
 

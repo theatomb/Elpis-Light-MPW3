@@ -73,6 +73,11 @@ module alu(
 				 exception_code = 32'b0;
 				 carry = 0;
 			 end
+			 `ALU_OP_MUL: begin
+				 w ={$signed(x)*$signed(y)};
+				 exception_code = 32'b0;
+				 carry = 0;
+			 end
 			 default: begin
 				 w = 32'b0;
 				 exception_code = 32'b0;

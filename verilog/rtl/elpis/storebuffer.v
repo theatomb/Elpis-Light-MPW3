@@ -61,14 +61,12 @@ module storebuffer(
     integer i;
 	always@(*) begin
 		sb_hit = 1'b0;
+		hit_pos = 2'b0;
 		for (i = 0; (i < `SB_NUM_ENTRIES); i=i+1) begin
 			if (sb_valid[i] && (sb_addr[i] <= ld_first_byte) && ( (sb_addr[i] + (sb_size[i] ? 0 : 3'b11) ) >= ld_last_byte) ) begin
 				sb_hit = 1'b1;
 				hit_pos = i[1:0];
 			end
-		end
-		if (!sb_hit) begin
-			hit_pos = 2'b0;
 		end
 	end
 
