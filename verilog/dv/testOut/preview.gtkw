@@ -1,70 +1,64 @@
 [*]
 [*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
-[*] Tue Nov  2 20:01:39 2021
+[*] Wed Nov  3 10:10:43 2021
 [*]
 [dumpfile] "/home/rodhuega/Elpis-Light-MPW3/verilog/dv/testOut/testOut.vcd"
-[dumpfile_mtime] "Tue Nov  2 19:44:44 2021"
-[dumpfile_size] 1741281963
+[dumpfile_mtime] "Wed Nov  3 10:08:00 2021"
+[dumpfile_size] 1739807121
 [savefile] "/home/rodhuega/Elpis-Light-MPW3/verilog/dv/testOut/preview.gtkw"
-[timestart] 585310000
-[size] 1920 976
-[pos] 1641 -12
-*-24.000000 655440000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[timestart] 2049655800
+[size] 2560 1377
+[pos] 2643 -379
+*-15.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] testOut_tb.
 [treeopen] testOut_tb.uut.
 [treeopen] testOut_tb.uut.mprj.
-[sst_width] 233
-[signals_width] 246
+[treeopen] testOut_tb.uut.mprj.core0.
+[treeopen] testOut_tb.uut.mprj.core0.datapath.
+[sst_width] 298
+[signals_width] 190
 [sst_expanded] 1
-[sst_vpaned_height] 275
+[sst_vpaned_height] 425
 @28
-testOut_tb.uut.mprj.sram_wrapper.clk
+testOut_tb.uut.mprj.core0.datapath.clk
 @22
-testOut_tb.uut.mprj.custom_sram.\mem[0][31:0]
-@28
-testOut_tb.uut.mprj.sram_wrapper.is_loading_memory_into_core
-@22
-testOut_tb.uut.mprj.sram_wrapper.addr_to_core_mem[19:0]
-testOut_tb.uut.mprj.sram_wrapper.data_to_core_mem[31:0]
-@28
-testOut_tb.uut.mprj.sram_wrapper.we_to_sram
-@22
-testOut_tb.uut.mprj.custom_sram.\mem[1][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[2][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[3][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[4][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[5][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[6][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[7][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[8][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[9][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[10][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[11][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[12][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[13][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[14][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[15][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[16][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[17][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[18][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[19][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[20][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[21][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[22][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[23][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[24][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[25][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[26][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[27][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[28][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[29][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[30][31:0]
-testOut_tb.uut.mprj.custom_sram.\mem[31][31:0]
-@28
-testOut_tb.uut.mprj.custom_sram.we
-@22
-testOut_tb.uut.mprj.custom_sram.d[31:0]
+testOut_tb.uut.mprj.core0.datapath.pc[31:0]
+testOut_tb.uut.mprj.core0.datapath.f_inst[31:0]
+@200
+-Regfile
 @23
-testOut_tb.uut.mprj.custom_sram.q[31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[0][31:0]
+@22
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[1][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[2][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[3][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[4][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[5][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[6][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[7][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[8][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[9][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[10][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[11][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[12][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[13][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[14][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[15][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[16][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[17][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[18][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[19][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[20][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[21][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[22][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[23][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[24][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[25][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[26][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[27][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[28][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[29][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[30][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[31][31:0]
 [pattern_trace] 1
 [pattern_trace] 0

@@ -197,11 +197,30 @@ void main()
 	OS_ADDR[29] = 0xFFFFFFFF;
 
 	// Elpis user program
+	uint32_t USER_DATA[8];
+	USER_DATA[0] = 0x00002203;
+	USER_DATA[1] = 0x004202B3;
+	USER_DATA[2] = 0x0041E1B3;
+	USER_DATA[3] = 0x00418333;
+	USER_DATA[4] = 0x0041F3B3;
+	USER_DATA[5] = 0x00334433;
+	USER_DATA[6] = 0x00000003;
+	USER_DATA[7] = 0xFFFFFFFF;
+
+	uint32_t USER_ADDR[8];
+	USER_ADDR[0] = 0x00000040;
+	USER_ADDR[1] = 0x00000041;
+	USER_ADDR[2] = 0x00000042;
+	USER_ADDR[3] = 0x00000043;
+	USER_ADDR[4] = 0x00000044;
+	USER_ADDR[5] = 0x00000045;
+	USER_ADDR[6] = 0x00000100;
+	USER_ADDR[7] = 0xFFFFFFFF;
 
 
 	// Loading elpis memory
 	elpis_load_memory(OS_DATA, OS_ADDR);
-
+	elpis_load_memory(USER_DATA, USER_ADDR);
 	
 	reg_la3_oenb = reg_la3_iena = 0xFFFFFFF9; // Recovering fast clock not controlled by the user
 

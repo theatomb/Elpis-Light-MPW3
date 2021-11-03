@@ -79,12 +79,22 @@ module testOut_tb;
 	end
 
 	// TIP. Dumping of first 32 memory addresses. Do something similar with 
-	integer idx;
+	integer i_mem;
 	initial begin
-    	for (idx = 0; idx < 32; idx = idx + 1) begin
-			$dumpvars(0, testOut_tb.uut.mprj.custom_sram.mem[idx]);
+    	for (i_mem = 0; i_mem < 512; i_mem = i_mem + 1) begin
+			$dumpvars(0, testOut_tb.uut.mprj.custom_sram.mem[i_mem]);
 		end
    	end
+
+	integer i_reg;
+	initial begin
+    	for (i_reg = 0; i_reg < 32; i_reg = i_reg + 1) begin
+			$dumpvars(0, testOut_tb.uut.mprj.core0.datapath.regfile.registers[i_reg]);
+		end
+   	end
+	// initial begin
+	// 	$dumpvars(0, testOut_tb.uut.mprj.core0.datapath.regfile.registers[3]);
+	// end
 
 	initial begin
 		RSTB <= 1'b0;

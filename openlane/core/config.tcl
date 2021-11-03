@@ -48,7 +48,7 @@ set ::env(DIE_AREA) "0 0 1500 1500"
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 # set ::env(PL_BASIC_PLACEMENT) 1
-set ::env(PL_TARGET_DENSITY) 0.2
+set ::env(PL_TARGET_DENSITY) 0.24
 set ::env(FP_CORE_UTIL) "50"
 
 #set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0
