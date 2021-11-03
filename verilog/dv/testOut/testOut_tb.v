@@ -73,9 +73,11 @@ module testOut_tb;
 		//wait(mprj_io[24:20] == 5'b00010);
 		//wait(mprj_io[24:20] == 5'b00001);
 		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[3] == 3);
+		$display("%c[1;32m",27);
 		$display("LA Test 1 Finish correctly");
+		$display("%c[0m",27);
 		//wait(checkbits == 16'h0002);
-		#10000;
+		#1;
 		$finish;
 	end
 
