@@ -51,36 +51,42 @@ set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
 ### Black-box verilog and views
 set ::env(VERILOG_FILES_BLACKBOX) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/user_proj_example.v \
 	$script_dir/../../verilog/rtl/elpis/alu.v \
 	$script_dir/../../verilog/rtl/elpis/arbiter.v \
 	$script_dir/../../verilog/rtl/elpis/betweenStages.v \
 	$script_dir/../../verilog/rtl/elpis/branchComparer.v \
 	$script_dir/../../verilog/rtl/elpis/cache.v \
+	$script_dir/../../verilog/rtl/elpis/chip_controller.v \
 	$script_dir/../../verilog/rtl/elpis/controlunit.v \
 	$script_dir/../../verilog/rtl/elpis/core.v \
+	$script_dir/../../verilog/rtl/elpis/custom_sram.v \
 	$script_dir/../../verilog/rtl/elpis/datapath.v \
 	$script_dir/../../verilog/rtl/elpis/decoder.v \
 	$script_dir/../../verilog/rtl/elpis/definitions.v \
-	$script_dir/../../verilog/rtl/elpis/drivers.v \
 	$script_dir/../../verilog/rtl/elpis/forwardingunit.v \
 	$script_dir/../../verilog/rtl/elpis/hazardDetectionUnit.v \
-	$script_dir/../../verilog/rtl/elpis/hf.v \
 	$script_dir/../../verilog/rtl/elpis/IO_arbiter.v \
-	$script_dir/../../verilog/rtl/elpis/memory.v \
-	$script_dir/../../verilog/rtl/elpis/muldiv.v \
 	$script_dir/../../verilog/rtl/elpis/regfile.v \
 	$script_dir/../../verilog/rtl/elpis/specialreg.v \
+	$script_dir/../../verilog/rtl/elpis/sram_wrapper.v \
 	$script_dir/../../verilog/rtl/elpis/storebuffer.v \
-	$script_dir/../../verilog/rtl/elpis/tlb.v \
-	$script_dir/../../verilog/rtl/elpis/top.v \
 	$script_dir/../../verilog/rtl/elpis/utils.v"
 
 set ::env(EXTRA_LEFS) "\
-	$script_dir/../../lef/user_proj_example.lef"
+	$script_dir/../../lef/core.lef \
+	$script_dir/../../lef/sram_wrapper.lef \
+	$script_dir/../../lef/custom_sram.lef \
+	$script_dir/../../lef/i_arbiter.lef \
+	$script_dir/../../lef/o_arbiter.lef \
+	$script_dir/../../lef/chip_controller.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
-	$script_dir/../../gds/user_proj_example.gds"
+	$script_dir/../../gds/core.gds \
+	$script_dir/../../gds/sram_wrapper.gds \
+	$script_dir/../../gds/custom_sram.gds \
+	$script_dir/../../gds/i_arbiter.gds \
+	$script_dir/../../gds/o_arbiter.gds \
+	$script_dir/../../gds/chip_controller.gds"
 
 set ::env(GLB_RT_MAXLAYER) 5
 

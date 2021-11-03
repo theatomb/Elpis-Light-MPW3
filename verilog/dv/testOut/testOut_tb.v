@@ -51,7 +51,7 @@ module testOut_tb;
 		$dumpvars(0, testOut_tb);
 		// TIP. Increase the first repeat number until it is needed
 		// Repeat cycles of 1000 clock edges as needed to complete testbench
-		repeat (82) begin
+		repeat (100) begin
 			repeat (1000) @(posedge clock);
 			// $display("+1000 cycles");
 		end
@@ -68,10 +68,11 @@ module testOut_tb;
 	initial begin
 
 		// TIP. replace to something like wait(testOut_tb.uut.mprj.core.datapath.regfile.registers[3]=='h5);
-		wait(mprj_io[24:20] == 5'b00000);
+		//wait(mprj_io[24:20] == 5'b00000);
 		$display("LA Test 1 started");
-		wait(mprj_io[24:20] == 5'b00010);
-		wait(mprj_io[24:20] == 5'b00001);
+		//wait(mprj_io[24:20] == 5'b00010);
+		//wait(mprj_io[24:20] == 5'b00001);
+		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[3] == 3);
 		$display("LA Test 1 Finish correctly");
 		//wait(checkbits == 16'h0002);
 		#10000;
