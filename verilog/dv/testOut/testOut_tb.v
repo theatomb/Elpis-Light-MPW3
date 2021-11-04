@@ -66,22 +66,21 @@ module testOut_tb;
 	end
 
 	initial begin
-
-		// TIP. replace to something like wait(testOut_tb.uut.mprj.core.datapath.regfile.registers[3]=='h5);
-		//wait(mprj_io[24:20] == 5'b00000);
-		$display("LA Test 1 started");
-		//wait(mprj_io[24:20] == 5'b00010);
-		//wait(mprj_io[24:20] == 5'b00001);
+		$display("Test 1 (Basic Ops) started");
 		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[3] == 3);
+		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[4] == 3);
+		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[5] == 6);
+		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[6] == 6);
+		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[7] == 3);
+		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[8] == 5);
 		$display("%c[1;32m",27);
-		$display("LA Test 1 Finish correctly");
+		$display("Test 1 (Basic Ops) Finished correctly");
 		$display("%c[0m",27);
-		//wait(checkbits == 16'h0002);
 		#1;
 		$finish;
 	end
 
-	// TIP. Dumping of first 32 memory addresses. Do something similar with 
+	// TIP. Dumping of memory addresses. Do something similar with registers
 	integer i_mem;
 	initial begin
     	for (i_mem = 0; i_mem < 512; i_mem = i_mem + 1) begin
@@ -95,9 +94,6 @@ module testOut_tb;
 			$dumpvars(0, testOut_tb.uut.mprj.core0.datapath.regfile.registers[i_reg]);
 		end
    	end
-	// initial begin
-	// 	$dumpvars(0, testOut_tb.uut.mprj.core0.datapath.regfile.registers[3]);
-	// end
 
 	initial begin
 		RSTB <= 1'b0;

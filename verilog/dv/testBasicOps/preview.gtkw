@@ -1,0 +1,65 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Nov  3 18:30:40 2021
+[*]
+[dumpfile] "/home/aurora/Elpis-Light-MPW3/verilog/dv/testOut/testOut.vcd"
+[dumpfile_mtime] "Wed Nov  3 18:23:55 2021"
+[dumpfile_size] 1739269985
+[savefile] "/home/aurora/Elpis-Light-MPW3/verilog/dv/testOut/preview.gtkw"
+[timestart] 2048896900
+[size] 2560 1466
+[pos] -77 -77
+*-17.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testOut_tb.
+[treeopen] testOut_tb.uut.
+[treeopen] testOut_tb.uut.mprj.
+[treeopen] testOut_tb.uut.mprj.core0.
+[treeopen] testOut_tb.uut.mprj.core0.datapath.
+[sst_width] 388
+[signals_width] 462
+[sst_expanded] 1
+[sst_vpaned_height] 425
+@28
+testOut_tb.uut.mprj.core0.datapath.clk
+@29
+testOut_tb.uut.mprj.sram_wrapper.is_loading_memory_into_core
+@22
+testOut_tb.uut.mprj.core0.datapath.pc[31:0]
+testOut_tb.uut.mprj.core0.datapath.f_inst[31:0]
+@200
+-Regfile
+@22
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[0][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[1][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[2][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[3][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[4][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[5][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[6][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[7][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[8][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[9][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[10][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[11][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[12][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[13][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[14][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[15][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[16][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[17][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[18][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[19][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[20][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[21][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[22][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[23][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[24][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[25][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[26][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[27][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[28][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[29][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[30][31:0]
+testOut_tb.uut.mprj.core0.datapath.regfile.\registers[31][31:0]
+[pattern_trace] 1
+[pattern_trace] 0
