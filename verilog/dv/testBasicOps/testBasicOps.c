@@ -126,7 +126,7 @@ void main()
 	reg_la0_oenb = reg_la0_iena = 0x00000000; // [31:0]
 	reg_la1_oenb = reg_la1_iena = 0x00000000; // [63:32]
 	reg_la2_oenb = reg_la2_iena = 0x00000000; // [95:64]
-	reg_la3_oenb = reg_la3_iena = 0xFFFFFFF8; // [127:96]
+	reg_la3_oenb = reg_la3_iena = 0x00000000; // [127:96]
 
 	// Flag start of the test
 	reg_mprj_datal = 0xAB400000;
@@ -222,7 +222,7 @@ void main()
 	elpis_load_memory(OS_DATA, OS_ADDR);
 	elpis_load_memory(USER_DATA, USER_ADDR);
 	
-	reg_la3_oenb = reg_la3_iena = 0xFFFFFFF9; // Recovering fast clock not controlled by the user
+	reg_la3_oenb = reg_la3_iena = 0x00000001; // Recovering fast clock not controlled by the user
 
 	// Reset of Elpis and start of computation at Elpis
 	reg_la3_data = 0x00000002;

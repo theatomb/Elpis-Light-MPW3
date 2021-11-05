@@ -40,7 +40,7 @@ set ::env(DESIGN_IS_CORE) 0
 
 set ::env(CLOCK_PORT) "clk"
 set ::env(CLOCK_NET) "clk"
-set ::env(CLOCK_PERIOD) "50"
+set ::env(CLOCK_PERIOD) "75"
 
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 1500 1500"
@@ -67,5 +67,11 @@ set ::env(GND_NETS) [list {vssd1}]
 set ::env(DIODE_INSERTION_STRATEGY) 4 
 # If you're going to use multiple power domains, then disable cvc run.
 set ::env(RUN_CVC) 1
+
+# set ::env(GLB_RESIZER_HOLD_MAX_BUFFER_PERCENT) "30"
+# set ::env(PL_RESIZER_HOLD_MAX_BUFFER_PERCENT) "30"
+# set ::env(PL_RESIZER_ALLOW_SETUP_VIOS) 1
+# set ::env(GLB_RESIZER_ALLOW_SETUP_VIOS) 1
+
 
 set ::env(ROUTING_CORES) 6
