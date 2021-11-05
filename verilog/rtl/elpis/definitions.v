@@ -90,7 +90,7 @@
 
 // Constants for memory
 `define MEMORY_DELAY_CYCLES	5
-`define MEMORY_SIZE		8192  		// 2^20 - 2^5 = 2^15.
+`define MEMORY_SIZE		512  		// 2^20 - 2^5 = 2^15.
 
 // Constants for cache
 `define CACHE_LINE_SIZE		128
