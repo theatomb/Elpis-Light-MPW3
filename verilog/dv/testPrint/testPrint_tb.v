@@ -59,7 +59,7 @@ module testPrint_tb;
 		`ifdef GL
 			$display ("Monitor: Timeout, Test Output (print) to Elpis (GL) Failed");
 		`else
-			$display ("Monitor: Timeout, Test Output (print) to Elpis(RTL) Failed");
+			$display ("Monitor: Timeout, Test Output (print) to Elpis (RTL) Failed");
 		`endif
 		$display("%c[0m",27);
 		$finish;
@@ -67,8 +67,8 @@ module testPrint_tb;
 
 	initial begin
 		$display("Test 1 (Output (print) to Elpis) started");
-		wait(testPrint_tb.uut.mprj.la_data_out[100] == 1);
-		wait(testPrint_tb.uut.mprj.wb_dat_o == 2);
+		wait(testPrint_tb.uut.mprj.la_data_out[100] == 1'b1);
+		wait(testPrint_tb.uut.mprj.wbs_dat_o == 'd2);
 		$display("%c[1;32m",27);
 		$display("Test 1 (Output (print) to Elpis) Finished correctly");
 		$display("%c[0m",27);

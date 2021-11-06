@@ -227,7 +227,7 @@ void main()
 	while (reg_la3_data != 0x00000010);
 
 	// Check bit 100 has the right data
-	if (reg_la3_data == 0x00000002){
+	if (reg_wb_reads == 0x00000002){
         print("OK\n\n");
     }
     else{
