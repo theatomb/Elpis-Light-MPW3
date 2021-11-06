@@ -11,7 +11,6 @@ module chip_controller(
     output reset_core,
     output is_loading_memory_into_core,
     output read_enable_to_Elpis,
-    output output_enabled_from_controller_to_pico,
     output[31:0] data_to_core_mem,
     output[31:0] read_value_to_Elpis,
     output[19:0] addr_to_core_mem,
@@ -30,7 +29,6 @@ module chip_controller(
     assign reset_core = la_data_in[97];
     assign is_loading_memory_into_core = la_data_in[98];
     assign read_enable_to_Elpis = la_data_in[99];
-    assign output_enabled_from_controller_to_pico = la_data_out[100];
     assign wbs_dat_o = output_data_from_elpis_to_controller;
 
     // Permissions from Elpis to PicoRiscV

@@ -101,13 +101,13 @@ module user_project_wrapper #(
     wire[19:0] addr_to_core_mem;
 
     //SUSPICIOUS
-    wire read_enable_to_Elpis, output_enabled_from_controller_to_pico, output_enabled_from_elpis_to_controller;
-    wire[31:0] output_data_from_elpis_to_controller, read_value_to_Elpis;
+    wire read_enable_to_Elpis;
+    wire[31:0] read_value_to_Elpis;
 
 
     chip_controller chip_controller(
-        .output_data_from_elpis_to_controller(output_data_from_elpis_to_controller), //
-        .output_enabled_from_elpis_to_controller(output_enabled_from_elpis_to_controller), //
+        .output_data_from_elpis_to_controller(print_output), //
+        .output_enabled_from_elpis_to_controller(print_hex_enable), //
         .wb_clk_i(wb_clk_i),
         .wb_rst_i(wb_rst_i),
         .la_data_in(la_data_in),
@@ -118,7 +118,6 @@ module user_project_wrapper #(
         .reset_core(reset_core),
         .is_loading_memory_into_core(is_loading_memory_into_core),
         .read_enable_to_Elpis(read_enable_to_Elpis), //
-        .output_enabled_from_controller_to_pico(output_enabled_from_controller_to_pico), //
         .data_to_core_mem(data_to_core_mem),
         .read_value_to_Elpis(read_value_to_Elpis), //
         .addr_to_core_mem(addr_to_core_mem),
@@ -173,9 +172,6 @@ module user_project_wrapper #(
 		.is_mem_ready(is_mem_ready),
 		.is_mem_req(is_mem_req)
 	);
-
-	assign output_data_from_elpis_to_controller = print_output;
-	assign output_enabled_from_elpis_to_controller = print_hex_enable;
 
 	io_input_arbiter io_input_arbiter(
 		.clk(clk),
