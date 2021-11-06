@@ -1,31 +1,50 @@
 [*]
 [*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
-[*] Wed Nov  3 18:30:40 2021
+[*] Sat Nov  6 12:44:18 2021
 [*]
 [dumpfile] "/home/aurora/Elpis-Light-MPW3/verilog/dv/testPrint/testPrint.vcd"
-[dumpfile_mtime] "Wed Nov  3 18:23:55 2021"
-[dumpfile_size] 1739269985
+[dumpfile_mtime] "Sat Nov  6 12:03:52 2021"
+[dumpfile_size] 2124714096
 [savefile] "/home/aurora/Elpis-Light-MPW3/verilog/dv/testPrint/preview.gtkw"
-[timestart] 2048896900
+[timestart] 2274482900
 [size] 2560 1466
 [pos] -77 -77
-*-17.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-17.000000 2274870200 2274870200 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] testPrint_tb.
 [treeopen] testPrint_tb.uut.
 [treeopen] testPrint_tb.uut.mprj.
-[treeopen] testPrint_tb.uut.mprj.core0.
 [treeopen] testPrint_tb.uut.mprj.core0.datapath.
 [sst_width] 388
-[signals_width] 462
+[signals_width] 702
 [sst_expanded] 1
 [sst_vpaned_height] 425
 @28
 testPrint_tb.uut.mprj.core0.datapath.clk
-@29
 testPrint_tb.uut.mprj.sram_wrapper.is_loading_memory_into_core
 @22
 testPrint_tb.uut.mprj.core0.datapath.pc[31:0]
 testPrint_tb.uut.mprj.core0.datapath.f_inst[31:0]
+@200
+-Chip controller
+@23
+testPrint_tb.uut.mprj.chip_controller.output_data_from_elpis_to_controller[31:0]
+@29
+testPrint_tb.uut.mprj.chip_controller.output_enabled_from_elpis_to_controller
+@200
+-Output arbiter
+@28
+testPrint_tb.uut.mprj.io_output_arbiter.arb_state[1:0]
+@22
+testPrint_tb.uut.mprj.io_output_arbiter.data_core0[31:0]
+@28
+testPrint_tb.uut.mprj.io_output_arbiter.is_ready_core0
+testPrint_tb.uut.mprj.io_output_arbiter.next_arb_state[1:0]
+testPrint_tb.uut.mprj.io_output_arbiter.print_hex_enable
+@22
+testPrint_tb.uut.mprj.io_output_arbiter.print_output[31:0]
+@28
+testPrint_tb.uut.mprj.io_output_arbiter.req_core0
+testPrint_tb.uut.mprj.io_output_arbiter.reset
 @200
 -Regfile
 @22

@@ -1,6 +1,6 @@
 module chip_controller(
     input[31:0] output_data_from_elpis_to_controller,
-    input output_enabled_from_elpis_to_controller, // not used, do something with it
+    input output_enabled_from_elpis_to_controller,
     input wb_clk_i,
     input wb_rst_i,
     input[127:0] la_data_in,
@@ -32,5 +32,8 @@ module chip_controller(
     assign read_enable_to_Elpis = la_data_in[99];
     assign output_enabled_from_controller_to_pico = la_data_out[100];
     assign wbs_dat_o = output_data_from_elpis_to_controller;
+
+    // Permissions from Elpis to PicoRiscV
+    assign la_data_out[100] = output_enabled_from_elpis_to_controller; 
 
 endmodule
