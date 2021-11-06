@@ -19,6 +19,9 @@
 #include "verilog/dv/caravel/defs.h"
 #include "verilog/dv/caravel/stub.c"
 
+#define reg_wb_register        (*(volatile uint32_t*)0x30100010)
+#define reg_wb_reads           (*(volatile uint32_t*)0x30001000)
+
 
 void elpis_load_memory(uint32_t*  program_data, uint32_t*  program_addr)
 {
@@ -197,25 +200,17 @@ void main()
 	OS_ADDR[29] = 0xFFFFFFFF;
 
 	// Elpis user program
-	uint32_t USER_DATA[8];
-	USER_DATA[0] = 0x00002203;
-	USER_DATA[1] = 0x004202B3;
-	USER_DATA[2] = 0x0041E1B3;
-	USER_DATA[3] = 0x00418333;
-	USER_DATA[4] = 0x0041F3B3;
-	USER_DATA[5] = 0x00334433;
-	USER_DATA[6] = 0x00000003;
-	USER_DATA[7] = 0xFFFFFFFF;
+	uint32_t USER_DATA[4];
+	USER_DATA[0] = 0x00200093;
+	USER_DATA[1] = 0x0210022F;
+	USER_DATA[2] = 0x00600073;
+	USER_DATA[3] = 0xFFFFFFFF;
 
-	uint32_t USER_ADDR[8];
+	uint32_t USER_ADDR[4];
 	USER_ADDR[0] = 0x00000040;
 	USER_ADDR[1] = 0x00000041;
 	USER_ADDR[2] = 0x00000042;
-	USER_ADDR[3] = 0x00000043;
-	USER_ADDR[4] = 0x00000044;
-	USER_ADDR[5] = 0x00000045;
-	USER_ADDR[6] = 0x00000100;
-	USER_ADDR[7] = 0xFFFFFFFF;
+	USER_ADDR[3] = 0xFFFFFFFF;
 
 
 	// Loading elpis memory
@@ -227,6 +222,17 @@ void main()
 	// Reset of Elpis and start of computation at Elpis
 	reg_la3_data = 0x00000002;
 	reg_la3_data = 0x00000000;
+
+	// Check bit 100 to be active
+	while (reg_la3_data != 0x00000010);
+
+	// Check bit 100 has the right data
+	if (reg_la3_data == 0x00000002){
+        print("OK\n\n");
+    }
+    else{
+        print("ERROR\n\n");
+    }
 
 	reg_mprj_datal = 0xAB410000;
 	print("\n");

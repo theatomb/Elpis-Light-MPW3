@@ -23,7 +23,7 @@
 `include "spiflash.v"
 `include "tbuart.v"
 
-module testOut_tb;
+module testPrint_tb;
 	reg clock;
     reg RSTB;
 	reg CSB;
@@ -47,8 +47,8 @@ module testOut_tb;
 	assign mprj_io[3] = (CSB == 1'b1) ? 1'b1 : 1'bz;
 
 	initial begin
-		$dumpfile("testOut.vcd");
-		$dumpvars(0, testOut_tb);
+		$dumpfile("testPrint.vcd");
+		$dumpvars(0, testPrint_tb);
 		// TIP. Increase the first repeat number until it is needed
 		// Repeat cycles of 1000 clock edges as needed to complete testbench
 		repeat (100) begin
@@ -57,24 +57,20 @@ module testOut_tb;
 		end
 		$display("%c[1;31m",27);
 		`ifdef GL
-			$display ("Monitor: Timeout, Test LA (GL) Failed");
+			$display ("Monitor: Timeout, Test Output (print) to Elpis (GL) Failed");
 		`else
-			$display ("Monitor: Timeout, Test LA (RTL) Failed");
+			$display ("Monitor: Timeout, Test Output (print) to Elpis(RTL) Failed");
 		`endif
 		$display("%c[0m",27);
 		$finish;
 	end
 
 	initial begin
-		$display("Test 1 (Basic Ops) started");
-		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[3] == 3);
-		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[4] == 3);
-		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[5] == 6);
-		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[6] == 6);
-		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[7] == 3);
-		wait(testOut_tb.uut.mprj.core0.datapath.regfile.registers[8] == 5);
+		$display("Test 1 (Output (print) to Elpis) started");
+		wait(testPrint_tb.uut.mprj.la_data_out[100] == 1);
+		wait(testPrint_tb.uut.mprj.wb_dat_o == 2);
 		$display("%c[1;32m",27);
-		$display("Test 1 (Basic Ops) Finished correctly");
+		$display("Test 1 (Output (print) to Elpis) Finished correctly");
 		$display("%c[0m",27);
 		#1;
 		$finish;
@@ -84,14 +80,14 @@ module testOut_tb;
 	integer i_mem;
 	initial begin
     	for (i_mem = 0; i_mem < 512; i_mem = i_mem + 1) begin
-			$dumpvars(0, testOut_tb.uut.mprj.custom_sram.mem[i_mem]);
+			$dumpvars(0, testPrint_tb.uut.mprj.custom_sram.mem[i_mem]);
 		end
    	end
 
 	integer i_reg;
 	initial begin
     	for (i_reg = 0; i_reg < 32; i_reg = i_reg + 1) begin
-			$dumpvars(0, testOut_tb.uut.mprj.core0.datapath.regfile.registers[i_reg]);
+			$dumpvars(0, testPrint_tb.uut.mprj.core0.datapath.regfile.registers[i_reg]);
 		end
    	end
 
@@ -152,7 +148,7 @@ module testOut_tb;
 	);
 
 	spiflash #(
-		.FILENAME("testOut.hex")
+		.FILENAME("testPrint.hex")
 	) spiflash (
 		.csb(flash_csb),
 		.clk(flash_clk),
