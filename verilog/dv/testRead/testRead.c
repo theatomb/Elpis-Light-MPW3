@@ -231,6 +231,6 @@ void main()
 
 	reg_mprj_datal = 0xAB410000;
 	print("\n");
-	print("Monitor: Test 1 Passed\n\n"); // Makes simulation very long!
+	print("Monitor: Test Read Passed\n\n"); // Makes simulation very long!
 	reg_mprj_datal = 0xAB510000;
 }

@@ -90,7 +90,7 @@
 
 // Constants for memory
 `define MEMORY_DELAY_CYCLES	5
-`define MEMORY_SIZE		512  		// 2^20 - 2^5 = 2^15.
+`define MEMORY_SIZE			512  	// 2^20 - 2^5 = 2^15.
 
 // Constants for cache
 `define CACHE_LINE_SIZE		128
@@ -141,8 +141,8 @@
 `define HF_NUM_ENTRIES    5'd16
 
 // Constants for FIFO coherence response states
-`define FIFO_COH_NOT_SENT	2'b00
-`define FIFO_COH_FIRST_SENT	2'b01
+`define FIFO_COH_NOT_SENT		2'b00
+`define FIFO_COH_FIRST_SENT		2'b01
 `define FIFO_COH_COMPLETE_SENT	2'b10
 
 // Implementation of ceiling log2 

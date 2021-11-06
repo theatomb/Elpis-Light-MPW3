@@ -40,7 +40,7 @@ SIM?=RTL
 
 .SUFFIXES:
 
-PATTERN = testIn
+PATTERN = testRead
 
 all:  ${PATTERN:=.vcd}
 

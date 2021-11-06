@@ -23,7 +23,7 @@
 `include "spiflash.v"
 `include "tbuart.v"
 
-module testIn_tb;
+module testRead_tb;
 	reg clock;
     reg RSTB;
 	reg CSB;
@@ -47,8 +47,8 @@ module testIn_tb;
 	assign mprj_io[3] = (CSB == 1'b1) ? 1'b1 : 1'bz;
 
 	initial begin
-		$dumpfile("testIn.vcd");
-		$dumpvars(0, testIn_tb);
+		$dumpfile("testRead.vcd");
+		$dumpvars(0, testRead_tb);
 		// TIP. Increase the first repeat number until it is needed
 		// Repeat cycles of 1000 clock edges as needed to complete testbench
 		repeat (100) begin
@@ -57,19 +57,19 @@ module testIn_tb;
 		end
 		$display("%c[1;31m",27);
 		`ifdef GL
-			$display ("Monitor: Timeout, Test Input to Elpis (GL) Failed");
+			$display ("Monitor: Timeout, Test Input (read) to Elpis (GL) Failed");
 		`else
-			$display ("Monitor: Timeout, Test Input to Elpis (RTL) Failed");
+			$display ("Monitor: Timeout, Test Input (read) to Elpis (RTL) Failed");
 		`endif
 		$display("%c[0m",27);
 		$finish;
 	end
 
 	initial begin
-		$display("Test 1 (Input to Elpis) started");
-		wait(testIn_tb.uut.mprj.core0.datapath.regfile.registers[15] == 2);
+		$display("Test 1 (Input (read) to Elpis) started");
+		wait(testRead_tb.uut.mprj.core0.datapath.regfile.registers[15] == 2);
 		$display("%c[1;32m",27);
-		$display("Test 2 (Input to Elpis) Finished correctly");
+		$display("Test 2 (Input (read) to Elpis) Finished correctly");
 		$display("%c[0m",27);
 		#1;
 		$finish;
@@ -79,21 +79,21 @@ module testIn_tb;
 	integer i_mem;
 	initial begin
     	for (i_mem = 0; i_mem < 512; i_mem = i_mem + 1) begin
-			$dumpvars(0, testIn_tb.uut.mprj.custom_sram.mem[i_mem]);
+			$dumpvars(0, testRead_tb.uut.mprj.custom_sram.mem[i_mem]);
 		end
    	end
 
 	integer i_reg;
 	initial begin
     	for (i_reg = 0; i_reg < 32; i_reg = i_reg + 1) begin
-			$dumpvars(0, testIn_tb.uut.mprj.core0.datapath.regfile.registers[i_reg]);
+			$dumpvars(0, testRead_tb.uut.mprj.core0.datapath.regfile.registers[i_reg]);
 		end
    	end
 
 	integer i_sreg;
 	initial begin
     	for (i_sreg = 0; i_sreg < 5; i_sreg = i_sreg + 1) begin
-			$dumpvars(0, testIn_tb.uut.mprj.core0.datapath.specialreg.rm[i_sreg]);
+			$dumpvars(0, testRead_tb.uut.mprj.core0.datapath.specialreg.rm[i_sreg]);
 		end
    	end
 
@@ -154,7 +154,7 @@ module testIn_tb;
 	);
 
 	spiflash #(
-		.FILENAME("testIn.hex")
+		.FILENAME("testRead.hex")
 	) spiflash (
 		.csb(flash_csb),
 		.clk(flash_clk),
