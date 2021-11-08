@@ -168,6 +168,10 @@ module user_project_wrapper #(
 	);
 
 	core #(.CORE_ID(0)) core0(
+`ifdef USE_POWER_PINS
+	    .vccd1(vccd1),	// User area 1 1.8V power
+	    .vssd1(vssd1),	// User area 1 digital ground
+`endif
 		.clk(clk),
 		.rst(reset_core),
 		.read_interactive_value(data_out_to_core),

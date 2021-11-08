@@ -53,132 +53,191 @@ module user_project_wrapper (user_clock2,
  output [31:0] wbs_dat_o;
  input [3:0] wbs_sel_i;
 
+ wire \addr_to_core_mem[0] ;
+ wire \addr_to_core_mem[10] ;
+ wire \addr_to_core_mem[11] ;
+ wire \addr_to_core_mem[12] ;
+ wire \addr_to_core_mem[13] ;
+ wire \addr_to_core_mem[14] ;
+ wire \addr_to_core_mem[15] ;
+ wire \addr_to_core_mem[16] ;
+ wire \addr_to_core_mem[17] ;
+ wire \addr_to_core_mem[18] ;
+ wire \addr_to_core_mem[19] ;
+ wire \addr_to_core_mem[1] ;
+ wire \addr_to_core_mem[2] ;
+ wire \addr_to_core_mem[3] ;
+ wire \addr_to_core_mem[4] ;
+ wire \addr_to_core_mem[5] ;
+ wire \addr_to_core_mem[6] ;
+ wire \addr_to_core_mem[7] ;
+ wire \addr_to_core_mem[8] ;
+ wire \addr_to_core_mem[9] ;
+ wire clk;
+ wire \data_to_core_mem[0] ;
+ wire \data_to_core_mem[10] ;
+ wire \data_to_core_mem[11] ;
+ wire \data_to_core_mem[12] ;
+ wire \data_to_core_mem[13] ;
+ wire \data_to_core_mem[14] ;
+ wire \data_to_core_mem[15] ;
+ wire \data_to_core_mem[16] ;
+ wire \data_to_core_mem[17] ;
+ wire \data_to_core_mem[18] ;
+ wire \data_to_core_mem[19] ;
+ wire \data_to_core_mem[1] ;
+ wire \data_to_core_mem[20] ;
+ wire \data_to_core_mem[21] ;
+ wire \data_to_core_mem[22] ;
+ wire \data_to_core_mem[23] ;
+ wire \data_to_core_mem[24] ;
+ wire \data_to_core_mem[25] ;
+ wire \data_to_core_mem[26] ;
+ wire \data_to_core_mem[27] ;
+ wire \data_to_core_mem[28] ;
+ wire \data_to_core_mem[29] ;
+ wire \data_to_core_mem[2] ;
+ wire \data_to_core_mem[30] ;
+ wire \data_to_core_mem[31] ;
+ wire \data_to_core_mem[3] ;
+ wire \data_to_core_mem[4] ;
+ wire \data_to_core_mem[5] ;
+ wire \data_to_core_mem[6] ;
+ wire \data_to_core_mem[7] ;
+ wire \data_to_core_mem[8] ;
+ wire \data_to_core_mem[9] ;
+ wire is_loading_memory_into_core;
+ wire print_hex_enable;
+ wire \print_output[0] ;
+ wire \print_output[10] ;
+ wire \print_output[11] ;
+ wire \print_output[12] ;
+ wire \print_output[13] ;
+ wire \print_output[14] ;
+ wire \print_output[15] ;
+ wire \print_output[16] ;
+ wire \print_output[17] ;
+ wire \print_output[18] ;
+ wire \print_output[19] ;
+ wire \print_output[1] ;
+ wire \print_output[20] ;
+ wire \print_output[21] ;
+ wire \print_output[22] ;
+ wire \print_output[23] ;
+ wire \print_output[24] ;
+ wire \print_output[25] ;
+ wire \print_output[26] ;
+ wire \print_output[27] ;
+ wire \print_output[28] ;
+ wire \print_output[29] ;
+ wire \print_output[2] ;
+ wire \print_output[30] ;
+ wire \print_output[31] ;
+ wire \print_output[3] ;
+ wire \print_output[4] ;
+ wire \print_output[5] ;
+ wire \print_output[6] ;
+ wire \print_output[7] ;
+ wire \print_output[8] ;
+ wire \print_output[9] ;
+ wire read_enable_to_Elpis;
+ wire \read_value_to_Elpis[0] ;
+ wire \read_value_to_Elpis[10] ;
+ wire \read_value_to_Elpis[11] ;
+ wire \read_value_to_Elpis[12] ;
+ wire \read_value_to_Elpis[13] ;
+ wire \read_value_to_Elpis[14] ;
+ wire \read_value_to_Elpis[15] ;
+ wire \read_value_to_Elpis[16] ;
+ wire \read_value_to_Elpis[17] ;
+ wire \read_value_to_Elpis[18] ;
+ wire \read_value_to_Elpis[19] ;
+ wire \read_value_to_Elpis[1] ;
+ wire \read_value_to_Elpis[20] ;
+ wire \read_value_to_Elpis[21] ;
+ wire \read_value_to_Elpis[22] ;
+ wire \read_value_to_Elpis[23] ;
+ wire \read_value_to_Elpis[24] ;
+ wire \read_value_to_Elpis[25] ;
+ wire \read_value_to_Elpis[26] ;
+ wire \read_value_to_Elpis[27] ;
+ wire \read_value_to_Elpis[28] ;
+ wire \read_value_to_Elpis[29] ;
+ wire \read_value_to_Elpis[2] ;
+ wire \read_value_to_Elpis[30] ;
+ wire \read_value_to_Elpis[31] ;
+ wire \read_value_to_Elpis[3] ;
+ wire \read_value_to_Elpis[4] ;
+ wire \read_value_to_Elpis[5] ;
+ wire \read_value_to_Elpis[6] ;
+ wire \read_value_to_Elpis[7] ;
+ wire \read_value_to_Elpis[8] ;
+ wire \read_value_to_Elpis[9] ;
+ wire reset_core;
+ wire rst;
 
- user_proj_example mprj (.vccd1(vccd1),
+ chip_controller chip_controller (.clk(clk),
+    .is_loading_memory_into_core(is_loading_memory_into_core),
+    .output_enabled_from_elpis_to_controller(print_hex_enable),
+    .read_enable_to_Elpis(read_enable_to_Elpis),
+    .reset_core(reset_core),
+    .rst(rst),
+    .vccd1(vssa1),
     .vssd1(vssd1),
     .wb_clk_i(wb_clk_i),
     .wb_rst_i(wb_rst_i),
-    .wbs_ack_o(wbs_ack_o),
-    .wbs_cyc_i(wbs_cyc_i),
-    .wbs_stb_i(wbs_stb_i),
-    .wbs_we_i(wbs_we_i),
-    .io_in({io_in[37],
-    io_in[36],
-    io_in[35],
-    io_in[34],
-    io_in[33],
-    io_in[32],
-    io_in[31],
-    io_in[30],
-    io_in[29],
-    io_in[28],
-    io_in[27],
-    io_in[26],
-    io_in[25],
-    io_in[24],
-    io_in[23],
-    io_in[22],
-    io_in[21],
-    io_in[20],
-    io_in[19],
-    io_in[18],
-    io_in[17],
-    io_in[16],
-    io_in[15],
-    io_in[14],
-    io_in[13],
-    io_in[12],
-    io_in[11],
-    io_in[10],
-    io_in[9],
-    io_in[8],
-    io_in[7],
-    io_in[6],
-    io_in[5],
-    io_in[4],
-    io_in[3],
-    io_in[2],
-    io_in[1],
-    io_in[0]}),
-    .io_oeb({io_oeb[37],
-    io_oeb[36],
-    io_oeb[35],
-    io_oeb[34],
-    io_oeb[33],
-    io_oeb[32],
-    io_oeb[31],
-    io_oeb[30],
-    io_oeb[29],
-    io_oeb[28],
-    io_oeb[27],
-    io_oeb[26],
-    io_oeb[25],
-    io_oeb[24],
-    io_oeb[23],
-    io_oeb[22],
-    io_oeb[21],
-    io_oeb[20],
-    io_oeb[19],
-    io_oeb[18],
-    io_oeb[17],
-    io_oeb[16],
-    io_oeb[15],
-    io_oeb[14],
-    io_oeb[13],
-    io_oeb[12],
-    io_oeb[11],
-    io_oeb[10],
-    io_oeb[9],
-    io_oeb[8],
-    io_oeb[7],
-    io_oeb[6],
-    io_oeb[5],
-    io_oeb[4],
-    io_oeb[3],
-    io_oeb[2],
-    io_oeb[1],
-    io_oeb[0]}),
-    .io_out({io_out[37],
-    io_out[36],
-    io_out[35],
-    io_out[34],
-    io_out[33],
-    io_out[32],
-    io_out[31],
-    io_out[30],
-    io_out[29],
-    io_out[28],
-    io_out[27],
-    io_out[26],
-    io_out[25],
-    io_out[24],
-    io_out[23],
-    io_out[22],
-    io_out[21],
-    io_out[20],
-    io_out[19],
-    io_out[18],
-    io_out[17],
-    io_out[16],
-    io_out[15],
-    io_out[14],
-    io_out[13],
-    io_out[12],
-    io_out[11],
-    io_out[10],
-    io_out[9],
-    io_out[8],
-    io_out[7],
-    io_out[6],
-    io_out[5],
-    io_out[4],
-    io_out[3],
-    io_out[2],
-    io_out[1],
-    io_out[0]}),
-    .irq({user_irq[2],
-    user_irq[1],
-    user_irq[0]}),
+    .addr_to_core_mem({\addr_to_core_mem[19] ,
+    \addr_to_core_mem[18] ,
+    \addr_to_core_mem[17] ,
+    \addr_to_core_mem[16] ,
+    \addr_to_core_mem[15] ,
+    \addr_to_core_mem[14] ,
+    \addr_to_core_mem[13] ,
+    \addr_to_core_mem[12] ,
+    \addr_to_core_mem[11] ,
+    \addr_to_core_mem[10] ,
+    \addr_to_core_mem[9] ,
+    \addr_to_core_mem[8] ,
+    \addr_to_core_mem[7] ,
+    \addr_to_core_mem[6] ,
+    \addr_to_core_mem[5] ,
+    \addr_to_core_mem[4] ,
+    \addr_to_core_mem[3] ,
+    \addr_to_core_mem[2] ,
+    \addr_to_core_mem[1] ,
+    \addr_to_core_mem[0] }),
+    .data_to_core_mem({\data_to_core_mem[31] ,
+    \data_to_core_mem[30] ,
+    \data_to_core_mem[29] ,
+    \data_to_core_mem[28] ,
+    \data_to_core_mem[27] ,
+    \data_to_core_mem[26] ,
+    \data_to_core_mem[25] ,
+    \data_to_core_mem[24] ,
+    \data_to_core_mem[23] ,
+    \data_to_core_mem[22] ,
+    \data_to_core_mem[21] ,
+    \data_to_core_mem[20] ,
+    \data_to_core_mem[19] ,
+    \data_to_core_mem[18] ,
+    \data_to_core_mem[17] ,
+    \data_to_core_mem[16] ,
+    \data_to_core_mem[15] ,
+    \data_to_core_mem[14] ,
+    \data_to_core_mem[13] ,
+    \data_to_core_mem[12] ,
+    \data_to_core_mem[11] ,
+    \data_to_core_mem[10] ,
+    \data_to_core_mem[9] ,
+    \data_to_core_mem[8] ,
+    \data_to_core_mem[7] ,
+    \data_to_core_mem[6] ,
+    \data_to_core_mem[5] ,
+    \data_to_core_mem[4] ,
+    \data_to_core_mem[3] ,
+    \data_to_core_mem[2] ,
+    \data_to_core_mem[1] ,
+    \data_to_core_mem[0] }),
     .la_data_in({la_data_in[127],
     la_data_in[126],
     la_data_in[125],
@@ -563,70 +622,70 @@ module user_project_wrapper (user_clock2,
     la_oenb[2],
     la_oenb[1],
     la_oenb[0]}),
-    .wbs_adr_i({wbs_adr_i[31],
-    wbs_adr_i[30],
-    wbs_adr_i[29],
-    wbs_adr_i[28],
-    wbs_adr_i[27],
-    wbs_adr_i[26],
-    wbs_adr_i[25],
-    wbs_adr_i[24],
-    wbs_adr_i[23],
-    wbs_adr_i[22],
-    wbs_adr_i[21],
-    wbs_adr_i[20],
-    wbs_adr_i[19],
-    wbs_adr_i[18],
-    wbs_adr_i[17],
-    wbs_adr_i[16],
-    wbs_adr_i[15],
-    wbs_adr_i[14],
-    wbs_adr_i[13],
-    wbs_adr_i[12],
-    wbs_adr_i[11],
-    wbs_adr_i[10],
-    wbs_adr_i[9],
-    wbs_adr_i[8],
-    wbs_adr_i[7],
-    wbs_adr_i[6],
-    wbs_adr_i[5],
-    wbs_adr_i[4],
-    wbs_adr_i[3],
-    wbs_adr_i[2],
-    wbs_adr_i[1],
-    wbs_adr_i[0]}),
-    .wbs_dat_i({wbs_dat_i[31],
-    wbs_dat_i[30],
-    wbs_dat_i[29],
-    wbs_dat_i[28],
-    wbs_dat_i[27],
-    wbs_dat_i[26],
-    wbs_dat_i[25],
-    wbs_dat_i[24],
-    wbs_dat_i[23],
-    wbs_dat_i[22],
-    wbs_dat_i[21],
-    wbs_dat_i[20],
-    wbs_dat_i[19],
-    wbs_dat_i[18],
-    wbs_dat_i[17],
-    wbs_dat_i[16],
-    wbs_dat_i[15],
-    wbs_dat_i[14],
-    wbs_dat_i[13],
-    wbs_dat_i[12],
-    wbs_dat_i[11],
-    wbs_dat_i[10],
-    wbs_dat_i[9],
-    wbs_dat_i[8],
-    wbs_dat_i[7],
-    wbs_dat_i[6],
-    wbs_dat_i[5],
-    wbs_dat_i[4],
-    wbs_dat_i[3],
-    wbs_dat_i[2],
-    wbs_dat_i[1],
-    wbs_dat_i[0]}),
+    .output_data_from_elpis_to_controller({\print_output[31] ,
+    \print_output[30] ,
+    \print_output[29] ,
+    \print_output[28] ,
+    \print_output[27] ,
+    \print_output[26] ,
+    \print_output[25] ,
+    \print_output[24] ,
+    \print_output[23] ,
+    \print_output[22] ,
+    \print_output[21] ,
+    \print_output[20] ,
+    \print_output[19] ,
+    \print_output[18] ,
+    \print_output[17] ,
+    \print_output[16] ,
+    \print_output[15] ,
+    \print_output[14] ,
+    \print_output[13] ,
+    \print_output[12] ,
+    \print_output[11] ,
+    \print_output[10] ,
+    \print_output[9] ,
+    \print_output[8] ,
+    \print_output[7] ,
+    \print_output[6] ,
+    \print_output[5] ,
+    \print_output[4] ,
+    \print_output[3] ,
+    \print_output[2] ,
+    \print_output[1] ,
+    \print_output[0] }),
+    .read_value_to_Elpis({\read_value_to_Elpis[31] ,
+    \read_value_to_Elpis[30] ,
+    \read_value_to_Elpis[29] ,
+    \read_value_to_Elpis[28] ,
+    \read_value_to_Elpis[27] ,
+    \read_value_to_Elpis[26] ,
+    \read_value_to_Elpis[25] ,
+    \read_value_to_Elpis[24] ,
+    \read_value_to_Elpis[23] ,
+    \read_value_to_Elpis[22] ,
+    \read_value_to_Elpis[21] ,
+    \read_value_to_Elpis[20] ,
+    \read_value_to_Elpis[19] ,
+    \read_value_to_Elpis[18] ,
+    \read_value_to_Elpis[17] ,
+    \read_value_to_Elpis[16] ,
+    \read_value_to_Elpis[15] ,
+    \read_value_to_Elpis[14] ,
+    \read_value_to_Elpis[13] ,
+    \read_value_to_Elpis[12] ,
+    \read_value_to_Elpis[11] ,
+    \read_value_to_Elpis[10] ,
+    \read_value_to_Elpis[9] ,
+    \read_value_to_Elpis[8] ,
+    \read_value_to_Elpis[7] ,
+    \read_value_to_Elpis[6] ,
+    \read_value_to_Elpis[5] ,
+    \read_value_to_Elpis[4] ,
+    \read_value_to_Elpis[3] ,
+    \read_value_to_Elpis[2] ,
+    \read_value_to_Elpis[1] ,
+    \read_value_to_Elpis[0] }),
     .wbs_dat_o({wbs_dat_o[31],
     wbs_dat_o[30],
     wbs_dat_o[29],
@@ -658,9 +717,5 @@ module user_project_wrapper (user_clock2,
     wbs_dat_o[3],
     wbs_dat_o[2],
     wbs_dat_o[1],
-    wbs_dat_o[0]}),
-    .wbs_sel_i({wbs_sel_i[3],
-    wbs_sel_i[2],
-    wbs_sel_i[1],
-    wbs_sel_i[0]}));
+    wbs_dat_o[0]}));
 endmodule
