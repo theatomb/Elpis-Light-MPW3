@@ -106,6 +106,10 @@ module user_project_wrapper #(
 
 
     chip_controller chip_controller(
+`ifdef USE_POWER_PINS
+        .vccd1(vccd1),	// User area 1 1.8V power
+        .vssd1(vssd1),	// User area 1 digital ground
+`endif
         .output_data_from_elpis_to_controller(print_output), //
         .output_enabled_from_elpis_to_controller(print_hex_enable), //
         .wb_clk_i(wb_clk_i),
@@ -125,6 +129,10 @@ module user_project_wrapper #(
     );
 
 	custom_sram custom_sram(
+`ifdef USE_POWER_PINS
+	    .vccd1(vccd1),	// User area 1 1.8V power
+	    .vssd1(vssd1),	// User area 1 digital ground
+`endif
 		.clk(clk),
 		.q(dout0_to_sram),
 		.a(addr0_to_sram),
@@ -135,6 +143,10 @@ module user_project_wrapper #(
 	);
 
 	sram_wrapper sram_wrapper(
+`ifdef USE_POWER_PINS
+	    .vccd1(vccd1),	// User area 1 1.8V power
+	    .vssd1(vssd1),	// User area 1 digital ground
+`endif
 		.clk(clk),
 		.reset(rst),
 		.we(core0_is_mem_we),
@@ -174,6 +186,10 @@ module user_project_wrapper #(
 	);
 
 	io_input_arbiter io_input_arbiter(
+`ifdef USE_POWER_PINS
+	    .vccd1(vccd1),	// User area 1 1.8V power
+	    .vssd1(vssd1),	// User area 1 digital ground
+`endif
 		.clk(clk),
 		.reset(rst),
 		.req_core0(read_interactive_req_core0),
@@ -184,6 +200,10 @@ module user_project_wrapper #(
 	);
 
 	io_output_arbiter io_output_arbiter(
+`ifdef USE_POWER_PINS
+	    .vccd1(vccd1),	// User area 1 1.8V power
+	    .vssd1(vssd1),	// User area 1 digital ground
+`endif
 		.clk(clk),
 		.reset(rst),
 		.req_core0(req_out_core0),

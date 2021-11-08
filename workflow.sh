@@ -6,4 +6,4 @@ make custom_sram
 make sram_wrapper
 make chip_controller
 make core 
-#make user_project_wrapper
+make user_project_wrapper

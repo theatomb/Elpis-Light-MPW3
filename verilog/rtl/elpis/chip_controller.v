@@ -1,4 +1,8 @@
 module chip_controller(
+`ifdef USE_POWER_PINS
+	inout vccd1,	// User area 1 1.8V supply
+	inout vssd1,	// User area 1 digital ground
+`endif
     input[31:0] output_data_from_elpis_to_controller,
     input output_enabled_from_elpis_to_controller,
     input wb_clk_i,
