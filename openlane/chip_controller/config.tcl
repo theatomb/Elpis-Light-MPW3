@@ -19,6 +19,8 @@ set ::env(DESIGN_NAME) chip_controller
 
 set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/elpis/definitions.v \
+	$script_dir/../../verilog/rtl/elpis/IO_arbiter.v \
+	$script_dir/../../verilog/rtl/elpis/sram_wrapper.v \
 	$script_dir/../../verilog/rtl/elpis/chip_controller.v"
 
 
@@ -29,11 +31,13 @@ set ::env(CLOCK_NET) "clk"
 set ::env(CLOCK_PERIOD) "50"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 200 200"
+set ::env(DIE_AREA) "0 0 400 400"
+
+set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 
 # set ::env(PL_BASIC_PLACEMENT) 1
-set ::env(PL_TARGET_DENSITY) 0.3
+set ::env(PL_TARGET_DENSITY) 0.4
 set ::env(FP_CORE_UTIL) "50"
 
 #set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0
@@ -49,8 +53,8 @@ set ::env(GLB_RT_MAXLAYER) 5
 set ::env(VDD_NETS) [list {vccd1}]
 set ::env(GND_NETS) [list {vssd1}]
 
-set ::env(DIODE_INSERTION_STRATEGY) 3 
-set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 3 
+set ::env(DIODE_INSERTION_STRATEGY) 4
+# set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 3 
 
 # If you're going to use multiple power domains, then disable cvc run.
 set ::env(RUN_CVC) 1

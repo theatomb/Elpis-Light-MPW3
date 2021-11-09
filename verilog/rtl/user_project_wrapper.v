@@ -110,8 +110,8 @@ module user_project_wrapper #(
         .vccd1(vccd1),	// User area 1 1.8V power
         .vssd1(vssd1),	// User area 1 digital ground
 `endif
-        .output_data_from_elpis_to_controller(print_output), //
-        .output_enabled_from_elpis_to_controller(print_hex_enable), //
+        // .output_data_from_elpis_to_controller(print_output), //
+        // .output_enabled_from_elpis_to_controller(print_hex_enable), //
         .wb_clk_i(wb_clk_i),
         .wb_rst_i(wb_rst_i),
         .la_data_in(la_data_in),
@@ -125,7 +125,29 @@ module user_project_wrapper #(
         .data_to_core_mem(data_to_core_mem),
         .read_value_to_Elpis(read_value_to_Elpis), //
         .addr_to_core_mem(addr_to_core_mem),
-        .wbs_dat_o(wbs_dat_o)
+        .wbs_dat_o(wbs_dat_o),
+        // O_arbiter
+        .is_ready_print_core0(is_ready_print_core0),
+        .req_out_core0(req_out_core0),
+        .core0_data_print(core0_data_print),
+        // I_arbiter
+        .data_out_to_core(data_out_to_core),
+        .is_ready_dataout_core0(is_ready_dataout_core0),
+        .read_interactive_req_core0(read_interactive_req_core0),
+        // SRAM Wrapper
+        .we(core0_is_mem_we),
+		.addr_in(core0_to_mem_address),
+		.wr_data(core0_to_mem_data),
+		.requested(is_mem_req),
+		.reset_mem_req(core0_need_reset_mem_req),
+		.rd_data_out(read_data_from_mem),
+		.ready(is_mem_ready),
+	 	.we_to_sram(we_to_sram),
+    	.csb0_to_sram(csb0_to_sram),
+    	.spare_wen0_to_sram(spare_wen0_to_sram),
+    	.addr0_to_sram(addr0_to_sram),
+    	.din0_to_sram(din0_to_sram), 
+    	.dout0_to_sram(dout0_to_sram)
     );
 
 	custom_sram custom_sram(
@@ -140,31 +162,6 @@ module user_project_wrapper #(
 		.we(we_to_sram),
 		.csb0_to_sram(csb0_to_sram),
 		.spare_wen0_to_sram(spare_wen0_to_sram)
-	);
-
-	sram_wrapper sram_wrapper(
-`ifdef USE_POWER_PINS
-	    .vccd1(vccd1),	// User area 1 1.8V power
-	    .vssd1(vssd1),	// User area 1 digital ground
-`endif
-		.clk(clk),
-		.reset(rst),
-		.we(core0_is_mem_we),
-		.addr_in(core0_to_mem_address),
-		.wr_data(core0_to_mem_data),
-		.requested(is_mem_req),
-		.reset_mem_req(core0_need_reset_mem_req),
-    	.is_loading_memory_into_core(is_loading_memory_into_core),
-		.addr_to_core_mem(addr_to_core_mem),
-		.data_to_core_mem(data_to_core_mem),
-		.rd_data_out(read_data_from_mem),
-		.ready(is_mem_ready),
-	 	.we_to_sram(we_to_sram),
-    	.csb0_to_sram(csb0_to_sram),
-    	.spare_wen0_to_sram(spare_wen0_to_sram),
-    	.addr0_to_sram(addr0_to_sram),
-    	.din0_to_sram(din0_to_sram), 
-    	.dout0_to_sram(dout0_to_sram)
 	);
 
 	core #(.CORE_ID(0)) core0(
@@ -189,33 +186,58 @@ module user_project_wrapper #(
 		.is_mem_req(is_mem_req)
 	);
 
-	io_input_arbiter io_input_arbiter(
-`ifdef USE_POWER_PINS
-	    .vccd1(vccd1),	// User area 1 1.8V power
-	    .vssd1(vssd1),	// User area 1 digital ground
-`endif
-		.clk(clk),
-		.reset(rst),
-		.req_core0(read_interactive_req_core0),
-		.read_value(read_value_to_Elpis),
-		.read_enable(read_enable_to_Elpis),
-		.is_ready_core0(is_ready_dataout_core0),
-		.data_out(data_out_to_core)
-	);
+// 	sram_wrapper sram_wrapper(
+// `ifdef USE_POWER_PINS
+// 	    .vccd1(vccd1),	// User area 1 1.8V power
+// 	    .vssd1(vssd1),	// User area 1 digital ground
+// `endif
+// 		.clk(clk),
+// 		.reset(rst),
+// 		.we(core0_is_mem_we),
+// 		.addr_in(core0_to_mem_address),
+// 		.wr_data(core0_to_mem_data),
+// 		.requested(is_mem_req),
+// 		.reset_mem_req(core0_need_reset_mem_req),
+//     	.is_loading_memory_into_core(is_loading_memory_into_core),
+// 		.addr_to_core_mem(addr_to_core_mem),
+// 		.data_to_core_mem(data_to_core_mem),
+// 		.rd_data_out(read_data_from_mem),
+// 		.ready(is_mem_ready),
+// 	 	.we_to_sram(we_to_sram),
+//     	.csb0_to_sram(csb0_to_sram),
+//     	.spare_wen0_to_sram(spare_wen0_to_sram),
+//     	.addr0_to_sram(addr0_to_sram),
+//     	.din0_to_sram(din0_to_sram), 
+//     	.dout0_to_sram(dout0_to_sram)
+// 	);
 
-	io_output_arbiter io_output_arbiter(
-`ifdef USE_POWER_PINS
-	    .vccd1(vccd1),	// User area 1 1.8V power
-	    .vssd1(vssd1),	// User area 1 digital ground
-`endif
-		.clk(clk),
-		.reset(rst),
-		.req_core0(req_out_core0),
-		.data_core0(core0_data_print),
-		.print_hex_enable(print_hex_enable),
-		.print_output(print_output),
-		.is_ready_core0(is_ready_print_core0)
-	);
+// 	io_input_arbiter io_input_arbiter(
+// // `ifdef USE_POWER_PINS
+// // 	    .vccd1(vccd1),	// User area 1 1.8V power
+// // 	    .vssd1(vssd1),	// User area 1 digital ground
+// // `endif
+// 		.clk(clk),
+// 		.reset(rst),
+// 		.req_core0(read_interactive_req_core0),
+// 		.read_value(read_value_to_Elpis),
+// 		.read_enable(read_enable_to_Elpis),
+// 		.is_ready_core0(is_ready_dataout_core0),
+// 		.data_out(data_out_to_core)
+// 	);
+
+// 	io_output_arbiter io_output_arbiter(
+// // `ifdef USE_POWER_PINS
+// // 	    .vccd1(vccd1),	// User area 1 1.8V power
+// // 	    .vssd1(vssd1),	// User area 1 digital ground
+// // `endif
+// 		.clk(clk),
+// 		.reset(rst),
+// 		.req_core0(req_out_core0),
+// 		.data_core0(core0_data_print),
+// 		.print_hex_enable(print_hex_enable),
+// 		.print_output(print_output),
+// 		.is_ready_core0(is_ready_print_core0)
+// 	);
 
 // user_proj_example mprj (
 // `ifdef USE_POWER_PINS
