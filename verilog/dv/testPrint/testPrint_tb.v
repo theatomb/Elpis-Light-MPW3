@@ -77,19 +77,21 @@ module testPrint_tb;
 	end
 
 	// TIP. Dumping of memory addresses. Do something similar with registers
-	integer i_mem;
-	initial begin
-    	for (i_mem = 0; i_mem < 512; i_mem = i_mem + 1) begin
-			$dumpvars(0, testPrint_tb.uut.mprj.custom_sram.mem[i_mem]);
+	`ifdef RTL
+		integer i_mem;
+		initial begin
+			for (i_mem = 0; i_mem < 512; i_mem = i_mem + 1) begin
+				$dumpvars(0, testPrint_tb.uut.mprj.custom_sram.mem[i_mem]);
+			end
 		end
-   	end
 
-	integer i_reg;
-	initial begin
-    	for (i_reg = 0; i_reg < 32; i_reg = i_reg + 1) begin
-			$dumpvars(0, testPrint_tb.uut.mprj.core0.datapath.regfile.registers[i_reg]);
+		integer i_reg;
+		initial begin
+			for (i_reg = 0; i_reg < 32; i_reg = i_reg + 1) begin
+				$dumpvars(0, testPrint_tb.uut.mprj.core0.datapath.regfile.registers[i_reg]);
+			end
 		end
-   	end
+	`endif
 
 	initial begin
 		RSTB <= 1'b0;
