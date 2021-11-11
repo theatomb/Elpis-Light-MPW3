@@ -6,7 +6,7 @@
 - Rodrigo Huerta ([@rodhuega]( https://github.com/rodhuega )) (UPC¹) 
 - Aurora Tomás ([@theatomb]( https://github.com/theatomb )) (UPC¹)
 <br/>
-¹ Universitat Politècnica de Catalunya (UPC) <br/>
+¹ Universitat Politècnica de Catalunya (UPC) ![](readme_data/logo-upc.png) <br/>
 
 ## **Chip layout**
 ![](readme_data/top-chip-layout.png)
