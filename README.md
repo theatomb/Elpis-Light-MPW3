@@ -6,14 +6,21 @@
 - Rodrigo Huerta ([@rodhuega]( https://github.com/rodhuega )) (UPC¹) 
 - Aurora Tomás ([@theatomb]( https://github.com/theatomb )) (UPC¹)
 <br/>
-¹ Universitat Politècnica de Catalunya (UPC) ![](readme_data/logo-upc.png) <br/>
+¹ Universitat Politècnica de Catalunya (UPC) <br/><br/><img src="readme_data/logo-upc.png" width="450"> <br/><br/>
+
+## **Project description**
+This chip is a reduced version of the one developed by the authors in the following subjects of the MIRI-HPC master of the UPC:
+
+- Processor Architecture
+- Multiprocessors Architecture
+- Processor Design
 
 ## **Chip layout**
 ![](readme_data/top-chip-layout.png)
 
 ## **Chip description**
 
-Elpis is a 5-stage pipelined and multi-cycle processor implemented from scratch based on RISC-V architecture, mixed with some MIPS ideas. However, due to the limitations of the tools this Elpis is lighter than our initial Elpis core. Anyway, the version that we present has the following characteristics:
+Elpis is a 5-stage pipelined and multi-cycle processor implemented from scratch based on RISC-V architecture, mixed with some MIPS ideas. However, due to the limitations of the tools this Elpis is lighter than our initial Elpis core.  Anyway, the version that we present has the following characteristics:
 
 - 32 integer registers 
 - Special register file
