@@ -67,11 +67,14 @@ set ::env(DIODE_INSERTION_STRATEGY) 4
 # If you're going to use multiple power domains, then disable cvc run.
 set ::env(RUN_CVC) 1
 
-set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) "0.3"
-set ::env(GLB_RESIZER_HOLD_SLACK_MARGIN) "0.3"
+set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) "0.5"
+set ::env(GLB_RESIZER_HOLD_SLACK_MARGIN) "0.5"
 
 set ::env(SYNTH_STRATEGY) "DELAY 2" 
 # set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) 0 
 # set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0 
 
 set ::env(ROUTING_CORES) 6
+
+set ::env(DECAP_CELL) "sky130_fd_sc_hd__decap_3"
+set ::env(FILL_CELL) "sky130_fd_sc_hd__fill_1 sky130_fd_sc_hd__fill_2"

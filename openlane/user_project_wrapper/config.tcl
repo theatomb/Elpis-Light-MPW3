@@ -74,18 +74,12 @@ set ::env(VERILOG_FILES_BLACKBOX) "\
 
 set ::env(EXTRA_LEFS) "\
 	$script_dir/../../lef/core.lef \
-	$script_dir/../../lef/sram_wrapper.lef \
 	$script_dir/../../lef/custom_sram.lef \
-	$script_dir/../../lef/i_arbiter.lef \
-	$script_dir/../../lef/o_arbiter.lef \
 	$script_dir/../../lef/chip_controller.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
 	$script_dir/../../gds/core.gds \
-	$script_dir/../../gds/sram_wrapper.gds \
 	$script_dir/../../gds/custom_sram.gds \
-	$script_dir/../../gds/i_arbiter.gds \
-	$script_dir/../../gds/o_arbiter.gds \
 	$script_dir/../../gds/chip_controller.gds"
 
 set ::env(GLB_RT_MAXLAYER) 5

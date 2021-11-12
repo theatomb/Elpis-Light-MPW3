@@ -359,8 +359,7 @@
 + wbs_dat_o[22] wbs_dat_o[23] wbs_dat_o[24] wbs_dat_o[25] wbs_dat_o[26] wbs_dat_o[27]
 + wbs_dat_o[28] wbs_dat_o[29] wbs_dat_o[2] wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3]
 + wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6] wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0]
-+ wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i vccd1_uq0 vccd2_uq0 vdda1_uq0
-+ vdda2_uq0
++ wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
 Xchip_controller custom_sram/a[0] custom_sram/a[10] custom_sram/a[11] custom_sram/a[12]
 + custom_sram/a[13] custom_sram/a[14] custom_sram/a[15] custom_sram/a[16] custom_sram/a[17]
 + custom_sram/a[18] custom_sram/a[19] custom_sram/a[1] custom_sram/a[2] custom_sram/a[3]
