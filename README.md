@@ -37,7 +37,7 @@ Elpis is a 5-stage pipelined and multi-cycle processor implemented from scratch 
 ![](readme_data/pipeline_diagram.jpg)
 
 ### **ISA**
-The supported instructions by Elpis are: ADD, SUB, MUL, LDB, LDW, STB, STW, BEQ, JUMP, IRET, MOVE, TLBWRITE, ADDI, OR, ORI, AND, ANDI, XOR, XORI, SLL, SRL, SRA, SLLI, SRLI, SRAI, BGE, BLT, BNE, MOVR, ECALL, READ, PRINT. 
+The supported instructions by Elpis are: ADD, SUB, MUL, LDB, LDW, STB, STW, BEQ, JUMP, IRET, MOVE, ADDI, OR, ORI, AND, ANDI, XOR, XORI, SLL, SRL, SRA, SLLI, SRLI, SRAI, BGE, BLT, BNE, MOVR, ECALL, READ, PRINT. 
 The instruction set encoding is mainly based on RISCV32, but there are some differences respecting the pipeline management where we present new instructions not existing in RISC-V:
 
 - **IRET**: It is always codified as ``0x0000007F``, sets the PSW to 0 (user mode) and jumps to the PC that RM0 holds. This instruction is only permitted to execute if PSW=1 (privileged mode).
