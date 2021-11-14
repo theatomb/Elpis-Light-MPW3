@@ -29,12 +29,12 @@ set ::env(CLOCK_NET) "clk"
 set ::env(CLOCK_PERIOD) "50"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 1800 1500"
+set ::env(DIE_AREA) "0 0 1200 1500"
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 # set ::env(PL_BASIC_PLACEMENT) 1
-set ::env(PL_TARGET_DENSITY) 0.35
+set ::env(PL_TARGET_DENSITY) 0.46
 set ::env(FP_CORE_UTIL) "50"
 
 #set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0
@@ -57,10 +57,8 @@ set ::env(RUN_CVC) 1
 set ::env(ROUTING_CORES) 6
 
 
-set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) "0.3"
-set ::env(GLB_RESIZER_HOLD_SLACK_MARGIN) "0.3"
+set ::env(PL_RESIZER_MAX_SLEW_MARGIN) 75
 
-set ::env(SYNTH_STRATEGY) "DELAY 2" 
-set ::env(PL_RESIZER_MAX_SLEW_MARGIN) 50
-
-set ::env(DECAP_PERCENT) 75
+set ::env(SYNTH_STRATEGY) "AREA 2"
+#set ::env(DECAP_CELL) "sky130_fd_sc_hd__decap_3"
+#set ::env(FILL_CELL) "sky130_fd_sc_hd__fill_1 sky130_fd_sc_hd__fill_2"
