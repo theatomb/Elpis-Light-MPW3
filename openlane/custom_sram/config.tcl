@@ -60,5 +60,4 @@ set ::env(ROUTING_CORES) 6
 set ::env(PL_RESIZER_MAX_SLEW_MARGIN) 75
 
 set ::env(SYNTH_STRATEGY) "AREA 2"
-#set ::env(DECAP_CELL) "sky130_fd_sc_hd__decap_3"
-#set ::env(FILL_CELL) "sky130_fd_sc_hd__fill_1 sky130_fd_sc_hd__fill_2"
+set ::env(DECAP_PERCENT) 75

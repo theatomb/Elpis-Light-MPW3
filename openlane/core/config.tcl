@@ -78,4 +78,5 @@ set ::env(SYNTH_STRATEGY) "DELAY 2"
 # set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0 
 
 set ::env(ROUTING_CORES) 6
+set ::env(DECAP_PERCENT) 75
 
