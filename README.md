@@ -225,3 +225,27 @@ The tests that we are providing in RTL are the following:
 The tests that we are providing in GL are the following:
 
 - [testPrint](https://github.com/theatomb/Elpis-Light-MPW3/tree/main/verilog/dv/testPrint): This test checks that Elpis is able to send data to PicoRV.
+
+## **Build the project**
+
+In order to build the project, it is needed to edit the `openlane/Makefile`. First of all, we need to do the workflow for the macros, so in the `openlane/Makefile` file we need to replace:
+
+```Make
+OPENLANE_IMAGE_NAME ?= efabless/openlane:$(OPENLANE_TAG)
+``` 
+by
+```Make
+OPENLANE_IMAGE_NAME ?= htms/openlane:mpw-3a
+``` 
+
+After that, we will execute `make chip_controller && make core && make custom_sram`. When this command finishes, we will edit again the `openlane/Makefile` file replacing:
+```Make
+OPENLANE_IMAGE_NAME ?= htms/openlane:mpw-3a
+``` 
+by
+```Make
+OPENLANE_IMAGE_NAME ?= efabless/openlane:$(OPENLANE_TAG)
+``` 
+Finally, we are able to execute `make user_project_wrapper`.
+
+The reason of this changes is that the default image of openlane makes a DRC error due to density.  The `htms/openlane:mpw-3a` docker image is able to fix it using the variable `set ::env(DECAP_PERCENT) 75`. But when we build the ` user_project_wrapper` we face new huge slew violations that the default image doesn't have.
