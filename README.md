@@ -248,4 +248,4 @@ OPENLANE_IMAGE_NAME ?= efabless/openlane:$(OPENLANE_TAG)
 ``` 
 Finally, we are able to execute `make user_project_wrapper`.
 
-The reason of this changes is that the default image of openlane makes a DRC error due to density.  The `htms/openlane:mpw-3a` docker image is able to fix it using the variable `set ::env(DECAP_PERCENT) 75`. But when we build the ` user_project_wrapper` we face new huge slew violations that the default image doesn't have.
+The reason of these changes is that the default image of openlane makes a DRC error due to density.  The `htms/openlane:mpw-3a` docker image is able to fix it using the variable `set ::env(DECAP_PERCENT) 75`. However when we build the ` user_project_wrapper` we face a huge number of additional slew violations that the default openlane image doesn't have.
