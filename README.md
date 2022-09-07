@@ -9,7 +9,7 @@
 ¹ Universitat Politècnica de Catalunya (UPC) <br/><br/><img src="readme_data/logo-upc.png" width="525"> <br/><br/>
 
 ## **Project description**
-This chip is a reduced version of the one developed by the authors during the following courses of the MIRI-HPC master taught in the UPC:
+This chip is a reduced version of the one developed by the authors during the following courses of the MIRI-HPC (Master in Innovation and Research in Informatics) Master's Program taught in the UPC:
 
 - Processor Architecture
 - Multiprocessors Architecture
@@ -20,12 +20,12 @@ This chip is a reduced version of the one developed by the authors during the fo
 
 ## **Chip description**
 
-Elpis is a 5-stage pipelined and multi-cycle processor implemented from scratch based on RISC-V architecture, mixed with some MIPS ideas. However, due to the limitations of the tools this Elpis is lighter than our initial Elpis core.  Anyway, the version that we present has the following characteristics:
+Elpis is a 5-stage pipelined and multi-cycle processor implemented from scratch based on RISC-V architecture, mixed with some MIPS ideas. However, due to the limitations of the tools this Elpis variant is lighter than our initial Elpis core.  Anyway, the version that is included in this repository has the following characteristics:
 
 - 32 integer registers 
 - Special register file
 - Full bypasses
-- Powerful instruction set, mainly based on RISC-V instructions, but with some customed ones
+- Powerful instruction set, mainly based on RISC-V instructions, but with some additional custom ones
 - L1 instruction and data caches (iCache and dCache)
 - Main memory simulates 5 cycles delay per access, to be more realistic
 - Store buffer
@@ -40,12 +40,12 @@ Elpis is a 5-stage pipelined and multi-cycle processor implemented from scratch 
 The supported instructions by Elpis are: ADD, SUB, MUL, LDB, LDW, STB, STW, BEQ, JUMP, IRET, MOVE, ADDI, OR, ORI, AND, ANDI, XOR, XORI, SLL, SRL, SRA, SLLI, SRLI, SRAI, BGE, BLT, BNE, MOVR, ECALL, READ, PRINT. 
 The instruction set encoding is mainly based on RISCV32, but there are some differences respecting the pipeline management where we present new instructions not existing in RISC-V:
 
-- **IRET**: It is always codified as ``0x0000007F``, sets the PSW to 0 (user mode) and jumps to the PC that RM0 holds. This instruction is only permitted to execute if PSW=1 (privileged mode).
+- **IRET**: It is always encoded as ``0x0000007F``, sets the PSW to 0 (user mode) and jumps to the PC that RM0 holds. This instruction is only permitted to execute if PSW=1 (privileged mode).
 - **JUMP**: Jumps to the address that the given register points to. For example, the instruction semantics could be ``jump x9``, where its decoding will result in an OPCODE [6:0] = 1101111 and destination register = [19:15]. As for the rest, the other bits are ignored.
 - **MOV**: Used to move register data from special registers to regular ones. For example, the instruction semantics could be ``mov x7, rm2``, where its decoding will result in an OPCODE [6:0] = 0101111, funct7 [31:25]= 0000000, source register (special register) = [21:20] and destination register (regular register) = [11:7]. As for the rest, the other bits are ignored. 
 - **MOVR**: Used to move register data from regular registers to special ones. For example, the instruction semantics could be ``movr rm4 x15``, where its decoding will result in an OPCODE [6:0] = 0101111, funct7 [31:25] = 0000001, source register (regular register) = [21:20] and destination register (special register) = [11:7]. As for the rest, the other bits are ignored.
-- **ECALL**: It is an instruction to call the operating system, so user-mode has to be enabled. However, at the moment, there are only supported two different calls. If it is performed ``ecall 6`` is codified as ``0x00600073``, otherwise if is an ``ecall 7`` is codified as ``0x00700073``. The code 6 is used in case we want to send data to PicoRV, and the code 7 is used in case we want to receive data from PicoRV. 
-- **PRINT**: This instruction sends into the PicoRV whatever is inside the special register rm4, and it is always codified as ``0x0200007D``. However, this instruction is only legal if privileged mode is enabled. On the other hand, if user mode is enabled it should be executed through an ecall instruction (``ecall 6``), which would result in an equivalent functionality.
+- **ECALL**: It is an instruction to call the operating system, so user-mode has to be enabled. However, at the moment, there are only supported two different calls. If it is performed ``ecall 6`` is encoded as ``0x00600073``, otherwise if is an ``ecall 7`` is encoded as ``0x00700073``. The code 6 is used in case we want to send data to PicoRV, and the code 7 is used in case we want to receive data from PicoRV. 
+- **PRINT**: This instruction sends into the PicoRV the contents of the special register rm4, and it is always encoded as ``0x0200007D``. However, this instruction is only legal if privileged mode is enabled. On the other hand, if user mode is enabled it should be executed through an ecall instruction (``ecall 6``), which would result in an equivalent functionality.
 - **READ**: This instruction receives a value from PicoRV, and it is always codified as ``0x0400007D``. However, this instruction is only legal if privileged mode is enabled. On the other hand, if user mode is enabled it should be executed through an ecall instruction (``ecall 7``), which would result in an equivalent functionality.
 
 ## **How to use the chip**
@@ -248,4 +248,4 @@ OPENLANE_IMAGE_NAME ?= efabless/openlane:$(OPENLANE_TAG)
 ``` 
 Finally, we are able to execute `make user_project_wrapper`.
 
-The reason of this changes is that the default image of openlane makes a DRC error due to density.  The `htms/openlane:mpw-3a` docker image is able to fix it using the variable `set ::env(DECAP_PERCENT) 75`. But when we build the ` user_project_wrapper` we face new huge slew violations that the default image doesn't have.
+The reason of these changes is that the default image of openlane makes a DRC error due to density.  The `htms/openlane:mpw-3a` docker image is able to fix it using the variable `set ::env(DECAP_PERCENT) 75`. However when we build the ` user_project_wrapper` we face a huge number of additional slew violations that the default openlane image doesn't have.
