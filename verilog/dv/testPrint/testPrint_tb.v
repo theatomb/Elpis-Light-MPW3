@@ -38,7 +38,7 @@ module testPrint_tb;
 	assign checkbits  = mprj_io[31:16];
 	assign uart_tx = mprj_io[6];
 
-	always #12.5 clock <= (clock === 1'b0);
+	always #200 clock <= (clock === 1'b0);
 
 	initial begin
 		clock = 0;
@@ -51,7 +51,7 @@ module testPrint_tb;
 		$dumpvars(0, testPrint_tb);
 		// TIP. Increase the first repeat number until it is needed
 		// Repeat cycles of 1000 clock edges as needed to complete testbench
-		repeat (100) begin
+		repeat (10000) begin
 			repeat (1000) @(posedge clock);
 			// $display("+1000 cycles");
 		end
@@ -72,7 +72,7 @@ module testPrint_tb;
 		$display("%c[1;32m",27);
 		$display("Test 1 (Output (print) to Elpis) Finished correctly");
 		$display("%c[0m",27);
-		#1;
+		#20;
 		$finish;
 	end
 
@@ -96,18 +96,18 @@ module testPrint_tb;
 	initial begin
 		RSTB <= 1'b0;
 		CSB  <= 1'b1;		// Force CSB high
-		#2000;
+		#40000;
 		RSTB <= 1'b1;	    	// Release reset
-		#170000;
+		#3400000;
 		CSB = 1'b0;		// CSB can be released
 	end
 
 	initial begin		// Power-up sequence
 		power1 <= 1'b0;
 		power2 <= 1'b0;
-		#200;
+		#4000;
 		power1 <= 1'b1;
-		#200;
+		#4000;
 		power2 <= 1'b1;
 	end
 

@@ -38,7 +38,7 @@ module testBasicOps_tb;
 	assign checkbits  = mprj_io[31:16];
 	assign uart_tx = mprj_io[6];
 
-	always #12.5 clock <= (clock === 1'b0);
+	always #25 clock <= (clock === 1'b0);
 
 	initial begin
 		clock = 0;
@@ -67,19 +67,61 @@ module testBasicOps_tb;
 
 	initial begin
 		$display("Test 1 (Basic Ops) started");
+	`ifdef RTL
 		wait(testBasicOps_tb.uut.mprj.core0.datapath.regfile.registers[3] == 3);
+	`elsif GL
+		wait(   /* testBasicOps_tb.uut.mprj.core0.datapath.regfile.registers[3] == 3 */
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][0] == 1'b1 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][1] == 1'b1 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][2] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][3] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][4] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][5] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][6] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][7] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][8] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][9] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][10] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][11] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][12] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][13] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][14] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][15] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][16] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][17] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][18] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][19] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][20] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][21] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][22] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][23] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][24] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][25] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][26] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][27] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][28] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][29] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][30] == 1'b0 &&
+			testBasicOps_tb.uut.mprj.core0.\datapath.regfile.registers[3][31] == 1'b0 
+		    );
+	`endif
+	`ifdef RTL 
 		wait(testBasicOps_tb.uut.mprj.core0.datapath.regfile.registers[4] == 3);
 		wait(testBasicOps_tb.uut.mprj.core0.datapath.regfile.registers[5] == 6);
 		wait(testBasicOps_tb.uut.mprj.core0.datapath.regfile.registers[6] == 6);
 		wait(testBasicOps_tb.uut.mprj.core0.datapath.regfile.registers[7] == 3);
 		wait(testBasicOps_tb.uut.mprj.core0.datapath.regfile.registers[8] == 5);
+	`elsif GL
+		/*TODO as above*/
+	`endif
 		$display("%c[1;32m",27);
 		$display("Test 1 (Basic Ops) Finished correctly");
 		$display("%c[0m",27);
-		#1;
+		#2;
 		$finish;
 	end
 
+	`ifdef RTL
 	// TIP. Dumping of memory addresses. Do something similar with registers
 	integer i_mem;
 	initial begin
@@ -94,22 +136,23 @@ module testBasicOps_tb;
 			$dumpvars(0, testBasicOps_tb.uut.mprj.core0.datapath.regfile.registers[i_reg]);
 		end
    	end
+	`endif
 
 	initial begin
 		RSTB <= 1'b0;
 		CSB  <= 1'b1;		// Force CSB high
-		#2000;
+		#4000;
 		RSTB <= 1'b1;	    	// Release reset
-		#170000;
+		#340000;
 		CSB = 1'b0;		// CSB can be released
 	end
 
 	initial begin		// Power-up sequence
 		power1 <= 1'b0;
 		power2 <= 1'b0;
-		#200;
+		#400;
 		power1 <= 1'b1;
-		#200;
+		#400;
 		power2 <= 1'b1;
 	end
 
